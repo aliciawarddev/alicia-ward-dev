@@ -13,6 +13,34 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222222;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #333333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444444;
+    margin-bottom: 1em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* Navigation */
 nav ul {
     list-style: none;
@@ -32,4 +60,10 @@ nav a {
 nav a:hover {
     text-decoration: underline;
     color: #555555;
+}
+
+/* Section Styling */
+main section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #eee;
 }
