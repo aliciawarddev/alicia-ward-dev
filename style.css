@@ -12,3 +12,23 @@
     color: black;
     padding: 20px;
 }
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #555555;
+}
