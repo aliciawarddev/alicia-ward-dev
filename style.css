@@ -38,6 +38,13 @@ h3 {
     color: #444444;
 }
 
+h4 {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
 p {
     font-size: 1rem;
     line-height: 1.5;
@@ -198,3 +205,20 @@ nav a:hover {
 .contact-buttons .btn {
     margin: 0;
 }
+
+/* PROJECTS */
+.projects-list .project {
+    margin-bottom: 2rem;
+}
+
+.projects-list a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.projects-list a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
