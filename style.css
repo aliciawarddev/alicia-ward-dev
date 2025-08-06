@@ -15,34 +15,38 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 0.5rem;
     color: #222;
     text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2.2rem;
     margin-bottom: 0.75rem;
     color: #333;
     border-bottom: 0.125rem solid #ddd;
     padding-bottom: 0.3rem;
     text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     margin-bottom: 0.5em;
     color: #444444;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 h4 {
     color: #555;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 0.3rem;
-    font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 p {
@@ -54,6 +58,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .btn {
@@ -63,10 +68,11 @@ p {
     background-color: #222;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    font-family: 'pacifico';
+    font-size: 1.3em;
 }
 
 .btn:hover {
@@ -136,6 +142,16 @@ nav a {
 nav a:hover {
     text-decoration: underline;
     color: #555;
+}
+
+nav ul li a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em; /* Looks great with Bebas */
+    text-transform: uppercase; /* Optional - Bebas looks good uppercase */
+    color: #333; /* Adjust to your color */
+    text-decoration: none;
 }
 
 /* HOME */
@@ -342,10 +358,16 @@ nav a:hover {
 
 /* FONT SELECTIONS:
 
+First Choices:
 Subtitles -                 Jaywalker
-Call to action/buttons -    Whatshot off
-Contrast -                  Synatype OTF
+Call to action/buttons -    Watshot OTF
+Contrast -                  dynatype OTF
 Text body -                 Futura
+
+Google Fonts:
+titles: bebas neue
+text: plus Jakarta sans (rubik)
+creative/display: pacifico, 
 
 */
 
@@ -356,4 +378,46 @@ Text body -                 Futura
     border-right: 20px solid accent;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
+}
+
+/* TRIANGLE SIGN */
+.triangle-sign-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.triangle-top {
+    width: 0;
+    height: 0;
+    border-top: 70px solid var(--primary);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    z-index: 1;
+}
+
+.triangle-bottom {
+    height: 0;
+    width: 0;
+    border-top: 140px solid var(--primary);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    transform: skewX(-47deg);
+    margin-top: -69.5px;
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.text-rectangle {
+    width: 90px;
+    height: 35px;
+    background-color: var(--dark);
+    margin-top: -120px;
+    margin-right: -110px;
+    z-index: 2;
+    color: var(--light);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3em;
 }
