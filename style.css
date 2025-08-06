@@ -73,6 +73,24 @@ p {
     background-color: #555;
 }
 
+/* COLOR PALETTE */
+:root {
+    --primary: #00A86B;
+    --accent: #FF5E3A; 
+    --light: #F9F8F3;
+    --dark: #444444; 
+    --border: #EAE6DA; 
+}
+
+/* 
+Color Palette Usage:
+- background: light
+- text: dark
+- headings/links: primary
+- buttons/important: accent
+- dividers: border 
+*/
+
 /* SECTIONS */
 main section {
     padding: 60px 20px;
