@@ -175,11 +175,47 @@ nav a:hover {
     line-height: 1.6;
 }
 
+/* 
 .skill-group li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: #222;
+}
+*/ 
+
+.skill-group li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width: 0;
+    height: 0;
+}
+
+.skill-group.languages li::before {
+    border-left: 12px solid var(--accent); /* Replace with your color */
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.skill-group.tools li::before {
+    border-left: 12px solid var(--primary); /* Replace with your color */
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.skill-group.design li::before {
+    border-left: 12px solid var(--accent); /* Replace with your color */
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.skill-group.strengths li::before {
+    border-left: 12px solid var(--primary); /* Replace with your color */
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 
 /* CONTACT */
@@ -240,3 +276,84 @@ nav a:hover {
     color: #555;
 }
 
+/* NAME TITLE*/
+/* General */
+.mod-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.first-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.last-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shape-high {
+    height: 150px;
+    width: 70px;
+    background-color: var(--accent);
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape-low {
+    height: 150px;
+    width: 70px;
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Horseshoes font */
+@font-face {
+    font-family: 'Horseshoes';
+    src: url('../fonts/horseshoes.otf') format('opentype'),
+         url('../fonts/horseshoes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.shape-high h1,
+.shape-low h1 {
+    font-family: 'Horseshoes', cursive;
+    font-size: 5rem;
+    color: var(--mod-cream);
+}
+
+/* FONT SELECTIONS:
+
+Subtitles -                 Jaywalker
+Call to action/buttons -    Whatshot off
+Contrast -                  Synatype OTF
+Text body -                 Futura
+
+*/
+
+/* BULLET POINTS */
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 20px solid accent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
