@@ -68,8 +68,7 @@ p {
     background-color: var(--teal);
     color: var(--light);
     text-decoration: none;
-    border-radius: 0.25rem;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
     cursor: pointer;
     font-family: 'pacifico';
     font-size: 1.3em;
@@ -77,6 +76,7 @@ p {
 
 .btn:hover {
     background-color: var(--orange);
+    box-shadow: -4px 4px 0 0 var(--dark);
 }
 
 /* COLOR PALETTE */
@@ -177,7 +177,7 @@ nav ul li a:hover {
     background-color: var(--teal);
     color: var(--light);
     transform: translateY(-2px);
-    box-shadow: 0 4px 0 0 var(--dark);
+    box-shadow: -4px 4px 0 0 var(--dark);
 }
 
 /* HOME */
