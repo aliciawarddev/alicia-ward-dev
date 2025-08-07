@@ -188,9 +188,106 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#home p {
-    color: var(--dark);
+/* NAME TITLE - Bold Letters with Drop Shadow */
+.name-sign-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    padding: 40px 0; 
 }
+
+.name-title {
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    position: relative;
+}
+
+.first-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.5rem; /* Increased from 5rem */
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--teal);
+    /* Single clean shadow instead of multiple */
+    text-shadow: -5px 5px 0 var(--dark);
+    /* Ensure crisp rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    transform: translateY(-10px) rotate(-2deg);
+}
+
+.last-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.5rem; /* Increased from 5rem */
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--orange);
+    /* Single clean shadow */
+    text-shadow: -5px 5px 0 var(--dark);
+    /* Ensure crisp rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    transform: translateY(10px) rotate(2deg);;
+}
+
+/* STARBURSTS */
+.name-title-container::before,
+.name-title-container::after {
+    content: '✦';
+    position: absolute;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+/* Teal */
+.name-title-container::before {
+    content: '✦';
+    right: 17%;
+    top: 8%;
+    color: var(--teal);
+    font-size: 1.5rem;
+}
+
+/* Orange */
+.name-title-container::after {
+    content: '✦';
+    left: 20%;
+    top: 6%;
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+/* Additional starbursts using name-title pseudo elements */
+.name-title::before,
+.name-title::after {
+    content: '✦';
+    position: absolute;
+    z-index: 10;
+}
+
+/* Sand */
+.name-title::before {
+    content: '✦';
+    right: 0%;
+    top: 80%;
+    color: var(--sand);
+    font-size: 1.8rem;
+}
+
+/* Dark */
+.name-title::after {
+    content: '✦';
+    left: -50px;
+    top: 70%;
+    color: var(--dark);    
+    font-size: 1.8rem;
+}
+
 
 /* NAME TITLE - Archive
 .mod-title-container {
@@ -254,7 +351,7 @@ nav ul li a:hover {
     font-size: 5rem;
     color: var(--light);
 }
-    
+
 /* Arrow Button */
 .arrow-button-container {
     display: flex;
