@@ -192,8 +192,7 @@ nav ul li a:hover {
     color: var(--dark);
 }
 
-/* NAME TITLE*/
-/* General */
+/* NAME TITLE - Archive
 .mod-title-container {
     display: flex;
     flex-direction: row;
@@ -239,7 +238,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-/* Horseshoes font */
+
 @font-face {
     font-family: 'Horseshoes';
     src: url('../fonts/horseshoes.otf') format('opentype'),
@@ -255,7 +254,7 @@ nav ul li a:hover {
     font-size: 5rem;
     color: var(--light);
 }
-
+    
 /* Arrow Button */
 .arrow-button-container {
     display: flex;
@@ -342,19 +341,18 @@ nav ul li a:hover {
 }
 
 .arrow-button-container:hover .text-square {
-    background-color: var(--teal); /* Teal on hover */
-    color: var(--light); /* Text changes to off-white */
-    border-color: var(--dark); /* Border stays dark */
+    background-color: var(--teal); 
+    color: var(--light); 
+    border-color: var(--dark); 
 }
 
 .arrow-button-container:hover .arrow-line {
-    border-color: var(--orange); /* Arrow changes to orange */
+    border-color: var(--orange); 
 }
 
 .arrow-button-container:hover .arrow-head {
-    border-left-color: var(--orange); /* Arrowhead to orange */
+    border-left-color: var(--orange); 
 }
-
 
 /* PROJECTS */
 .projects-list .project {
