@@ -149,31 +149,35 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--teal);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
-    
+    gap: 0.75rem;
+    padding: 1rem 0;
 }
 
 nav ul li a {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
-    letter-spacing: 0.05em; /* Looks great with Bebas */
-    text-transform: uppercase; /* Optional - Bebas looks good uppercase */
-    color: #333; /* Adjust to your color */
+    font-size: 1.1rem;
+    letter-spacing: 0.05em; 
+    text-transform: uppercase; 
+    color: var(--dark); /* Adjust to your color */
     text-decoration: none;
+
+    /* Pill shape */
+    padding: 0.5rem 1.5rem;
+    background-color: var(--sand);
+    border-radius: 25px;
+    border: 2px solid var(--dark);
+
+    /* Smooth transitions */
+    transition: all 0.3 ease;
+}
+
+/* Hover state */
+nav ul li a:hover {
+    background-color: var(--teal);
+    color: var(--light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0 0 var(--dark);
 }
 
 /* HOME */
