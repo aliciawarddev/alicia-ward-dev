@@ -7,17 +7,16 @@
 
 
 body {
-    font-family: sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
     background-color: var(--light);
-    color: #222;
     padding: 1.25rem;
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #222;
+    color: var(--dark);
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
@@ -26,8 +25,8 @@ h1 {
 h2 {
     font-size: 2.2rem;
     margin-bottom: 0.75rem;
-    color: black;
-    border-bottom: 0.125rem solid #ddd;
+    color: var(--dark);
+    border-bottom: 0.125rem solid var(--teal);
     padding-bottom: 0.3rem;
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
@@ -37,13 +36,13 @@ h2 {
 h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
-    color: #444444;
+    color: var(--orange);
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
 }
 
 h4 {
-    color: #555;
+    color: var(--dark);
     font-size: 1.3rem;
     margin-bottom: 0.3rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -53,7 +52,7 @@ h4 {
 p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #444444;
+    color: var(--dark);
     margin-bottom: 1em;
     max-width: 600px;
     margin-left: auto;
@@ -66,8 +65,8 @@ p {
     display: inline-block;
     margin: 1.25rem auto;
     padding: 0.625rem 1.25rem;
-    background-color: #222;
-    color: #fff;
+    background-color: var(--teal);
+    color: var(--light);
     text-decoration: none;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
@@ -77,21 +76,21 @@ p {
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: var(--orange);
 }
 
 /* COLOR PALETTE */
 :root {
-    --primary: #00A86B;
-    --accent: #FF5E3A; 
-    --light: #F9F8F3;
-    --dark: #444444; 
-    --border: #EAE6DA; 
-    --beige: #f5deb3;
+    --light: #FAF3E0;   /* Off-white */
+    --dark: #3A3A3A;    /* Warm charcoal */
+    --tan: #D4A574;     /* Mid-tone brown (renamed from beige) */
+    --teal: #00A896;    /* Primary cool */
+    --orange: #FF6B35;  /* Primary warm */
+    --sand: #F4A261;    /* Accent warm */
 }
 
 /* 
-Color Palette Usage:
+COLOR PALETT
 - background: light
 - text: dark
 - headings/links: primary
@@ -99,10 +98,24 @@ Color Palette Usage:
 - dividers: border 
 */
 
+/* FONT SELECTIONS:
+
+First Choices:
+Subtitles -                 Jaywalker
+Call to action/buttons -    Watshot OTF
+Contrast -                  dynatype OTF
+Text body -                 Futura
+
+Google Fonts:
+titles: bebas neue
+text: plus Jakarta sans (rubik)
+creative/display: pacifico, 
+
+*/
+
 /* SECTIONS */
 main section {
     padding: 60px 20px;
-    border-bottom: 1px solid #eee;
 }
 
 /* Default left alignment for content sections */
@@ -126,6 +139,10 @@ main section {
 }
 
 /* NAVIGATION */
+.header {
+    background-color: var(--light);
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -137,13 +154,13 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #222;
+    color: var(--dark);
     font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #555;
+    color: var(--teal);
 }
 
 nav ul li a {
@@ -164,134 +181,8 @@ nav ul li a {
     text-align: center;
 }
 
-/* SKILLS */
-.skills-container {
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-.skill-group {
-    margin-bottom: 2rem;
-}
-
-.skill-group h3 {
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.skill-group ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skill-group li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #444;
-    line-height: 1.6;
-}
-
-/* 
-.skill-group li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #222;
-}
-*/ 
-
-.skill-group li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
-    width: 0;
-    height: 0;
-}
-
-.skill-group.languages li::before {
-    border-left: 12px solid var(--accent); /* Replace with your color */
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-.skill-group.tools li::before {
-    border-left: 12px solid var(--primary); /* Replace with your color */
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-.skill-group.design li::before {
-    border-left: 12px solid var(--accent); /* Replace with your color */
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-.skill-group.strengths li::before {
-    border-left: 12px solid var(--primary); /* Replace with your color */
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-/* CONTACT */
-#contact {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#contact h2 {
-    text-align: center;
-}
-
-#contact p {
-    text-align: center;
-    margin: 1rem;
-    text-decoration: none;
-    max-width: none;
-}
-
-#contact a:not(.btn) {
-    text-decoration: none;
-    color: #222222;
-    font-weight: bold;
-}
-
-#contact a:not(.btn):hover {
-    text-decoration: underline;
-    color: #555555;
-}
-
-.contact-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-/* Ensure contact buttons have consistent styling */
-.contact-buttons .btn {
-    margin: 0;
-}
-
-/* PROJECTS */
-.projects-list .project {
-    margin-bottom: 2rem;
-}
-
-.projects-list a {
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
-}
-
-.projects-list a:hover {
-    text-decoration: underline;
-    color: #555;
+#home p {
+    color: var(--dark);
 }
 
 /* NAME TITLE*/
@@ -323,7 +214,7 @@ nav ul li a {
 .shape-high {
     height: 120px;
     width: 70px;
-    background-color: var(--accent);
+    background-color: var(--teal);
     position: relative;
     margin-bottom: 40px;
     display: flex;
@@ -334,7 +225,7 @@ nav ul li a {
 .shape-low {
     height: 120px;
     width: 70px;
-    background-color: var(--primary);
+    background-color: var(--orange);
     position: relative;
     display: flex;
     align-items: center;
@@ -355,34 +246,237 @@ nav ul li a {
 .shape-low h1 {
     font-family: 'Horseshoes', cursive;
     font-size: 5rem;
-    color: black;
+    color: var(--light);
 }
 
-/* FONT SELECTIONS:
+/* Arrow Button */
+.arrow-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 2rem auto;
+    width: fit-content;
+}
 
-First Choices:
-Subtitles -                 Jaywalker
-Call to action/buttons -    Watshot OTF
-Contrast -                  dynatype OTF
-Text body -                 Futura
+.text-square {
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: var(--sand);
+    margin-right: -170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'pacifico';
+    font-size: 1.3em;
+    color: var(--dark);
+    box-shadow: -5px 5px 0 0 var(--dark);
+    border: 2px solid var(--dark);
+}
 
-Google Fonts:
-titles: bebas neue
-text: plus Jakarta sans (rubik)
-creative/display: pacifico, 
+.arrow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 5px;
+    pointer-events: none;
+}
 
-*/
+.arrow-line {
+    width: 100px;
+    height: 95px;
+    border-left: 22px solid var(--teal);
+    border-bottom: 22px solid var(--teal);
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 20px;
+    box-shadow: -5px 5px 0 0 var(--dark);
+    z-index: 2;
+}
 
-/* BULLET POINTS */
-.triangle {
+.arrow-head {
+    height: 0;
+    width: 0;
+    border-left: 25px solid var(--teal);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    margin-left: -20px;
+    margin-top: -30px;
+}
+
+.arrow-shadow {
+    height: 0;
+    width: 0;
+    border-left: 25px solid var(--dark);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-bottom: -10px;
+    z-index: 1;
+    top: 10px;
+    right: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover */
+.arrow-button-container:hover {
+    transform: translateX(5px);
+}
+
+.arrow-button-container:hover .text-square {
+    background-color: var(--teal); /* Teal on hover */
+    color: var(--light); /* Text changes to off-white */
+    border-color: var(--dark); /* Border stays dark */
+}
+
+.arrow-button-container:hover .arrow-line {
+    border-color: var(--orange); /* Arrow changes to orange */
+}
+
+.arrow-button-container:hover .arrow-head {
+    border-left-color: var(--orange); /* Arrowhead to orange */
+}
+
+
+/* PROJECTS */
+.projects-list .project {
+    margin-bottom: 2rem;
+}
+
+.projects-list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.projects-list a:hover {
+    text-decoration: underline;
+    color: var(--teal);
+}
+
+/* Tech Approach Label */
+.tech-label {
+    color: var(--orange);
+    font-weight: 600; /* Optional: make it slightly bolder */
+}
+
+/* SKILLS */
+.skills-container {
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.skill-group {
+    margin-bottom: 2rem;
+}
+
+.skill-group h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.skill-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-group li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.skill-group li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
     width: 0;
     height: 0;
-    border-right: 20px solid accent;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
 }
 
-/* TRIANGLE SIGN */
+.skill-group.languages li::before {
+    border-left: 12px solid var(--orange); 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.skill-group.tools li::before {
+    border-left: 12px solid var(--teal); 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.skill-group.design li::before {
+    border-left: 12px solid var(--sand); 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.skill-group.strengths li::before {
+    border-left: 12px solid var(--teal); 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+/* CONTACT */
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    margin: 1rem;
+    text-decoration: none;
+    max-width: none;
+}
+
+#contact a:not(.btn) {
+    text-decoration: none;
+    color: var(--teal);
+    font-weight: bold;
+}
+
+#contact a:not(.btn):hover {
+    text-decoration: underline;
+    color: #555555;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Ensure contact buttons have consistent styling */
+.contact-buttons .btn {
+    margin: 0;
+}
+
+/* TRIANGLE SIGN - Archive
 .triangle-sign-wrapper {
     display: flex;
     flex-direction: column;
@@ -423,91 +517,5 @@ creative/display: pacifico,
     font-family: 'Pacifico', cursive;
     font-size: 1.3em;
 }
+*/ 
 
-/* Arrow Button */
-.arrow-button-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    margin: 2rem auto;
-    width: fit-content;
-}
-
-.arrow-button-container:hover {
-    transform: translateX(3px);
-}
-
-.arrow-button-container:hover .text-square {
-    background-color: var(--light); /* Lighter beige on hover */
-}
-
-.text-square {
-    width: 150px;
-    height: 75px;
-    border-radius: 10px;
-    background-color: var(--beige);
-    margin-right: -170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'pacifico';
-    font-size: 1.3em;
-    border: 2px solid black;
-    color: black;
-    box-shadow: -5px 5px 0 0 black;
-}
-
-.arrow-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: -10px;
-    margin-left: 5px;
-    pointer-events: none;
-}
-
-.arrow-line {
-    width: 100px;
-    height: 95px;
-    border-left: 22px solid var(--accent);
-    border-bottom: 22px solid var(--accent);
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 20px;
-    box-shadow: -5px 5px 0 0 black;
-    z-index: 2;
-}
-
-.arrow-head {
-    height: 0;
-    width: 0;
-    border-left: 25px solid var(--accent);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    position: relative;
-    margin-left: -20px;
-    margin-top: -30px;
-}
-
-.arrow-shadow {
-    height: 0;
-    width: 0;
-    border-left: 25px solid black;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    margin-bottom: -10px;
-    z-index: 1;
-    top: 10px;
-    right: 5px;
-    position: relative;
-    z-index: 1;
-}
