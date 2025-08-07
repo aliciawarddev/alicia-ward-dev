@@ -451,9 +451,19 @@ nav ul li a:hover {
     border-left-color: var(--orange); 
 }
 
+/* ABOUT */
+
+
 /* PROJECTS */
 .projects-list .project {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.projects-list {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .projects-list a {
@@ -467,6 +477,55 @@ nav ul li a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
+}
+
+/* First project (Objects) - align left */
+.projects-list .project:nth-child(1) {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+    max-width: 85%;
+}
+
+/* Second project (Nature) - align right */
+.projects-list .project:nth-child(2) {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    max-width: 85%;
+}
+
+/* Third project (Scenes) - align left */
+.projects-list .project:nth-child(3) {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+    max-width: 85%;
+}
+
+/* Optional: Add colored accent bars to emphasize zigzag */
+.projects-list .project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 90%;
+    background: var(--teal);
+}
+
+.projects-list .project:nth-child(1)::before {
+    left: 0;
+    background: var(--orange);
+}
+
+.projects-list .project:nth-child(2)::before {
+    right: 0;
+    background: var(--teal);
+}
+
+.projects-list .project:nth-child(3)::before {
+    left: 0;
+    background: var(--sand);
 }
 
 /* Tech Approach Label */
