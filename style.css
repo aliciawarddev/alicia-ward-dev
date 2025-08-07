@@ -15,7 +15,8 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
     color: var(--dark);
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
@@ -24,7 +25,8 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    margin-bottom: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
     color: var(--dark);
     border-bottom: 0.125rem solid var(--teal);
     padding-bottom: 0.3rem;
@@ -35,7 +37,8 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5em;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--orange);
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
@@ -44,16 +47,17 @@ h3 {
 h4 {
     color: var(--dark);
     font-size: 1.3rem;
-    margin-bottom: 0.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
 }
 
 p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
     color: var(--dark);
-    margin-bottom: 1em;
+    margin-bottom: 1.5rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -89,15 +93,6 @@ p {
     --sand: #F4A261;    /* Accent warm */
 }
 
-/* 
-COLOR PALETT
-- background: light
-- text: dark
-- headings/links: primary
-- buttons/important: accent
-- dividers: border 
-*/
-
 /* FONT SELECTIONS:
 
 First Choices:
@@ -115,7 +110,9 @@ creative/display: pacifico,
 
 /* SECTIONS */
 main section {
-    padding: 60px 20px;
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Default left alignment for content sections */
@@ -138,9 +135,20 @@ main section {
     margin-right: 0;
 }
 
+
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
 /* NAVIGATION */
 .header {
     background-color: var(--light);
+}
+
+nav {
+    margin-bottom: 60px;
 }
 
 nav ul {
@@ -150,7 +158,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
-    padding: 1rem 0;
+    padding: 1rem 0 3rem 0;
 }
 
 nav ul li a {
@@ -186,6 +194,17 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+#home h2 {
+    margin-top: -20px;
+    margin-bottom: 1.5rem;
+}
+
+#home p {
+    margin-bottom: 3rem;
 }
 
 /* NAME TITLE - Bold Letters with Drop Shadow */
@@ -233,6 +252,11 @@ nav ul li a:hover {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     transform: translateY(10px) rotate(2deg);;
+}
+
+.first-name, 
+.last-name {
+    margin-bottom: 0;
 }
 
 /* STARBURSTS */
@@ -452,18 +476,23 @@ nav ul li a:hover {
 }
 
 /* ABOUT */
+#about p {
+    margin-bottom: 2rem;
+}
 
+#about p:last-child {
+    margin-bottom: 0;
+}
 
 /* PROJECTS */
 .projects-list .project {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    position: relative;
+    margin-bottom: 4rem;
+    padding: 2.5rem;
 }
 
 .projects-list {
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .projects-list a {
@@ -501,34 +530,8 @@ nav ul li a:hover {
     margin-left: 0;
     text-align: left;
     max-width: 85%;
+    margin-bottom: 0;
 }
-
-/* Optional: Add colored accent bars to emphasize zigzag */
-.projects-list .project::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 5px;
-    height: 90%;
-    background: var(--teal);
-}
-
-.projects-list .project:nth-child(1)::before {
-    left: 0;
-    background: var(--orange);
-}
-
-.projects-list .project:nth-child(2)::before {
-    right: 0;
-    background: var(--teal);
-}
-
-.projects-list .project:nth-child(3)::before {
-    left: 0;
-    background: var(--sand);
-}
-
-
 
 /* Tech Approach Label */
 .tech-label {
@@ -539,16 +542,20 @@ nav ul li a:hover {
 /* SKILLS */
 .skills-container {
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .skill-group {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .skill-group h3 {
     margin-bottom: 1rem;
     color: #333;
+}
+
+.skill-grroup:last-child {
+    margin-bottom: 0;
 }
 
 .skill-group ul {
@@ -560,8 +567,8 @@ nav ul li a:hover {
 .skill-group li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #444;
+    margin-bottom: 0.8rem;
+    color: var(--dark);
     line-height: 1.6;
 }
 
@@ -651,9 +658,13 @@ nav ul li a:hover {
 
 #contact p {
     text-align: center;
-    margin: 1rem;
+    margin-bottom: 2rem;
     text-decoration: none;
     max-width: none;
+}
+
+.contact-buttons {
+    margin-top: 2.5rem;
 }
 
 /* Email Button */
@@ -704,6 +715,8 @@ nav ul li a:hover {
 /* FOOTER */
 footer {
     background: linear-gradient(90deg, var(--teal) 60%, var(--orange) 40%);
+    padding: 2.5rem 2rem;
+    margin-top: 80px;
 }
 
 footer p {
@@ -713,6 +726,20 @@ footer p {
     letter-spacing: 0.2em;
 }
 
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    main section {
+        padding: 60px 20px; /* Less padding on mobile */
+    }
+    
+    #home {
+        padding-bottom: 80px;
+    }
+    
+    footer {
+        margin-top: 40px;
+    }
+}
 
 
 
