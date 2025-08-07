@@ -159,8 +159,11 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
     color: var(--teal);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    
 }
 
 nav ul li a {
@@ -361,8 +364,10 @@ nav ul li a {
 }
 
 .projects-list a:hover {
-    text-decoration: underline;
     color: var(--teal);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 /* Tech Approach Label */
