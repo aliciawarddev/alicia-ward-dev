@@ -504,15 +504,54 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* Atomic starburst bullets */
+.skill-group li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+.skill-group.languages li::before {
+    color: var(--orange);
+}
+
+.skill-group.tools li::before {
+    color: var(--teal);
+}
+
+.skill-group.design li::before {
+    color: var(--orange);
+}
+
+.skill-group.strengths li::before {
+    color: var(--teal);
+}
+
+/* Adjust the padding to accommodate the starburst */
+.skill-group li {
+    position: relative;
+    padding-left: 1.8rem; /* Increased slightly from 1.5rem */
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Archive 
 .skill-group li::before {
     content: '';
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%); /* Center vertically */
+    transform: translateY(-50%);
     width: 0;
     height: 0;
 }
+*/
+
+/* Triangle bullets - archive 
 
 .skill-group.languages li::before {
     border-left: 12px solid var(--orange); 
@@ -537,6 +576,7 @@ nav ul li a:hover {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
 }
+*/
 
 /* CONTACT */
 #contact {
