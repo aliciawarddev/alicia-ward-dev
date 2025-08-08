@@ -478,24 +478,41 @@ nav ul {
 .about-content {
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-#about p {
-    margin-bottom: 2rem;
+/* Card Container */
+.about-card {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 25px;
+    border: 2px solid var(--dark);
+    box-shadow: -6px 6px 0 0 var(--sand);
+    transition: all 0.3s ease;
 }
 
-#about p:last-child {
-    margin-bottom: 0;
+.about-card:nth-child(even) {
+    box-shadow: -6px 6px 0 0 var(--teal);
+}
+
+.about-card:hover {
+    transform: translateY(-3px);
+    box-shadow: -8px 8px 0 0 var(--orange);
+}
+
+/* Card titles */
+.about-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--teal);
+    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.about-card p {
+    margin: 0;
+    color: var(--dark);
 }
 
 /* PROJECTS */
