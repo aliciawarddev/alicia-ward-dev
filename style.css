@@ -516,6 +516,250 @@ nav ul {
 }
 
 /* PROJECTS */
+#projects {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: var(--dark);
+    border-bottom: 0.125rem solid var(--teal);
+    padding-bottom: 0.3rem;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Section intro */
+#projects .projects-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+#projects .projects-intro h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--orange);
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+#projects .projects-intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--dark);
+    line-height: 1.7;
+    text-align: center !important;
+}
+
+/* Projects Grid Container */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: -6px 6px 0 0 var(--orange);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: -8px 8px 0 0 var(--dark);
+}
+
+/* Project Link Wrapper */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Thumbnail Container */
+.project-thumbnail {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, var(--sand) 0%, var(--teal) 100%);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid var(--dark);
+}
+
+/* Placeholder for actual images */
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-thumbnail img {
+    transform: scale(1.05);
+}
+
+/* Thumbnail overlay for hover effect */
+.thumbnail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 168, 150, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .thumbnail-overlay {
+    opacity: 1;
+}
+
+.view-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--light);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Project Content */
+.project-content {
+    padding: 2rem;
+}
+
+.project-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+/* Title hover effect */
+.project-link:hover .project-title {
+    color: var(--teal);
+}
+
+.project-title::after {
+    content: '→';
+    margin-left: 0.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .project-title::after {
+    transform: translateX(5px);
+}
+
+.project-description {
+    color: var(--dark);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.tech-approach {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(58, 58, 58, 0.2);
+}
+
+.tech-label {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--orange);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tech-details {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Project Tags */
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tag {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    background-color: var(--teal);
+    color: var(--dark);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1px solid var(--dark);
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    /* Make the third card span full width */
+    .project-card:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+    
+    /* Adjust third card layout to be horizontal */
+    .project-card:nth-child(3) .project-link {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .project-card:nth-child(3) .project-thumbnail {
+        height: 100%;
+        border-bottom: none;
+        border-right: 2px solid var(--dark);
+    }
+}
+
+@media (max-width: 767px) {
+    #projects {
+        padding: 60px 20px;
+    }
+    
+    .project-content {
+        padding: 1.5rem;
+    }
+    
+    .project-thumbnail {
+        height: 200px;
+    }
+}
+
+
+/* Old Projects Code 
 .projects-list .project {
     margin-bottom: 4rem;
     padding: 2.5rem;
@@ -538,16 +782,18 @@ nav ul {
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
 }
+*/
 
-/* First project (Objects) - align left */
+/* First project (Objects) - align left */ /*
 .projects-list .project:nth-child(1) {
     margin-right: auto;
     margin-left: 0;
     text-align: left;
     max-width: 85%;
 }
+*/
 
-/* Second project (Nature) - align right */
+/* Second project (Nature) - align right */ /*
 .projects-list .project:nth-child(2) {
     margin-left: auto;
     margin-right: 0;
@@ -555,7 +801,7 @@ nav ul {
     max-width: 85%;
 }
 
-/* Third project (Scenes) - align left */
+/* Third project (Scenes) - align left */ /*
 .projects-list .project:nth-child(3) {
     margin-right: auto;
     margin-left: 0;
@@ -564,11 +810,6 @@ nav ul {
     margin-bottom: 0;
 }
 
-/* Tech Approach Label */
-.tech-label {
-    color: var(--orange);
-    font-weight: 600; /* Optional: make it slightly bolder */
-}
 
 /* SKILLS */
 .skills-container {
