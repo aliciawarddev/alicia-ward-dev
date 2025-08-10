@@ -823,8 +823,142 @@ nav ul {
     margin-bottom: 0;
 }
 
+/* SKILLS SECTION - CLEAN GRID DESIGN */
+#skills {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
 
-/* SKILLS */
+#skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: var(--dark);
+    border-bottom: 0.125rem solid var(--teal);
+    padding-bottom: 0.3rem;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Clean Grid Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skill-card {
+    background: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    /* Uniform shadow color for cohesion */
+    box-shadow: -6px 6px 0 0 var(--sand);
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: -8px 8px 0 0 var(--teal);
+}
+
+/* Card Headers */
+.skill-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--teal);
+    margin: 0 0 1.25rem 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--teal);
+}
+
+/* Skill Items - Clean list style */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.skill-item {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+/* Simple bullet using your starburst */
+.skill-item::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-size: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);  /* Add this to center vertically */
+}
+
+/* Professional Strengths Card - Full width */
+.skill-card.strengths {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, var(--light) 0%, rgba(0, 168, 150, 0.05) 100%);
+}
+
+.skill-card.strengths h3 {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+}
+
+.strength-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.strength-list li {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.strength-list li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-size: 0.8rem;
+    top: 10%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-card.strengths {
+        grid-column: 1;
+    }
+    
+    .strength-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* SKILLS 
 .skills-container {
     gap: 2rem;
     margin-top: 2rem;
@@ -857,7 +991,7 @@ nav ul {
     line-height: 1.6;
 }
 
-/* Atomic starburst bullets */
+
 .skill-group li::before {
     content: '✦';
     position: absolute;
@@ -883,53 +1017,15 @@ nav ul {
     color: var(--teal);
 }
 
-/* Adjust the padding to accommodate the starburst */
 .skill-group li {
     position: relative;
-    padding-left: 1.8rem; /* Increased slightly from 1.5rem */
+    padding-left: 1.8rem; 
     margin-bottom: 0.5rem;
     color: var(--dark);
     line-height: 1.6;
 }
+    */
 
-/* Archive 
-.skill-group li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-}
-*/
-
-/* Triangle bullets - archive 
-
-.skill-group.languages li::before {
-    border-left: 12px solid var(--orange); 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-.skill-group.tools li::before {
-    border-left: 12px solid var(--teal); 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-.skill-group.design li::before {
-    border-left: 12px solid var(--sand); 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-
-.skill-group.strengths li::before {
-    border-left: 12px solid var(--teal); 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
-*/
 
 /* CONTACT */
 #contact {
