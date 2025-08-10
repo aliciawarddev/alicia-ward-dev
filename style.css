@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 2rem;
     color: var(--dark);
@@ -40,16 +40,18 @@ h1 {
     letter-spacing: 0.05em;
 }
 
+/* Section Headers */
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 2.5rem;
     color: var(--dark);
-    border-bottom: 0.125rem solid var(--teal);
+    border-bottom: 0.4rem solid var(--teal);
     padding-bottom: 0.3rem;
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -137,31 +139,6 @@ main section {
     padding: 100px 20px;
     max-width: 900px;
     margin: 0 auto;
-}
-
-/* Default left alignment for content sections */
-#projects,
-#skills {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#projects h2,
-#skills h2 {
-    text-align: left;
-}
-
-#projects p,
-#skills p {
-    text-align: left;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#contact {
-    padding-top: 100px;
-    padding-bottom: 80px;
 }
 
 /* NAVIGATION */
@@ -535,17 +512,7 @@ nav ul {
     padding: 100px 20px;
 }
 
-#projects h2 {
-    font-size: 2.2rem;
-    margin-bottom: 2.5rem;
-    color: var(--dark);
-    border-bottom: 0.125rem solid var(--teal);
-    padding-bottom: 0.3rem;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
+
 
 /* Section intro */
 #projects .projects-intro {
@@ -828,18 +795,6 @@ nav ul {
     max-width: 900px;
     margin: 0 auto;
     padding: 100px 20px;
-}
-
-#skills h2 {
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
-    color: var(--dark);
-    border-bottom: 0.125rem solid var(--teal);
-    padding-bottom: 0.3rem;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
 }
 
 /* Clean Grid Layout */
