@@ -5,12 +5,29 @@
     box-sizing: border-box;
 }
 
+main {
+    display: block;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    display: block;
+    width: 100%;
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    clear: both;  /* Clears any floats */
+}
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
     background-color: var(--light);
     padding: 1.25rem;
+    display: block;
 }
 
 h1 {
