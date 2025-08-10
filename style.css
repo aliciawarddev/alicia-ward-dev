@@ -1079,7 +1079,32 @@ nav ul {
 }
 */
 
-/* FOOTER */
+/* FOOTER - Minimal with accent */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 2rem 2rem;
+    margin-top: 80px;
+}
+
+footer p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--dark);
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.footer-star {
+    color: var(--teal);
+    font-size: 1.2rem;
+}
+
+
+
+/* FOOTER ARCHIVE 
 footer {
     background: linear-gradient(90deg, var(--teal) 60%, var(--orange) 40%);
     padding: 2.5rem 2rem;
@@ -1093,10 +1118,10 @@ footer p {
     letter-spacing: 0.2em;
 }
 
-/* RESPONSIVE ADJUSTMENTS */
+
 @media (max-width: 768px) {
     main section {
-        padding: 60px 20px; /* Less padding on mobile */
+        padding: 60px 20px; 
     }
     
     #home {
@@ -1107,6 +1132,8 @@ footer p {
         margin-top: 40px;
     }
 }
+
+*/
 
 
 
