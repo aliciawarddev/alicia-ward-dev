@@ -508,10 +508,6 @@ nav ul {
     transition: all 0.3s ease;
 }
 
-.about-card:nth-child(even) {
-    box-shadow: -6px 6px 0 0 var(--teal);
-}
-
 .about-card:hover {
     transform: translateY(-3px);
     box-shadow: -8px 8px 0 0 var(--orange);
@@ -593,7 +589,7 @@ nav ul {
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
-    box-shadow: -6px 6px 0 0 var(--orange);
+    box-shadow: -6px 6px 0 0 var(--sand);
 }
 
 .project-card:hover {
@@ -729,8 +725,8 @@ nav ul {
     font-size: 0.9rem;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
-    background-color: var(--teal);
-    color: var(--dark);
+    background-color: var(--orange);
+    color: var(--light);
     letter-spacing: 0.05em;
     text-transform: uppercase;
     border: 1px solid var(--dark);
