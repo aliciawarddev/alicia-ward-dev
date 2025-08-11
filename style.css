@@ -180,6 +180,161 @@ nav ul {
     font-size: 2rem;
 }
 
+/* ARROW BUTTON - VIEW PROJECTS */
+.arrow-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 2rem auto;
+    width: fit-content;
+}
+
+.text-square {
+    width: 180px;  /* Increased from 150px */
+    height: 85px;   /* Increased from 75px */
+    border-radius: 25px;  /* Match btn border-radius */
+    background-color: var(--sand);
+    margin-right: -190px;  /* Adjusted for larger size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;  /* Match btn font */
+    font-size: 1.2rem;  /* Match btn font-size */
+    letter-spacing: 0.05em;  /* Match btn letter-spacing */
+    text-transform: uppercase;  /* Match btn text-transform */
+    color: var(--dark);
+    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
+    border: 2px solid var(--dark);
+    transition: all 0.3s ease;  /* Add transition for smooth changes */
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 5px;
+    pointer-events: none;
+    position: relative;  /* Add this */
+}
+
+/* 
+.arrow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 5px;
+    pointer-events: none;
+}
+    */ 
+
+.arrow-line {
+    width: 110px;  /* Slightly increased */
+    height: 105px;  /* Slightly increased */
+    border-left: 24px solid var(--teal);  /* Slightly thicker */
+    border-bottom: 24px solid var(--teal);
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 20px;
+    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
+    z-index: 3;
+    transition: all 0.3s ease;  /* Add transition */
+}
+
+.arrow-head {
+    height: 0;
+    width: 0;
+    border-left: 28px solid var(--teal);
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    position: absolute;  /* Changed to absolute */
+    right: -23px;  /* Position from the right of arrow-line */
+    bottom: -33px;
+    transform: translateY(-50%);  /* Center vertically */
+    z-index: 4;  /* Higher than shadow */
+    transition: border-color 0.3s ease;  /* Only transition color */
+}
+
+/* 
+.arrow-head {
+    height: 0;
+    width: 0;
+    border-left: 28px solid var(--teal); 
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    margin-left: -23px;
+    margin-top: -32px;
+    transition: all 0.3s ease; 
+}
+*/ 
+
+.arrow-shadow {
+    height: 0;
+    width: 0;
+    border-left: 28px solid var(--dark);
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    position: absolute;  /* Changed to absolute */
+    right: -27px;  /* 4px offset from arrow-head */
+    bottom: -37px;
+    transform: translateY(-50%);
+    z-index: 1;  /* Behind arrow-head */
+    transition: all 0.3s ease;
+}
+
+/* 
+.arrow-shadow {
+    height: 0;
+    width: 0;
+    border-left: 28px solid var(--dark);  
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    margin-bottom: -10px;
+    z-index: 1;
+    top: 10px;
+    right: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+*/
+
+/* Hover - Enhanced to match btn */
+.arrow-button-container:hover {
+    transform: translateY(-3px);  /* Changed from translateX to match btn */
+}
+
+.arrow-button-container:hover .text-square {
+    background-color: var(--teal); 
+    color: var(--light); 
+    box-shadow: -8px 8px 0 0 var(--dark);  /* Match btn hover shadow */
+}
+
+.arrow-button-container:hover .arrow-line {
+    border-color: var(--orange);
+    box-shadow: -8px 8px 0 0 var(--dark);  /* Enhanced shadow on hover */
+}
+
+.arrow-button-container:hover .arrow-head {
+    border-left-color: var(--orange);  /* Only color changes, no movement */
+}
+
+.arrow-button-container:hover .arrow-shadow {
+    right: -19px;  /* Move further right (from -27px) */
+    bottom: -45px;  /* Move further down (from +4px to +8px) */
+}
+
 /* NAME TITLE - Bold Letters with Drop Shadow 
 .name-sign-container {
     position: relative;
@@ -358,7 +513,7 @@ nav ul {
     color: var(--light);
 }
 
-/* Arrow Button */
+/* Arrow Button - ARCHIVE 
 .arrow-button-container {
     display: flex;
     flex-direction: row;
@@ -438,7 +593,7 @@ nav ul {
     z-index: 1;
 }
 
-/* Hover */
+/* Hover 
 .arrow-button-container:hover {
     transform: translateX(5px);
 }
