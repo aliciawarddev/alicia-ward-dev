@@ -94,7 +94,7 @@ p {
 .btn {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--dark);
@@ -104,6 +104,7 @@ p {
     border-radius: 25px;
     background-color: var(--sand);
     border: 2px solid var(--dark);
+    box-shadow: -4px 4px 0 0 var(--dark);
     /* Smooth transition */
     transition: all 0.3s ease;
     display: inline-block;
@@ -112,8 +113,8 @@ p {
 .btn:hover { /* Hover State */
     background-color: var(--teal);
     color: var(--light);
-    transform: translateY(-2px);
-    box-shadow: -4px 4px 0 0 var(--dark);
+    transform: translateY(-3px);
+    box-shadow: -8px 8px 0 0 var(--dark);
 }
 
 /* COLOR PALETTE */
@@ -613,29 +614,6 @@ nav ul {
 .showcase-footer {
     text-align: center;
     margin-top: 2.5rem;
-}
-
-.portfolio-btn {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--dark);
-    text-decoration: none;
-    padding: 0.75rem 2.5rem;
-    border-radius: 25px;
-    background-color: var(--sand);
-    border: 3px solid var(--dark);
-    box-shadow: -4px 4px 0 0 var(--dark);
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.portfolio-btn:hover {
-    background-color: var(--teal);
-    color: var(--light);
-    transform: translateY(-3px);
-    box-shadow: -8px 8px 0 0 var(--dark);
 }
 
 /* Mobile Responsive */
