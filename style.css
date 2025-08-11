@@ -30,9 +30,6 @@ body {
     display: block;
 }
 
-
-
-
 /* Name title - Home Section */
 h1 {
     font-size: 6rem;
@@ -41,7 +38,7 @@ h1 {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
-    color: var(--teal);
+    color: var(--orange);
     /* drop shadow */
      text-shadow: -5px 5px 0 var(--dark);
      /* Crisp rendering */
@@ -129,21 +126,6 @@ p {
     --sand: #F4A261;    /* Accent warm */
 }
 
-/* FONT SELECTIONS:
-
-First Choices:
-Subtitles -                 Jaywalker
-Call to action/buttons -    Watshot OTF
-Contrast -                  dynatype OTF
-Text body -                 Futura
-
-Google Fonts:
-titles: bebas neue
-text: plus Jakarta sans (rubik)
-creative/display: pacifico, 
-
-*/
-
 /* NAVIGATION */
 .header {
     background-color: var(--light);
@@ -191,7 +173,10 @@ nav ul {
     gap: 1.5rem;
 }
 
-
+.home-subtitle {
+    border-bottom: none;
+    font-size: 2rem;
+}
 
 /* NAME TITLE - Bold Letters with Drop Shadow 
 .name-sign-container {
