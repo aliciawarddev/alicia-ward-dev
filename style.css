@@ -171,6 +171,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    color: var(--teal);
 }
 
 .home-subtitle {
