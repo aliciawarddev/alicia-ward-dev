@@ -91,6 +91,7 @@ p {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* Buttons */
 .btn {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
@@ -115,6 +116,33 @@ p {
     color: var(--light);
     transform: translateY(-3px);
     box-shadow: -8px 8px 0 0 var(--dark);
+}
+
+/* Cards */
+.card {
+    background: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: -6px 6px 0 0 var(--teal);
+}
+
+/* Card headers */
+.card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--teal);
+    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.card p {
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.6;
 }
 
 /* COLOR PALETTE */
@@ -640,36 +668,6 @@ nav ul {
     gap: 1.5rem;
 }
 
-/* Card Container */
-.about-card {
-    background-color: var(--light);
-    padding: 1.5rem;
-    border-radius: 25px;
-    border: 2px solid var(--dark);
-    box-shadow: -6px 6px 0 0 var(--sand);
-    transition: all 0.3s ease;
-}
-
-.about-card:hover {
-    transform: translateY(-3px);
-    box-shadow: -8px 8px 0 0 var(--orange);
-}
-
-/* Card titles */
-.about-card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    color: var(--teal);
-    margin: 0 0 0.75rem 0;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.about-card p {
-    margin: 0;
-    color: var(--dark);
-}
-
 /* PROJECTS - Gallery Strip Style */
 #projects {
     max-width: 900px;
@@ -731,18 +729,13 @@ nav ul {
 .gallery-item {
     flex: 0 0 auto;
     position: relative;
-    background: white;
-    border: 3px solid var(--dark);
-    border-radius: 20px;
+    background: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 25px;
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: -6px 6px 0 0 var(--teal);
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: -8px 8px 0 0 var(--dark);
 }
 
 .gallery-item img {
@@ -762,7 +755,7 @@ nav ul {
     color: var(--dark);
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    border-top: 3px solid var(--dark);
+    border-top: 2px solid var(--dark);
 }
 
 /* Portfolio Button */
@@ -1081,31 +1074,9 @@ nav ul {
     gap: 2rem;
 }
 
+/* SKill Card - Text alignment*/
 .skill-card {
-    background: var(--light);
-    border: 2px solid var(--dark);
-    border-radius: 25px;
-    padding: 2rem;
-    transition: all 0.3s ease;
-    /* Uniform shadow color for cohesion */
-    box-shadow: -6px 6px 0 0 var(--sand);
-}
-
-.skill-card:hover {
-    transform: translateY(-3px);
-    box-shadow: -8px 8px 0 0 var(--teal);
-}
-
-/* Card Headers */
-.skill-card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.4rem;
-    color: var(--teal);
-    margin: 0 0 1.25rem 0;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid var(--teal);
+    text-align: left !important;
 }
 
 /* Skill Items - Clean list style */
