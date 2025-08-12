@@ -327,7 +327,7 @@ nav ul {
     border-bottom: 24px solid var(--teal);
     border-bottom-left-radius: 30px;
     border-top-right-radius: 20px;
-    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
+    box-shadow: -6px 6px 0 0 var(--dark);  /* Match btn default shadow */
     z-index: 3;
     transition: all 0.3s ease;  /* Add transition */
 }
@@ -350,10 +350,10 @@ nav ul {
     height: 0;
     width: 0;
     border-left: 28px solid var(--dark);
-    border-top: 22px solid transparent;
+    border-top: 19px solid transparent;
     border-bottom: 22px solid transparent;
     position: absolute;  /* Changed to absolute */
-    right: -27px;  /* 4px offset from arrow-head */
+    right: -19px;  /* 4px offset from arrow-head */
     bottom: -37px;
     transform: translateY(-50%);
     z-index: 1;  /* Behind arrow-head */
