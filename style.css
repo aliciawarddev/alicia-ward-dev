@@ -44,11 +44,11 @@ body {
 }  
 
 #home .first-name {
-    text-shadow: -5px 5px 0 var(--orange);
+    text-shadow: -5px 5px 0 var(--teal);
 }
 
 #home .last-name {
-    text-shadow: -5px 5px 0 var(--orange);
+    text-shadow: -5px 5px 0 var(--teal);
 }
 
 /* Section Headers */
@@ -69,7 +69,7 @@ h3 {
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
-    color: var(--orange);
+    color: var(--dark);
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
 }
@@ -107,7 +107,7 @@ p {
     /* Pill Shape */
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
-    background-color: var(--teal);
+    background-color: var(--orange);
     border: 2px solid var(--dark);
     box-shadow: -4px 4px 0 0 var(--dark);
     /* Smooth transition */
@@ -116,7 +116,7 @@ p {
 }
 
 .btn:hover { /* Hover State */
-    background-color: var(--teal-dark);
+    background-color: var(--orange-dark);
     color: var(--light);
     transform: translateY(-3px);
     box-shadow: -8px 8px 0 0 var(--dark);
@@ -155,28 +155,28 @@ p {
     box-shadow: -6px 6px 0 0 var(--mustard);
 }
 #about .card h3 {
-    color: var(--orange);  /* Cool against warm mustard */
+    color: var(--dark);  /* Cool against warm mustard */
 }
 
 #skills .card {
     box-shadow: -6px 6px 0 0 var(--mustard);
 }
 #skills .card h3 {
-    color: var(--orange);  /* Cool against warm orange */
+    color: var(--dark);  /* Cool against warm orange */
 }
 
 #skills .strengths {
     box-shadow: -6px 6px 0 0 var(--teal);
 }
 #skills .strengths h3 {
-    color: var(--orange);  /* Warm against the cool gradient */
+    color: var(--dark);  /* Warm against the cool gradient */
 }
 
 #projects .gallery-item {
     box-shadow: -6px 6px 0 0 var(--mustard);
 }
 #projects .item-label {
-    color: var(--orange);  /* Keep simple, it's small text */
+    color: var(--dark);  /* Keep simple, it's small text */
     background: var(--lightest);
 }
 
@@ -708,7 +708,7 @@ nav ul {
 .showcase-header h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
-    color: var(--orange);
+    color: var(--dark);
     margin-bottom: 0.75rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1149,7 +1149,7 @@ nav ul {
     content: '✦';
     position: absolute;
     left: 0;
-    color: var(--teal);
+    color: var(--orange);
     font-size: 0.8rem;
     top: 10%;
 }
@@ -1313,7 +1313,7 @@ footer p {
 }
 
 .footer-star {
-    color: var(--orange);
+    color: var(--mustard);
     font-size: 1.2rem;
 }
 
