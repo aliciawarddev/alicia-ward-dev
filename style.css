@@ -142,6 +142,7 @@ p {
     margin: 0 0 0.75rem 0;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .card p {
@@ -264,6 +265,7 @@ nav ul {
 .home-subtitle {
     border-bottom: none;
     font-size: 2rem;
+    font-weight: 400;
 }
 
 /* ARROW BUTTON - VIEW PROJECTS */
@@ -687,18 +689,6 @@ nav ul {
     padding: 100px 20px;
 }
 
-#projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--dark);
-    border-bottom: 0.5rem solid var(--teal);
-    padding-bottom: 0.3rem;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
 /* Header Section */
 .showcase-header {
     text-align: center;
@@ -712,6 +702,7 @@ nav ul {
     margin-bottom: 0.75rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .showcase-header p {
