@@ -37,7 +37,6 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
     color: var(--dark);  /* Fixed - was orange but should be dark based on your design */
-    text-shadow: -5px 5px 0 var(--teal);  /* Or use alternating colors for each name */
     /* Crisp rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -45,7 +44,7 @@ body {
 }  
 
 #home .first-name {
-    text-shadow: -5px 5px 0 var(--teal);
+    text-shadow: -5px 5px 0 var(--orange);
 }
 
 #home .last-name {
@@ -103,12 +102,12 @@ p {
     font-size: 1.2rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--dark);
+    color: var(--lightest);
     text-decoration: none;
     /* Pill Shape */
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
-    background-color: var(--keppel);
+    background-color: var(--teal);
     border: 2px solid var(--dark);
     box-shadow: -4px 4px 0 0 var(--dark);
     /* Smooth transition */
@@ -117,7 +116,7 @@ p {
 }
 
 .btn:hover { /* Hover State */
-    background-color: var(--brunswick);
+    background-color: var(--teal-dark);
     color: var(--light);
     transform: translateY(-3px);
     box-shadow: -8px 8px 0 0 var(--dark);
@@ -131,15 +130,15 @@ p {
     padding: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
-    box-shadow: -6px 6px 0 0 var(--chestnut); 
-    background-color: rgba(250, 250, 250, 0.8);
+    box-shadow: -6px 6px 0 0 var(--mustard); 
+    background-color: var(--lightest);
 }
 
 /* Card headers */
 .card h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.3rem;
-    color: var(--brunswick);
+    color: var(--teal);
     margin: 0 0 0.75rem 0;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -151,45 +150,52 @@ p {
     line-height: 1.6;
 }
 
-/* SECTIONS - SPECIFIC COLORS */
-/* About */
-.about-card {
-    box-shadow: -6px 6px 0 0 var(--rose) !important;
+/* Card colors - per section */
+#about .card {
+    box-shadow: -6px 6px 0 0 var(--mustard);
+}
+#about .card h3 {
+    color: var(--orange);  /* Cool against warm mustard */
 }
 
-.about-card h3 {
-    color: var(--chestnut) !important;
+#skills .card {
+    box-shadow: -6px 6px 0 0 var(--mustard);
+}
+#skills .card h3 {
+    color: var(--orange);  /* Cool against warm orange */
 }
 
-/* Skills */
-.skill-card {
-    box-shadow: -6px 6px 0 0 var(--mustard) !important;
+#skills .strengths {
+    box-shadow: -6px 6px 0 0 var(--teal);
+}
+#skills .strengths h3 {
+    color: var(--orange);  /* Warm against the cool gradient */
 }
 
-.skill-card h3 {
-    color: var(--teal) !important;
+#projects .gallery-item {
+    box-shadow: -6px 6px 0 0 var(--mustard);
 }
-
-.skill-card.strengths h3 {
-    color: var(--orange) !important;
-}
-
-.skill-card.strengths {
-    box-shadow: -6px 6px 0 0 var(--golden) !important;
-}
-
-/* Projects*/
-.gallery-item {
-    box-shadow: -6px 6px 0 0 var(--teal) !important;
-}
-
-.gallery-item .item-label {
-    color: var(--orange) !important;
+#projects .item-label {
+    color: var(--orange);  /* Keep simple, it's small text */
+    background: var(--lightest);
 }
 
 /* COLOR PALETTE */
 :root {
-    --light: #FAF3E0;  /* champagne: #F2E1C3*/
+    --light: #FAF3E0;  
+    --lightest: #FDF9F0;
+    --dark: #3A3A3A; 
+    --orange: #E07A5F;
+    --orange-dark: #c7654c;
+    --teal: #3B9C9C;
+    --teal-dark: #2f7e7e;
+    --mustard: #F2CC8F;
+    --mustard-light: #f5d8a9;
+}
+
+/* COLOR PALETTE 
+:root {
+    --light: #FAF3E0;  
     --dark: #3A3A3A;   
     --keppel: #54a498;    
     --brunswick: #105446;  
@@ -278,7 +284,7 @@ nav ul {
     width: 180px;  /* Increased from 150px */
     height: 85px;   /* Increased from 75px */
     border-radius: 25px;  /* Match btn border-radius */
-    background-color: var(--sand);
+    background-color: var(--orange);
     margin-right: -190px;  /* Adjusted for larger size */
     display: flex;
     align-items: center;
@@ -287,7 +293,7 @@ nav ul {
     font-size: 1.2rem;  /* Match btn font-size */
     letter-spacing: 0.05em;  /* Match btn letter-spacing */
     text-transform: uppercase;  /* Match btn text-transform */
-    color: var(--dark);
+    color: var(--lightest);
     box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
     border: 2px solid var(--dark);
     transition: all 0.3s ease;  /* Add transition for smooth changes */
@@ -303,18 +309,6 @@ nav ul {
     pointer-events: none;
     position: relative;  /* Add this */
 }
-
-/* 
-.arrow-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: -10px;
-    margin-left: 5px;
-    pointer-events: none;
-}
-    */ 
 
 .arrow-line {
     width: 110px;  /* Slightly increased */
@@ -342,24 +336,6 @@ nav ul {
     transition: border-color 0.3s ease;  /* Only transition color */
 }
 
-/* 
-.arrow-head {
-    height: 0;
-    width: 0;
-    border-left: 28px solid var(--teal); 
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    position: relative;
-    margin-left: -23px;
-    margin-top: -32px;
-    transition: all 0.3s ease; 
-}
-*/ 
-
 .arrow-shadow {
     height: 0;
     width: 0;
@@ -374,40 +350,24 @@ nav ul {
     transition: all 0.3s ease;
 }
 
-/* 
-.arrow-shadow {
-    height: 0;
-    width: 0;
-    border-left: 28px solid var(--dark);  
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
-    margin-bottom: -10px;
-    z-index: 1;
-    top: 10px;
-    right: 5px;
-    position: relative;
-    transition: all 0.3s ease;
-}
-*/
-
 /* Hover - Enhanced to match btn */
 .arrow-button-container:hover {
     transform: translateY(-3px);  /* Changed from translateX to match btn */
 }
 
 .arrow-button-container:hover .text-square {
-    background-color: var(--teal); 
+    background-color: var(--orange-dark); 
     color: var(--light); 
     box-shadow: -8px 8px 0 0 var(--dark);  /* Match btn hover shadow */
 }
 
 .arrow-button-container:hover .arrow-line {
-    border-color: var(--orange);
+    border-color: var(--teal-dark);
     box-shadow: -8px 8px 0 0 var(--dark);  /* Enhanced shadow on hover */
 }
 
 .arrow-button-container:hover .arrow-head {
-    border-left-color: var(--orange);  /* Only color changes, no movement */
+    border-left-color: var(--teal-dark);  /* Only color changes, no movement */
 }
 
 .arrow-button-container:hover .arrow-shadow {
@@ -787,7 +747,7 @@ nav ul {
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: -6px 6px 0 0 var(--teal);
+    box-shadow: -6px 6px 0 0 var(--orange);
 }
 
 .gallery-item img {
@@ -800,7 +760,7 @@ nav ul {
 .item-label {
     display: block;
     padding: 0.75rem;
-    background: var(--light);
+    background: var(--lightest);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.1rem;
     text-align: center;
@@ -1160,12 +1120,12 @@ nav ul {
 /* Professional Strengths Card - Full width */
 .skill-card.strengths {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, var(--light) 0%, rgba(0, 168, 150, 0.05) 100%);
+    background-color: var(--lightest);
+    box-shadow: -6px 6px 0 0 var(--teal); 
 }
 
 .skill-card.strengths h3 {
     color: var(--orange);
-    border-bottom-color: var(--orange);
 }
 
 .strength-list {
@@ -1353,7 +1313,7 @@ footer p {
 }
 
 .footer-star {
-    color: var(--teal);
+    color: var(--orange);
     font-size: 1.2rem;
 }
 
