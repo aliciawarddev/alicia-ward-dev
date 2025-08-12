@@ -65,6 +65,14 @@ h2 {
     text-transform: uppercase;
 }
 
+h2::before, h2::after {
+    content: '✦';
+    margin: 0 1rem;
+    color: var(--teal);
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
 h3 {
     font-size: 1.5rem;
     margin-top: 2rem;
