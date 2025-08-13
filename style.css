@@ -33,7 +33,6 @@ body {
 /* Name title - Home Section */
 #home h1 {
     font-size: 6rem;
-    margin: 0;  /* Simplified from margin-top: 0; margin-bottom: 2rem; */
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
     color: var(--teal);  /* Fixed - was orange but should be dark based on your design */
@@ -138,7 +137,7 @@ p {
 .card h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.3rem;
-    color: var(--teal);
+    color: var(--dark);
     margin: 0 0 0.75rem 0;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -151,34 +150,15 @@ p {
     line-height: 1.6;
 }
 
-/* Card colors - per section */
-#about .card {
-    box-shadow: -6px 6px 0 0 var(--mustard);
-}
-#about .card h3 {
-    color: var(--dark);  /* Cool against warm mustard */
+.card .skill-list, 
+.card ul {
+    text-align: left;
 }
 
-#skills .card {
-    box-shadow: -6px 6px 0 0 var(--mustard);
-}
-#skills .card h3 {
-    color: var(--dark);  /* Cool against warm orange */
-}
+/* Special Case - different shadow color */
 
 #skills .strengths {
     box-shadow: -6px 6px 0 0 var(--teal);
-}
-#skills .strengths h3 {
-    color: var(--dark);  /* Warm against the cool gradient */
-}
-
-#projects .gallery-item {
-    box-shadow: -6px 6px 0 0 var(--mustard);
-}
-#projects .item-label {
-    color: var(--dark);  /* Keep simple, it's small text */
-    background: var(--lightest);
 }
 
 /* COLOR PALETTE */
@@ -197,10 +177,6 @@ p {
 /* NAVIGATION */
 .header {
     background-color: var(--light);
-}
-
-nav {
-    margin-bottom: 60px;
 }
 
 nav ul {
@@ -365,11 +341,7 @@ nav ul {
 }
 
 /* ABOUT */
-#about {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
+
 
 .about-container {
     display: grid;
@@ -393,33 +365,11 @@ nav ul {
 }
 
 /* PROJECTS - Gallery Strip Style */
-#projects {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 100px 20px;
-}
 
 /* Header Section */
 .showcase-header {
     text-align: center;
     margin-bottom: 2.5rem;
-}
-
-.showcase-header h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    color: var(--dark);
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.showcase-header p {
-    max-width: 600px;
-    margin: 0 auto;
-    color: var(--dark);
-    line-height: 1.6;
 }
 
 /* Gallery Strip */
@@ -448,7 +398,7 @@ nav ul {
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: -6px 6px 0 0 var(--orange);
+    box-shadow: -6px 6px 0 0 var(--mustard);
 }
 
 .gallery-item img {
@@ -491,22 +441,12 @@ nav ul {
 }
 
 /* SKILLS SECTION - CLEAN GRID DESIGN */
-#skills {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 100px 20px;
-}
 
 /* Clean Grid Layout */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-}
-
-/* SKill Card - Text alignment*/
-.skill-card {
-    text-align: left !important;
 }
 
 /* Skill Items - Clean list style */
@@ -540,10 +480,6 @@ nav ul {
     grid-column: 1 / -1;
     background-color: var(--lightest);
     box-shadow: -6px 6px 0 0 var(--teal); 
-}
-
-.skill-card.strengths h3 {
-    color: var(--orange);
 }
 
 .strength-list {
@@ -589,7 +525,7 @@ nav ul {
 
 /* CONTACT */
 #contact {
-    padding: 4rem 2rem;
+    padding: 100px 20px;
     text-align: center;
 }
 
