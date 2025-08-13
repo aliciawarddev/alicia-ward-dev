@@ -36,7 +36,7 @@ body {
     margin: 0;  /* Simplified from margin-top: 0; margin-bottom: 2rem; */
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
-    color: var(--dark);  /* Fixed - was orange but should be dark based on your design */
+    color: var(--teal);  /* Fixed - was orange but should be dark based on your design */
     /* Crisp rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,11 +44,11 @@ body {
 }  
 
 #home .first-name {
-    text-shadow: -5px 5px 0 var(--teal);
+    text-shadow: -5px 5px 0 var(--dark);
 }
 
 #home .last-name {
-    text-shadow: -5px 5px 0 var(--teal);
+    text-shadow: -5px 5px 0 var(--dark);
 }
 
 /* Section Headers */
@@ -63,14 +63,6 @@ h2 {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-}
-
-h2::before, h2::after {
-    content: '✦';
-    margin: 0 1rem;
-    color: var(--teal);
-    font-size: 1.5rem;
-    vertical-align: middle;
 }
 
 h3 {
@@ -274,6 +266,14 @@ nav ul {
     border-bottom: none;
     font-size: 2rem;
     font-weight: 400;
+}
+
+.home-subtitle::before, .home-subtitle::after {
+    content: '✦';
+    margin: 0 1rem;
+    color: var(--teal);
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 /* ARROW BUTTON - VIEW PROJECTS */
