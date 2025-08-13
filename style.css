@@ -223,7 +223,7 @@ nav ul {
 .home-subtitle::before, .home-subtitle::after {
     content: '✦';
     margin: 0 1rem;
-    color: var(--teal);
+    color: var(--mustard);
     font-size: 1.5rem;
     vertical-align: middle;
 }
@@ -351,6 +351,7 @@ nav ul {
     width: 100%;
     border-radius: 25px;
     border: 2px solid var(--dark);
+    box-shadow: -6px 6px 0 0 var(--teal);
 }
 
 /* About Content */
