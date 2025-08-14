@@ -157,6 +157,7 @@ p {
     box-shadow: -6px 6px 0 0 var(--teal);
 }
 
+/* Root Styles */
 :root {
     /* Color Palette */
     --light: #FAF3E0;  
@@ -210,7 +211,7 @@ nav ul {
 }
 
 /* NAME TITLE */
-.name-title {
+.home-title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -569,5 +570,49 @@ footer p {
     font-size: 1.2rem;
 }
 
+/* ACCESSIBILITY */
 
+/* Skip Navigation - Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--orange);
+    color: var(--lightest);
+    padding: var(--space-sm) var(--space-md);
+    text-decoration: none;
+    border-radius: 0 0 5px 0;
+    z-index: 100;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus Styles - Accessibility */
+*:focus-visible {
+    outline: 3px solid var(--teal);
+    outline-offset: 2px;
+}
+
+.btn:focus {
+    outline: 3px solid var(--teal);
+    outline-offset: 4px;
+}
+
+/* Reduced motion for users with vestibular disorders */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn, .card {
+        border-width: 3px;
+    }
+}

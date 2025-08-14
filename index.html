@@ -49,9 +49,12 @@
 
 <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAVIGATION BAR -->
   <header>
-    <nav>
-      <ul>
+    <nav aria-label="Main navigation">
+      <ul role="list">
         <li><a href="#home" class="btn">Home</a></li>
         <li><a href="#about" class="btn">About</a></li>
         <li><a href="#projects" class="btn">Projects</a></li>
@@ -61,14 +64,14 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" role="main">
     <!-- HOME -->
-    <section id="home">
+    <section id="home" aria-labelledby="home-title">
       <!-- Name Title -->
-       <div class="name-title">
-          <h1 class="first-name">Alicia</h1>
-          <h1 class="last-name">Ward</h1>
-       </div>
+        <h1 class="home-title">
+          <span class="first-name">Alicia</span>
+          <span class="last-name">Ward</span>
+        </h1>
       <h2 class="home-subtitle">Front-End Web Developer & CSS Specialist</h2>
       <p>Lifelong artist turned Front-End Developer specializing in CSS illustrations. I transform artistic vision into functional web experiences, building clean, visually striking, and user-focused websites that engage and delight users</p>
 
@@ -227,7 +230,7 @@
       <!-- Contact Buttons-->
       <div class="contact-buttons">
         <a href="mailto:aliciahw14@gmail.com" class="btn">Email</a>
-        <a href="https://github.com/aliciawarddev" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+        <a href="https://github.com/aliciawarddev" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View GitHub profile (opens in new tab)">GitHub</a>
         <a href="https://www.linkedin.com/in/aliciahward/" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
         <a href="#" target="_blank" class="btn">Resume</a>
       </div>
@@ -244,9 +247,9 @@
 
   <!-- FOOTER -->
   <footer>
-    <span class="footer-star">✦</span>
+    <span class="footer-star" aria-hidden="true">✦</span>
     <p>&copy; 2025 Alicia Ward</p>
-    <span class="footer-star">✦</span>
+    <span class="footer-star" aria-hidden="true">✦</span>
   </footer>
 
 </body>
