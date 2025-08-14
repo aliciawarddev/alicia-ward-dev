@@ -651,17 +651,73 @@ footer p {
         margin: 0 auto;
     }
     
-    /* Contact buttons - Full width */
+    /* Contact Buttons */
     .contact-buttons {
-        flex-direction: column;
-        width: 100%;
-        max-width: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+        justify-content: center;
+        max-width: 400px;
         margin: var(--space-xl) auto 0;
     }
     
     .contact-buttons .btn {
-        width: 100%;
+        flex: 0 1 calc(50% - var(--space-sm)/2);
+        min-width: 180px;
     }
+
+    /* Home Subtitle */
+    .home-subtitle {
+        font-size: clamp(1.2rem, 4vw, 1.75rem);
+        /* ADD these lines for better mobile display */
+        padding: 0 var(--space-sm);
+        word-wrap: break-word;
+        max-width: 100%;
+    }
+    
+    /* Adjust the decorative stars */
+    .home-subtitle::before, 
+    .home-subtitle::after {
+        content: '✦';
+        margin: 0 0.5rem; /* Reduced from 1rem */
+        font-size: 1.2rem; /* Reduced from 1.5rem */
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    /* Only apply hover effects on devices with precise pointers (mouse) */
+    .btn:hover {
+        background-color: var(--orange-dark);
+        color: var(--light);
+        transform: translateY(-3px);
+        box-shadow: -8px 8px 0 0 var(--dark);
+    }
+    
+    .arrow-button-container:hover {
+        transform: translateY(-3px);
+    }
+    
+    .arrow-button-container:hover .text-square {
+        background-color: var(--orange-dark); 
+        color: var(--light); 
+        box-shadow: -8px 8px 0 0 var(--dark);
+    }
+}
+
+/* Reset hover states for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        background-color: var(--orange);
+        color: var(--lightest);
+        transform: none;
+        box-shadow: -4px 4px 0 0 var(--dark);
+    }
+}
+
+/* Add active state for better touch feedback */
+.btn:active {
+    transform: translateY(0);
+    box-shadow: -2px 2px 0 0 var(--dark);
 }
 
 /* Tablet styles */
@@ -692,6 +748,29 @@ footer p {
     .skill-card,
     .about-card {
         padding: var(--space-md);
+    }
+
+    /* Home subtitle */
+    .home-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    
+    /* Option: Hide decorative stars on very small screens */
+    .home-subtitle::before, 
+    .home-subtitle::after {
+        display: none;
+    }
+    
+    /* OR keep them but make them block elements */
+    .home-subtitle::before {
+        display: block;
+        margin: 0 auto var(--space-xs);
+    }
+    
+    .home-subtitle::after {
+        display: block;
+        margin: var(--space-xs) auto 0;
     }
 }
 
