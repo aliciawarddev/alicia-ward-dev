@@ -429,19 +429,6 @@ nav ul {
     margin-top: var(--space-xl);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .gallery-item img {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .gallery-track {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 /* SKILLS SECTION - CLEAN GRID DESIGN */
 
 /* Clean Grid Layout */
@@ -510,21 +497,6 @@ nav ul {
     top: 10%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .skill-card.strengths {
-        grid-column: 1;
-    }
-    
-    .strength-list {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* CONTACT */
 #contact {
     text-align: center;
@@ -568,6 +540,98 @@ footer p {
 .footer-star {
     color: var(--mustard);
     font-size: 1.2rem;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    /* Navigation - Make it wrap properly */
+    nav ul {
+        flex-wrap: wrap;
+        padding: var(--space-sm);
+    }
+    
+    /* Touch targets - Minimum 44x44px for fingers */
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Flexible typography - Scales with screen */
+    h1 {
+        font-size: clamp(3rem, 10vw, 5rem);
+    }
+    
+    .home-subtitle {
+        font-size: clamp(1.2rem, 4vw, 1.75rem);
+    }
+    
+    /* Stack name vertically on mobile */
+    .name-title {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    /* Scale down arrow button */
+    .arrow-button-container {
+        transform: scale(0.8);
+    }
+    
+    /* About section - Stack image above text */
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .profile-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    /* Contact buttons - Full width */
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: var(--space-xl) auto 0;
+    }
+    
+    .contact-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    main section {
+        padding: 60px 30px;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Small phone styles */
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+    }
+    
+    main section {
+        padding: 40px 15px;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .skill-card,
+    .about-card {
+        padding: var(--space-md);
+    }
 }
 
 /* ACCESSIBILITY */
