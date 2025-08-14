@@ -1,4 +1,25 @@
-/* Base Styles */
+/* =======================================
+   TABLE OF CONTENTS
+   =======================================
+   1. Base Styles & Reset
+   2. Typography
+   3. Layout Components
+   4. Navigation
+   5. Home Section
+   6. About Section  
+   7. Projects Section
+   8. Skills Section
+   9. Contact Section
+   10. Footer
+   11. Responsive Design
+   12. Accessibility
+   13. Print Styles
+   ======================================= */
+
+/* =======================================
+   1. BASE STYLES & RESET
+   Global resets and foundational styles
+   ======================================= */
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +55,7 @@ main section:last-child {
     padding-bottom: 40px;  /* Less padding before footer */
 }
 
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
@@ -41,6 +63,11 @@ body {
     padding: 1.25rem;
     display: block;
 }
+
+/* =======================================
+   2. TYPOGRAPHY
+   Font families, sizes, and text styles
+   ======================================= */
 
 /* Name title - Home Section */
 h1 {
@@ -89,6 +116,11 @@ p {
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+/* =======================================
+   3. LAYOUT COMPONENTS
+   Reusable components like buttons and cards
+   ======================================= */
 
 /* Buttons */
 .btn {
@@ -179,7 +211,11 @@ p {
     --space-2xl: 3rem;     /* 48px */
 }
 
-/* NAVIGATION */
+/* =======================================
+   4. NAVIGATION
+   Main navigation bar with responsive design
+   ======================================= */
+
 .header {
     background-color: var(--light);
 }
@@ -194,7 +230,11 @@ nav ul {
     padding: var(--space-md) 0 var(--space-xl) 0;
 }
 
-/* HOME */
+/* =======================================
+   5. HOME SECTION
+   Hero section with name title and CTA
+   ======================================= */
+
 #home {
     display: flex;
     flex-direction: column;
@@ -342,7 +382,10 @@ nav ul {
     bottom: -45px;  /* Move further down (from +4px to +8px) */
 }
 
-/* ABOUT */
+/* =======================================
+   6. ABOUT SECTION
+   Profile image and about cards grid
+   ======================================= */
 
 .about-container {
     display: grid;
@@ -366,7 +409,10 @@ nav ul {
     gap: var(--space-lg);
 }
 
-/* PROJECTS - Gallery Strip Style */
+/* =======================================
+   7. PROJECTS SECTION
+   Gallery showcase with hover effects
+   ======================================= */
 
 /* Header Section */
 .showcase-header {
@@ -429,7 +475,10 @@ nav ul {
     margin-top: var(--space-xl);
 }
 
-/* SKILLS SECTION - CLEAN GRID DESIGN */
+/* =======================================
+   8. SKILLS SECTION
+   Technical and soft skills grid layout
+   ======================================= */
 
 /* Clean Grid Layout */
 .skills-grid {
@@ -497,7 +546,11 @@ nav ul {
     top: 10%;
 }
 
-/* CONTACT */
+/* =======================================
+   9. CONTACT SECTION
+   Contact information and social links
+   ======================================= */
+
 #contact {
     text-align: center;
 }
@@ -520,7 +573,11 @@ nav ul {
     flex-wrap: wrap;
 }
 
-/* FOOTER - Minimal with accent */
+/* =======================================
+   10. FOOTER
+   Copyright and decorative elements
+   ======================================= */
+
 footer {
     display: flex;
     align-items: center;
@@ -542,7 +599,11 @@ footer p {
     font-size: 1.2rem;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* =======================================
+   11. RESPONSIVE DESIGN
+   Media queries for all screen sizes
+   ======================================= */
+
 @media (max-width: 768px) {
     /* Navigation - Make it wrap properly */
     nav ul {
@@ -634,7 +695,10 @@ footer p {
     }
 }
 
-/* ACCESSIBILITY */
+/* =======================================
+   12. ACCESSIBILITY
+   Focus states, skip links, and a11y features
+   ======================================= */
 
 /* Skip Navigation - Accessibility */
 .skip-link {
@@ -678,5 +742,38 @@ footer p {
 @media (prefers-contrast: high) {
     .btn, .card {
         border-width: 3px;
+    }
+}
+
+/* =======================================
+   13. PRINT STYLES
+   Optimized styles for printing
+   ======================================= */
+
+@media print {
+    /* Hide non-essential elements */
+    nav, .arrow-button-container, .footer-star {
+        display: none;
+    }
+    
+    /* Remove shadows for cleaner print */
+    .card, .btn, .gallery-item {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    /* Black text for better print quality */
+    body, h1, h2, h3, p, li {
+        color: black;
+    }
+    
+    /* White background */
+    body {
+        background: white;
+    }
+    
+    /* Show URLs for links */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
     }
 }
