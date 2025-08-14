@@ -655,14 +655,14 @@ footer p {
     .contact-buttons {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--space-sm);
+        gap: var(--space-md);  /* CHANGE from var(--space-sm) to var(--space-md) */
         justify-content: center;
         max-width: 400px;
         margin: var(--space-xl) auto 0;
     }
     
     .contact-buttons .btn {
-        flex: 0 1 calc(50% - var(--space-sm)/2);
+        flex: 0 1 calc(50% - var(--space-md)/2);  /* UPDATE the calculation to match new gap */
         min-width: 180px;
     }
 
