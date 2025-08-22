@@ -420,6 +420,37 @@ nav ul {
     margin-bottom: var(--space-sm);
 }
 
+/* PORTOLFIO FEATURES LIST */
+
+.features-list {
+        display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content; 
+}
+
+.feature-item {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+    padding-left: var(--space-lg);
+    text-align: left;
+}
+
+.feature-item::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-size: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);  /* Add this to center vertically */
+}
+
 /* Gallery Strip */
 .gallery-strip {
     position: relative;
@@ -510,7 +541,7 @@ nav ul {
     color: var(--orange);
     font-size: 0.8rem;
     top: 50%;
-    transform: translateY(-50%);  /* Add this to center vertically */
+    transform: translateY(-50%); 
 }
 
 /* Professional Strengths Card - Full width */
