@@ -989,11 +989,6 @@ footer p {
     outline-offset: 2px;
 }
 
-.btn:focus {
-    outline: 3px solid var(--teal);
-    outline-offset: 4px;
-}
-
 /* Reduced motion for users with vestibular disorders */
 @media (prefers-reduced-motion: reduce) {
     * {
