@@ -426,14 +426,37 @@ nav ul {
     border-radius: 8px;
 }
 
-.about-column.left ul {
+
+/* Values */
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
     list-style: none;
+    width: 90%;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
 }
 
-.about-column.left li {
-    padding: 0.5rem 0;
+.value-item {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+    padding-left: var(--space-lg);
+    text-align: left;
+    font-weight: 600;
+}
+
+.value-item::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-size: 0.8rem;
+    top: 10%;
 }
 
 /* About content */
@@ -536,7 +559,7 @@ nav ul {
 /* PORTOLFIO FEATURES LIST */
 
 .features-list {
-        display: flex;
+    display: flex;
     flex-direction: column;
     gap: var(--space-sm);
     list-style: none;
