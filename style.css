@@ -240,6 +240,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 #home h2 {
@@ -257,6 +258,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     gap: var(--space-lg);
+    position: relative;
 }
 
 .home-subtitle {
@@ -275,7 +277,7 @@ nav ul {
 
 /* ARROW BUTTON - VIEW PROJECTS */
 .arrow-button-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -284,15 +286,17 @@ nav ul {
     cursor: pointer;
     transition: transform 0.3s ease;
     margin: var(--space-lg) auto;
-    width: fit-content;
+    position: relative;
+    width: fit-content;  /* Add this to prevent full width */
+    align-self: center;  /* Add this for flexbox parent alignment */
 }
 
 .text-square {
-    width: 180px;  /* Increased from 150px */
+    width: 170px;  /* Increased from 150px */
     height: 85px;   /* Increased from 75px */
-    border-radius: 25px;  /* Match btn border-radius */
+    border-radius: 15px;  /* Match btn border-radius */
     background-color: var(--orange);
-    margin-right: -190px;  /* Adjusted for larger size */
+    margin-left: -50px;  /* Adjusted for larger size */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,7 +316,7 @@ nav ul {
     align-items: flex-end;
     justify-content: center;
     margin-top: -10px;
-    margin-left: 5px;
+    margin-right: -50px;
     pointer-events: none;
     position: relative;  /* Add this */
 }
