@@ -391,27 +391,136 @@ nav ul {
    Profile image and about cards grid
    ======================================= */
 
+#about-section {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#about-section h2 {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+/* Left column */
+.about-column.left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Right column */
+.about-column.right {
+    width: calc(70% - 2rem);
+}
+
+/* Profile Image */
+.profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-column.left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-column.left li {
+    padding: 0.5rem 0;
+}
+
+/* About content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-card {
+    width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .about-column.left,
+  .about-column.right {
+    width: 100%;
+  }
+  
+  #about-section {
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* 
+.about-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-column.left {
+    width: 30%;
+}
+
+.about-column.right {
+    width: 70%;
+}
+
+.profile-image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-content {
+    width: 70%;
+    display: flex;
+}
+*/ 
+
+
+
+/* ARCHIVE */
+
+/* 
 .about-container {
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: var(--space-xl);
     align-items: start;
 }
+*/ 
 
-/* Profile Image */
+/* Profile Image 
 .profile-image {
     width: 100%;
     border-radius: 25px;
     border: 2px solid var(--dark);
     box-shadow: -6px 6px 0 0 var(--teal);
 }
+    */
 
-/* About Content */
+/* About Content 
 .about-content {
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
 }
+    */
 
 /* =======================================
    7. PROJECTS SECTION
