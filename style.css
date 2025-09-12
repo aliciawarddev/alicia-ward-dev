@@ -460,7 +460,7 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 10px; 
+    gap: 15px; 
     width: fit-content;
     margin: 0 auto;
     margin-top: var(--space-xl);
@@ -846,6 +846,12 @@ footer p {
         display: block;
         margin: var(--space-xs) auto 0;
     }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    gap: 10px; /* Tighter on small screens */
+  }
 }
 
 /* =======================================
