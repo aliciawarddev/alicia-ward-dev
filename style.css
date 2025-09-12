@@ -455,7 +455,44 @@ nav ul {
     transform: translateY(-50%);  /* Add this to center vertically */
 }
 
-/* Gallery Strip */
+/* Preview Grid */
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px; 
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: var(--space-xl);
+    background: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    box-shadow: -6px 6px 0 0 var(--mustard);
+    overflow: hidden;
+}
+
+.preview-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    position: relative;
+    background: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: -6px 6px 0 0 var(--mustard);
+}
+
+
+/* Gallery Strip - ARCHIVED  
 .gallery-strip {
     position: relative;
     display: flex;
@@ -469,7 +506,7 @@ nav ul {
     gap: var(--space-lg);
     padding: var(--space-sm);
     justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping on mobile */
+    flex-wrap: wrap;
 }
 
 .gallery-item {
@@ -503,6 +540,8 @@ nav ul {
     text-transform: uppercase;
     border-top: 2px solid var(--dark);
 }
+
+*/
 
 /* Portfolio Button */
 .showcase-footer {
