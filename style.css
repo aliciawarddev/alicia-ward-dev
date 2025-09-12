@@ -398,6 +398,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 4rem 2rem;
 }
 
 #about-section h2 {
@@ -410,7 +411,7 @@ nav ul {
     width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 /* Right column */
@@ -423,9 +424,26 @@ nav ul {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--dark);
 }
 
+/* Pronouns */
+.pronouns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family:"Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    color: var(--dark);
+    margin: 0 0 var(--space-sm) 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
 
 /* Values */
 .values-list {
@@ -459,6 +477,17 @@ nav ul {
     top: 10%;
 }
 
+.infinity {
+  filter: grayscale(100%) brightness(0.4);
+  font-style: normal;
+}
+
+.about-column.left li:nth-child(1)::before { color: #e40303; } /* Red */
+.about-column.left li:nth-child(2)::before { color: #ff8c00; } /* Orange */
+.about-column.left li:nth-child(3)::before { color: #ffed00; } /* Yellow */
+.about-column.left li:nth-child(4)::before { color: #008026; } /* Green */
+.about-column.left li:nth-child(5)::before { color: #24408e; } /* Blue */
+
 /* About content */
 .about-content {
     display: flex;
@@ -468,7 +497,15 @@ nav ul {
 
 .about-card {
     width: 100%;
+    text-align: left;
+    padding: 2rem;
+    line-height: 1.6;
 }
+
+.about-card p {
+    text-align: left;
+}
+
 
 /* Mobile responsive */
 @media (max-width: 768px) {
@@ -481,8 +518,6 @@ nav ul {
     flex-direction: column;
   }
 }
-
-
 
 
 /* 
