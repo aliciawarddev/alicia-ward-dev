@@ -79,7 +79,7 @@ h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    text-shadow: -5px 5px 0 var(--dark);
+    text-shadow: -3px 3px 0 var(--dark);
 }  
 
 /* Section Headers */
