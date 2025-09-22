@@ -103,6 +103,21 @@ h3 {
     color: var(--dark);
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: var(--space-sm); 
+    color: var(--dark);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -122,7 +137,8 @@ p {
    Reusable components like buttons and cards
    ======================================= */
 
-/* Buttons */
+/* BUTTONS */
+/* Primary Buttons */
 .btn {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
@@ -147,6 +163,33 @@ p {
     color: var(--light);
     transform: translateY(-3px);
     box-shadow: -8px 8px 0 0 var(--dark);
+}
+
+/* Secondary Buttons - Smaller size for less prominent actions */
+.btn-secondary {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;  /* Slightly smaller than primary */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--lightest);
+    text-decoration: none;
+    /* Pill Shape - Slightly less padding */
+    padding: calc(var(--space-sm) * 0.8) calc(var(--space-lg) * 0.85);
+    border-radius: 25px;
+    background-color: var(--teal);
+    border: 2px solid var(--dark);
+    box-shadow: -3px 3px 0 0 var(--dark);  /* Slightly smaller shadow */
+    /* Smooth transition */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover { /* Hover State */
+    background-color: var(--teal-dark);
+    color: var(--light);
+    transform: translateY(-2px);  /* Less dramatic lift */
+    box-shadow: -6px 6px 0 0 var(--dark);  /* Smaller than primary hover */
 }
 
 /* Cards */
@@ -524,14 +567,31 @@ nav ul {
    Gallery showcase with hover effects
    ======================================= */
 
-/* Header Section */
-.showcase-header {
-    text-align: center;
-    margin-bottom: var(--space-sm);
+/* Project Container */
+.project-showcase {
+    margin-bottom: var(--space-xl);
 }
 
-/* PORTOLFIO FEATURES LIST */
+.project-showcase:last-child {
+    margin-bottom: 0;
+}
 
+/* Project Header */
+.project-header {
+    margin-bottom: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-description {
+    color: var(--dark);
+    font-size: 1rem;
+    margin-top: var(--space-sm);
+}
+
+/* Features List */
 .features-list {
     display: flex;
     flex-direction: column;
@@ -561,7 +621,7 @@ nav ul {
     transform: translateY(-50%);  /* Add this to center vertically */
 }
 
-/* Preview Grid */
+/* Preview Grid - CSS Portfolio Gallery*/
 .preview-grid {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -585,22 +645,111 @@ nav ul {
     display: block;
 }
 
-.gallery-item {
-    flex: 0 0 auto;
-    position: relative;
-    background: var(--light);
+/* Project Grid - JS Projects Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-xl) auto;
+    max-width: 1200px;
+}
+
+/* Project Cards with Preview Images */
+.project-card {
+    background: var(--lightest);
     border: 2px solid var(--dark);
     border-radius: 25px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
     box-shadow: -6px 6px 0 0 var(--mustard);
+    transition: all 0.3s ease;
 }
 
-/* Portfolio Button */
-.showcase-footer {
+/* Project Preview Image Container */
+.project-preview {
+    width: 100%;
+    height: 400px;
+    background: var(--light);
+    border-bottom: 2px solid var(--dark);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+/* Project Info Section */
+.project-info {
+    padding: var(--space-lg);
+}
+
+.project-info h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    letter-spacing: 0.05em;
+}
+
+.project-info p {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background: var(--orange);
+    color: var(--lightest);
+    font-size: 1rem;
+    box-shadow: -4px 4px 0 0 var(--dark);
+}
+
+.btn-primary:hover {
+    transform: translate(1px, -1px);
+    box-shadow: -5px 5px 0 0 var(--dark);
+    background: var(--mustard);
+}
+
+
+/* Project Footer */
+.project-footer {
     text-align: center;
     margin-top: var(--space-xl);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .preview-grid {
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(4, 100px);
+    }
+    
+    .project-preview {
+        height: 180px;
+    }
 }
 
 /* =======================================
