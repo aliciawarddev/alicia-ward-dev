@@ -597,58 +597,6 @@ nav ul {
     box-shadow: -6px 6px 0 0 var(--mustard);
 }
 
-
-/* Gallery Strip - ARCHIVED  
-.gallery-strip {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: var(--space-lg) 0;
-    padding: var(--space-md);
-}
-
-.gallery-track {
-    display: flex;
-    gap: var(--space-lg);
-    padding: var(--space-sm);
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery-item {
-    flex: 0 0 auto;
-    position: relative;
-    background: var(--light);
-    border: 2px solid var(--dark);
-    border-radius: 25px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: -6px 6px 0 0 var(--mustard);
-}
-
-.gallery-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-.item-label {
-    display: block;
-    padding: var(--space-sm);
-    background: var(--lightest);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1rem;
-    text-align: center;
-    color: var(--dark);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border-top: 2px solid var(--dark);
-}
-
-*/
-
 /* Portfolio Button */
 .showcase-footer {
     text-align: center;
