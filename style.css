@@ -71,7 +71,7 @@ body {
 
 /* Name title - Home Section */
 h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
     color: var(--teal);  /* Fixed - was orange but should be dark based on your design */
@@ -84,7 +84,7 @@ h1 {
 
 /* Section Headers */
 h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: var(--space-xl); 
     padding-bottom: var(--space-xs);  
@@ -97,7 +97,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: var(--space-md);
     color: var(--dark);
@@ -110,7 +110,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: var(--space-sm); 
     color: var(--dark);
@@ -207,9 +207,9 @@ p {
 }
 
 /* Card headers */
-.card h3 {
+.card h4 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--dark);
     margin: 0 0 var(--space-sm) 0;
     letter-spacing: 0.05em;
