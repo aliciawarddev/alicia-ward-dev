@@ -106,6 +106,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
 }
 
 h4 {
@@ -118,6 +119,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
 }
 
 p {
