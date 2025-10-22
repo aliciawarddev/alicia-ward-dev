@@ -168,33 +168,6 @@ p {
     box-shadow: -4px 4px 0 0 var(--dark);
 }
 
-/* Secondary Buttons - Smaller size for less prominent actions */
-.btn-secondary {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    font-size: 0.95rem;  /* Slightly smaller than primary */
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--lightest);
-    text-decoration: none;
-    /* Pill Shape - Slightly less padding */
-    padding: calc(var(--space-sm) * 0.8) calc(var(--space-lg) * 0.85);
-    border-radius: 25px;
-    background-color: var(--teal);
-    border: 2px solid var(--dark);
-    box-shadow: -2px 2px 0 0 var(--dark);  /* Slightly smaller shadow */
-    /* Smooth transition */
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.btn-secondary:hover { /* Hover State */
-    background-color: var(--teal-dark);
-    color: var(--light);
-    transform: translateY(-2px);  /* Less dramatic lift */
-    box-shadow: -4px 4px 0 0 var(--dark);  /* Smaller than primary hover */
-}
-
 /* Cards */
 .card {
     background: var(--light);
