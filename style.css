@@ -446,6 +446,40 @@ nav ul {
     width: calc(70% - 2rem);
 }
 
+/* TAGLINE */
+.tagline {
+    font-style: italic;
+    color: var(--text-secondary, #666);
+    margin: 0.5rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* FUN FACTS */
+.fun-facts {
+    margin-top: 1.5rem;
+}
+
+.facts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.facts-list li {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* CARD ICON */
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
 /* Profile Image */
 .profile-image {
     width: 100%;
@@ -535,16 +569,25 @@ nav ul {
 }
 
 
+
 /* Mobile responsive */
 @media (max-width: 768px) {
-  .about-column.left,
-  .about-column.right {
+    .about-column.left,
+    .about-column.right {
     width: 100%;
-  }
+    } 
   
-  #about-section {
+    #about-section {
     flex-direction: column;
-  }
+    }
+
+    .card-icon {
+        font-size: 1.5rem;
+    }
+    
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =======================================
