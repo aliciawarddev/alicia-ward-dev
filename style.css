@@ -72,7 +72,7 @@ body {
 
 /* Name title - Home Section */
 h1 {
-    font-size: 5.5rem;
+    font-size: 6rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
     color: var(--dark);  /* Fixed - was orange but should be dark based on your design */
@@ -80,7 +80,7 @@ h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    text-shadow: -2px 2px 0 var(--teal);
+    text-shadow: -3px 3px 0 var(--teal);
 }  
 
 /* Section Headers */
@@ -145,8 +145,8 @@ p {
 .btn {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--lightest);
     text-decoration: none;
@@ -268,13 +268,26 @@ nav ul {
 
 #home h2 {
     margin-bottom: var(--space-lg);
+    color: var(--teal-dark);
+    font-weight: 600;
+    font-size: 2rem;
+    border-bottom: none;
+}
+
+#home h2::before, 
+#home h2::after {
+    content: '✦';
+    margin: 0 1rem;
+    color: var(--orange);
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 #home p {
     margin-bottom: var(--space-xl);
+    opacity: 0.9;
 }
 
-/* NAME TITLE */
 .home-title {
     display: flex;
     flex-direction: row;
@@ -282,20 +295,6 @@ nav ul {
     justify-content: center;
     gap: var(--space-lg);
     position: relative;
-}
-
-.home-subtitle {
-    border-bottom: none;
-    font-size: 1.75rem;
-    font-weight: 400;
-}
-
-.home-subtitle::before, .home-subtitle::after {
-    content: '✦';
-    margin: 0 1rem;
-    color: var(--mustard);
-    font-size: 1.5rem;
-    vertical-align: middle;
 }
 
 /* ARROW BUTTON - VIEW PROJECTS */
@@ -311,26 +310,27 @@ nav ul {
     margin: var(--space-md) auto;
     position: relative;
     width: fit-content;  /* Add this to prevent full width */
-    align-self: center;  /* Add this for flexbox parent alignment */
+    align-self: center;  /* Add this for flexbox parent alignment */4
 }
 
 .text-square {
-    width: 170px;  /* Increased from 150px */
-    height: 85px;   /* Increased from 75px */
+    width: 220px;  /* Increased from 150px */
+    height: 100px;   /* Increased from 75px */
     border-radius: 15px;  /* Match btn border-radius */
     background-color: var(--orange);
-    margin-left: -50px;  /* Adjusted for larger size */
+    margin-left: -85px;  /* Adjusted for larger size */
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;  /* Match btn font */
-    font-size: 1.2rem;  /* Match btn font-size */
-    letter-spacing: 0.05em;  /* Match btn letter-spacing */
+    font-size: 2rem;  /* Match btn font-size */
+    letter-spacing: 0.06em;  /* Match btn letter-spacing */
     text-transform: uppercase;  /* Match btn text-transform */
     color: var(--lightest);
     box-shadow: -2px 2px 0 0 var(--dark);  /* Match btn default shadow */
     border: 2px solid var(--dark);
     transition: all 0.3s ease;  /* Add transition for smooth changes */
+    padding: 1rem;
 }
 
 .arrow-container {
@@ -345,8 +345,8 @@ nav ul {
 }
 
 .arrow-line {
-    width: 110px;  /* Slightly increased */
-    height: 105px;  /* Slightly increased */
+    width: 150px;  /* Slightly increased */
+    height: 120px;  /* Slightly increased */
     border-left: 24px solid var(--teal);  /* Slightly thicker */
     border-bottom: 24px solid var(--teal);
     border-bottom-left-radius: 30px;
