@@ -417,6 +417,316 @@ nav ul {
    Profile image and about cards grid
    ======================================= */
 
+/* ===================================
+   ABOUT SECTION - COMPLETE CSS
+   =================================== */
+
+/* --- Section Layout --- */
+#about-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-primary, #333);
+}
+
+/* --- Two Column Layout (Flexbox) --- */
+#about-section .about-columns-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-column.left {
+    flex: 0 0 30%;
+    min-width: 280px;
+}
+
+.about-column.right {
+    flex: 1;
+    min-width: 400px;
+}
+
+/* --- Profile Image --- */
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* --- Name & Pronouns --- */
+.pronouns {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary, #333);
+    margin: 0 0 0.5rem 0;
+}
+
+/* --- Tagline --- */
+.tagline {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-secondary, #666);
+    margin: 0.5rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* --- Values Card --- */
+.values.card {
+    margin-bottom: 1.5rem;
+}
+
+.values h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary, #333);
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.value-item {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary, #666);
+}
+
+.value-item .infinity {
+    margin-left: 0.25rem;
+}
+
+/* --- Fun Facts Card --- */
+.fun-facts {
+    margin-top: 1.5rem;
+}
+
+.fun-facts h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary, #333);
+}
+
+.facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facts-list li {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary, #666);
+}
+
+/* --- Card Base Styling --- */
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* --- About Content (Right Column) --- */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-card {
+    margin-bottom: 0;
+}
+
+.about-card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: var(--text-primary, #333);
+}
+
+.about-card p {
+    line-height: 1.6;
+    color: var(--text-secondary, #666);
+    margin-bottom: 0.75rem;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Card Icons --- */
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Highlight Card --- */
+.highlight-card {
+    background: linear-gradient(135deg, var(--accent-light, #f0f8ff) 0%, var(--white, #fff) 100%);
+    border-left: 4px solid var(--accent-color, #007bff);
+}
+
+/* --- Milestone Callout --- */
+.milestone {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    border-radius: 6px;
+    border-left: 4px solid #f4a300;
+    font-size: 0.95rem;
+}
+
+/* --- Skill Highlight --- */
+.skill-highlight {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: var(--bg-light, #f8f9fa);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* --- Strengths Grid --- */
+.strengths-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.strength-item {
+    padding: 0.75rem;
+    background: var(--bg-light, #f8f9fa);
+    border-radius: 6px;
+}
+
+.strength-item strong {
+    display: block;
+    color: var(--accent-color, #007bff);
+    margin-bottom: 0.25rem;
+}
+
+.strength-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* --- Skills Card --- */
+.skills-card {
+    background: var(--bg-light, #f8f9fa);
+}
+
+/* --- Skills Tags --- */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: white;
+    border: 2px solid var(--accent-color, #007bff);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent-color, #007bff);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: var(--accent-color, #007bff);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- Philosophy Quote --- */
+.philosophy {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--bg-light, #f8f9fa);
+    border-left: 3px solid var(--accent-color, #007bff);
+    font-size: 0.95rem;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    /* Stack columns on mobile */
+    #about-section .about-columns-wrapper {
+        flex-direction: column;
+    }
+    
+    .about-column.left,
+    .about-column.right {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    
+    .about-column.left {
+        margin-bottom: 2rem;
+    }
+    
+    .profile-image {
+        max-width: 200px;
+    }
+    
+    .card-icon {
+        font-size: 1.5rem;
+    }
+    
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-section {
+        padding: 2rem 1rem;
+    }
+    
+    #about-section h2 {
+        font-size: 2rem;
+    }
+    
+    .about-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ARCHIVED - PREVIOUS ABOUT SECTION 
 #about-section {
     width: 100%;
     margin: 0 auto;
@@ -433,7 +743,7 @@ nav ul {
     flex-basis: 100%;
 }
 
-/* Left column */
+/* Left column 
 .about-column.left {
     width: 30%;
     display: flex;
@@ -441,12 +751,12 @@ nav ul {
     gap: 2rem;
 }
 
-/* Right column */
+/* Right column 
 .about-column.right {
     width: calc(70% - 2rem);
 }
 
-/* TAGLINE */
+/* TAGLINE 
 .tagline {
     font-style: italic;
     color: var(--text-secondary, #666);
@@ -454,7 +764,7 @@ nav ul {
     font-size: 0.95rem;
 }
 
-/* FUN FACTS */
+/* FUN FACTS 
 .fun-facts {
     margin-top: 1.5rem;
 }
@@ -469,13 +779,13 @@ nav ul {
     font-size: 0.9rem;
 }
 
-/* CARD ICON */
+/* CARD ICON 
 .card-icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-/* Profile Image */
+/* Profile Image 
 .profile-image {
     width: 100%;
     height: auto;
@@ -485,7 +795,7 @@ nav ul {
     box-shadow: -4px 4px 0 0 var(--teal);
 }
 
-/* Pronouns */
+/* Pronouns 
 .pronouns {
     display: flex;
     align-items: center;
@@ -502,7 +812,7 @@ nav ul {
     margin: 0;
 }
 
-/* Values */
+/* Values 
 .values-list {
     display: flex;
     flex-direction: column;
@@ -539,13 +849,13 @@ nav ul {
   font-style: normal;
 }
 
-.about-column.left li:nth-child(1)::before { color: #e40303; } /* Red */
-.about-column.left li:nth-child(2)::before { color: #ff8c00; } /* Orange */
-.about-column.left li:nth-child(3)::before { color: #ffed00; } /* Yellow */
-.about-column.left li:nth-child(4)::before { color: #008026; } /* Green */
-.about-column.left li:nth-child(5)::before { color: #24408e; } /* Blue */
+.about-column.left li:nth-child(1)::before { color: #e40303; } 
+.about-column.left li:nth-child(2)::before { color: #ff8c00; }
+.about-column.left li:nth-child(3)::before { color: #ffed00; } 
+.about-column.left li:nth-child(4)::before { color: #008026; } 
+.about-column.left li:nth-child(5)::before { color: #24408e; } 
 
-/* About content */
+/* About content 
 .about-content {
     display: flex;
     flex-direction: column;
@@ -563,9 +873,7 @@ nav ul {
     text-align: left;
 }
 
-
-
-/* Mobile responsive */
+/* Mobile responsive 
 @media (max-width: 768px) {
     .about-column.left,
     .about-column.right {
@@ -751,14 +1059,14 @@ nav ul {
 
 /* ARCHIVED SKILLS SECTION STYLING */
 
-/* Clean Grid Layout */
+/* Clean Grid Layout 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
 }
 
-/* Skill Items - Clean list style */
+/* Skill Items - Clean list style 
 .skill-list {
     display: flex;
     flex-direction: column;
@@ -773,7 +1081,7 @@ nav ul {
     padding-left: var(--space-lg);
 }
 
-/* Simple bullet using your starburst */
+/* Simple bullet using your starburst 
 .skill-item::before {
     content: '✦';
     position: absolute;
@@ -784,7 +1092,7 @@ nav ul {
     transform: translateY(-50%); 
 }
 
-/* Professional Strengths Card - Full width */
+/* Professional Strengths Card - Full width 
 .skill-card.strengths {
     grid-column: 1 / -1;
     background-color: var(--lightest);
