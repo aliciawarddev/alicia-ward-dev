@@ -164,8 +164,7 @@ p {
 .btn:hover { /* Hover State */
     background-color: var(--orange-dark);
     color: var(--light);
-    transform: translateY(-3px);
-    box-shadow: -4px 4px 0 0 var(--dark);
+    box-shadow: -3px 3px 0 0 var(--dark);
 }
 
 /* Secondary Buttons - Smaller size for less prominent actions */
