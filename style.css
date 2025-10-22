@@ -75,12 +75,12 @@ h1 {
     font-size: 5.5rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
-    color: var(--teal);  /* Fixed - was orange but should be dark based on your design */
+    color: var(--dark);  /* Fixed - was orange but should be dark based on your design */
     /* Crisp rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    text-shadow: -3px 3px 0 var(--dark);
+    text-shadow: -2px 2px 0 var(--teal);
 }  
 
 /* Section Headers */
@@ -308,7 +308,7 @@ nav ul {
     color: inherit;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin: var(--space-lg) auto;
+    margin: var(--space-md) auto;
     position: relative;
     width: fit-content;  /* Add this to prevent full width */
     align-self: center;  /* Add this for flexbox parent alignment */
@@ -425,6 +425,7 @@ nav ul {
     flex-wrap: wrap;
     gap: 2rem;
     padding: 4rem 2rem;
+    margin-top: -1rem;
 }
 
 #about-section h2 {
