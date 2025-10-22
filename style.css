@@ -270,7 +270,7 @@ nav ul {
     margin-bottom: var(--space-lg);
     color: var(--teal-dark);
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.3rem;
     border-bottom: none;
 }
 
@@ -314,8 +314,8 @@ nav ul {
 }
 
 .text-square {
-    width: 220px;  /* Increased from 150px */
-    height: 100px;   /* Increased from 75px */
+    width: 200px;  /* Increased from 150px */
+    height: 90px;   /* Increased from 75px */
     border-radius: 15px;  /* Match btn border-radius */
     background-color: var(--orange);
     margin-left: -85px;  /* Adjusted for larger size */
@@ -323,7 +323,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;  /* Match btn font */
-    font-size: 2rem;  /* Match btn font-size */
+    font-size: 1.7rem;  /* Match btn font-size */
     letter-spacing: 0.06em;  /* Match btn letter-spacing */
     text-transform: uppercase;  /* Match btn text-transform */
     color: var(--lightest);
@@ -346,7 +346,7 @@ nav ul {
 
 .arrow-line {
     width: 150px;  /* Slightly increased */
-    height: 120px;  /* Slightly increased */
+    height: 110px;  /* Slightly increased */
     border-left: 24px solid var(--teal);  /* Slightly thicker */
     border-bottom: 24px solid var(--teal);
     border-bottom-left-radius: 30px;
@@ -377,7 +377,7 @@ nav ul {
     border-top: 19px solid transparent;
     border-bottom: 22px solid transparent;
     position: absolute;  /* Changed to absolute */
-    right: -19px;  /* 4px offset from arrow-head */
+    right: -16px;  /* 4px offset from arrow-head */
     bottom: -37px;
     transform: translateY(-50%);
     z-index: 1;  /* Behind arrow-head */
@@ -408,7 +408,7 @@ nav ul {
 }
 
 .arrow-button-container:hover .arrow-shadow {
-    right: -17px;  /* Move further right (from -27px) */
+    right: -15px;  /* Move further right (from -27px) */
     bottom: -40px;  /* Move further down (from +4px to +8px) */
 }
 
