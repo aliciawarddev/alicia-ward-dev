@@ -155,7 +155,7 @@ p {
     border-radius: 25px;
     background-color: var(--orange);
     border: 2px solid var(--dark);
-    box-shadow: -4px 4px 0 0 var(--dark);
+    box-shadow: -2px 2px 0 0 var(--dark);
     /* Smooth transition */
     transition: all 0.3s ease;
     display: inline-block;
@@ -165,7 +165,7 @@ p {
     background-color: var(--orange-dark);
     color: var(--light);
     transform: translateY(-3px);
-    box-shadow: -8px 8px 0 0 var(--dark);
+    box-shadow: -4px 4px 0 0 var(--dark);
 }
 
 /* Secondary Buttons - Smaller size for less prominent actions */
@@ -182,7 +182,7 @@ p {
     border-radius: 25px;
     background-color: var(--teal);
     border: 2px solid var(--dark);
-    box-shadow: -3px 3px 0 0 var(--dark);  /* Slightly smaller shadow */
+    box-shadow: -2px 2px 0 0 var(--dark);  /* Slightly smaller shadow */
     /* Smooth transition */
     transition: all 0.3s ease;
     display: inline-block;
@@ -192,7 +192,7 @@ p {
     background-color: var(--teal-dark);
     color: var(--light);
     transform: translateY(-2px);  /* Less dramatic lift */
-    box-shadow: -6px 6px 0 0 var(--dark);  /* Smaller than primary hover */
+    box-shadow: -4px 4px 0 0 var(--dark);  /* Smaller than primary hover */
 }
 
 /* Cards */
