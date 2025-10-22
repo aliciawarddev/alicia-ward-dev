@@ -176,7 +176,7 @@ p {
     padding: var(--space-lg);
     transition: all 0.3s ease;
     position: relative;
-    box-shadow: -6px 6px 0 0 var(--mustard); 
+    box-shadow: -4px 4px 0 0 var(--mustard); 
     background-color: var(--lightest);
 }
 
@@ -617,7 +617,7 @@ nav ul {
     background: var(--light);
     border: 2px solid var(--dark);
     border-radius: 25px;
-    box-shadow: -6px 6px 0 0 var(--mustard);
+    box-shadow: -4px 4px 0 0 var(--mustard);
     overflow: hidden;
     padding: 15px;
 }
@@ -645,7 +645,7 @@ nav ul {
     border: 2px solid var(--dark);
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: -6px 6px 0 0 var(--mustard);
+    box-shadow: -4px 4px 0 0 var(--mustard);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -762,7 +762,7 @@ nav ul {
 .skill-card.strengths {
     grid-column: 1 / -1;
     background-color: var(--lightest);
-    box-shadow: -6px 6px 0 0 var(--teal); 
+    box-shadow: -4px 4px 0 0 var(--teal) !important; 
 }
 
 .strength-list {
