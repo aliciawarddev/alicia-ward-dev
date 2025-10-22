@@ -328,7 +328,7 @@ nav ul {
     letter-spacing: 0.05em;  /* Match btn letter-spacing */
     text-transform: uppercase;  /* Match btn text-transform */
     color: var(--lightest);
-    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
+    box-shadow: -2px 2px 0 0 var(--dark);  /* Match btn default shadow */
     border: 2px solid var(--dark);
     transition: all 0.3s ease;  /* Add transition for smooth changes */
 }
@@ -351,7 +351,7 @@ nav ul {
     border-bottom: 24px solid var(--teal);
     border-bottom-left-radius: 30px;
     border-top-right-radius: 20px;
-    box-shadow: -6px 6px 0 0 var(--dark);  /* Match btn default shadow */
+    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
     z-index: 3;
     transition: all 0.3s ease;  /* Add transition */
 }
@@ -385,19 +385,22 @@ nav ul {
 }
 
 /* Hover - Enhanced to match btn */
+/* 
 .arrow-button-container:hover {
-    transform: translateY(-3px);  /* Changed from translateX to match btn */
+    transform: translateY(-1px); 
 }
+    */
 
 .arrow-button-container:hover .text-square {
     background-color: var(--orange-dark); 
     color: var(--light); 
-    box-shadow: -8px 8px 0 0 var(--dark);  /* Match btn hover shadow */
+    box-shadow: -4px 4px 0 0 var(--dark) !important;
+    transform: translateY(-1px);
 }
 
 .arrow-button-container:hover .arrow-line {
     border-color: var(--teal-dark);
-    box-shadow: -8px 8px 0 0 var(--dark);  /* Enhanced shadow on hover */
+    box-shadow: -6px 6px 0 0 var(--dark);  /* Enhanced shadow on hover */
 }
 
 .arrow-button-container:hover .arrow-head {
@@ -405,8 +408,8 @@ nav ul {
 }
 
 .arrow-button-container:hover .arrow-shadow {
-    right: -19px;  /* Move further right (from -27px) */
-    bottom: -45px;  /* Move further down (from +4px to +8px) */
+    right: -17px;  /* Move further right (from -27px) */
+    bottom: -40px;  /* Move further down (from +4px to +8px) */
 }
 
 /* =======================================
