@@ -90,7 +90,7 @@ h2 {
     margin-bottom: var(--space-xl); 
     padding-bottom: var(--space-xs);  
     color: var(--dark);
-    border-bottom: 0.4rem solid var(--teal);
+    border-bottom: 0.3rem solid var(--teal);
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
