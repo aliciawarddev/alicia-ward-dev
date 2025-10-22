@@ -164,7 +164,8 @@ p {
 .btn:hover { /* Hover State */
     background-color: var(--orange-dark);
     color: var(--light);
-    box-shadow: -3px 3px 0 0 var(--dark);
+    transform: translateY(-1px);
+    box-shadow: -4px 4px 0 0 var(--dark);
 }
 
 /* Secondary Buttons - Smaller size for less prominent actions */
@@ -994,8 +995,8 @@ footer p {
     .btn:hover {
         background-color: var(--orange-dark);
         color: var(--light);
-        transform: translateY(-3px);
-        box-shadow: -8px 8px 0 0 var(--dark);
+        transform: translateY(-1px);
+        box-shadow: -4px 4px 0 0 var(--dark);
     }
     
     .arrow-button-container:hover {
