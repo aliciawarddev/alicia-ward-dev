@@ -29,14 +29,19 @@
 
 html {
     scroll-behavior: smooth;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 main {
     display: block;
     max-width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 main section {
@@ -67,10 +72,18 @@ body {
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 section {
     max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* =======================================
@@ -243,13 +256,19 @@ p {
    Main navigation bar with responsive design
    ======================================= */
 
-.header {
-    background-color: var(--light);
+header {
+    background: var(--light);
     position: fixed;
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    max-width: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 2rem;
 }
 
 nav ul {
@@ -259,7 +278,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     gap: var(--space-xl);
-    padding: var(--space-md) 0 var(--space-xl) 0;
+    padding: var(--space-md) 0;
 }
 
 /* =======================================
