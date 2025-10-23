@@ -237,10 +237,11 @@ p {
 
 .header {
     background-color: var(--light);
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
 }
 
 nav ul {
