@@ -466,323 +466,147 @@ nav ul {
     align-items: start;
 }
 
+/* Header - spans both columns */
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--text-primary, #333);
+    color: var(--dark);
     /* Centered position */
     text-align: center;
     grid-column: 1 / -1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Section Layout --- */
-
-
-#about-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--text-primary, #333);
-}
-
-/* --- Two Column Layout (Flexbox) --- */
-#about-section .about-columns-wrapper {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.about-column {
+/* LEFT COLUMN */
+.about-column.left {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
 }
 
-.about-column.left {
-    flex: 0 0 30%;
-    min-width: 280px;
+.about-column.left > * {
+    width: 100%; /* All direct children take full width */
 }
 
-.about-column.right {
-    flex: 1;
-    min-width: 400px;
-}
-
-/* --- Profile Image --- */
+/* Profile image*/
 .profile-image {
-    width: 15rem;
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 1.5rem;
-    transition: transform 0.3s ease;
+    width: 100%;
     border: 2px solid var(--dark);
     border-radius: 25px;
     box-shadow: -4px 4px 0 0 var(--teal);
+    display: block;
 }
 
-
-/* --- Name & Pronouns --- */
+/* Pronouns*/
 .pronouns {
     text-align: center;
-    font-size: 1.2rem;
+    margin: 0;
     font-weight: 600;
-    color: var(--text-primary, #333);
-    margin: 0 0 0.5rem 0;
+    color: var(--dark);
 }
 
-/* --- Tagline --- */
+/* Tagline*/
 .tagline {
     text-align: center;
     font-style: italic;
-    color: var(--text-secondary, #666);
-    margin: 0.5rem 0 1.5rem;
-    font-size: 0.95rem;
+    margin: 0;
+    color: var(--dark);
 }
 
-/* --- Values Card --- */
-.values.card {
-    margin-bottom: 1.5rem;
+/* RIGHT COLUMN */
+.about-column.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
 }
 
-.values h4 {
-    margin-bottom: 1rem;
-    color: var(--text-primary, #333);
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
 }
 
+.about-content > * {
+    width: 100%; /* All cards take full width */
+}
+
+/* Values List*/
 .values-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .value-item {
-    padding: 0.5rem 0;
-    font-size: 0.95rem;
-    color: var(--text-secondary, #666);
+    background: var(--mustard);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--dark);
+    border: 1px solid var(--dark);
 }
 
-.value-item .infinity {
-    margin-left: 0.25rem;
-}
-
-/* --- Fun Facts Card --- */
-.fun-facts {
-    margin-top: 1.5rem;
-}
-
-.fun-facts h4 {
-    margin-bottom: 1rem;
-    color: var(--text-primary, #333);
-}
-
+/* Fun facts list */
 .facts-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .facts-list li {
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-    color: var(--text-secondary, #666);
+    font-size: 0.95rem;
+    color: var(--dark);
 }
 
-/* --- Card Base Styling --- */
-.card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card h4 {
-    margin-top: 0;
-    font-size: 1.1rem;
-}
-
-/* --- About Content (Right Column) --- */
-.about-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.about-card {
-    margin-bottom: 0;
-}
-
-.about-card h3 {
-    margin-top: 0;
-    font-size: 1.3rem;
-    color: var(--text-primary, #333);
-}
-
-.about-card p {
-    line-height: 1.6;
-    color: var(--text-secondary, #666);
-    margin-bottom: 0.75rem;
-}
-
-.about-card p:last-child {
-    margin-bottom: 0;
-}
-
-/* --- Card Icons --- */
+/* Icons */
 .card-icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-/* --- Highlight Card --- */
-.highlight-card {
-    background: linear-gradient(135deg, var(--accent-light, #f0f8ff) 0%, var(--white, #fff) 100%);
-    border-left: 4px solid var(--accent-color, #007bff);
+.standout-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/* --- Milestone Callout --- */
-.milestone {
-    margin-top: 1rem;
-    padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-    border-radius: 6px;
-    border-left: 4px solid #f4a300;
-    font-size: 0.95rem;
-}
-
-/* --- Skill Highlight --- */
-.skill-highlight {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    background: var(--bg-light, #f8f9fa);
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-/* --- Strengths Grid --- */
+/* Strengths grid */
 .strengths-grid {
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     margin-top: 1rem;
 }
 
 .strength-item {
-    padding: 0.75rem;
-    background: var(--bg-light, #f8f9fa);
-    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .strength-item strong {
     display: block;
-    color: var(--accent-color, #007bff);
     margin-bottom: 0.25rem;
+    color: var(--dark);
+    font-size: 1.1rem;
 }
 
 .strength-item p {
     margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
-/* --- Skills Card --- */
-.skills-card {
-    background: var(--bg-light, #f8f9fa);
-}
-
-/* --- Skills Tags --- */
-.skills-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.skill-tag {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    background: white;
-    border: 2px solid var(--accent-color, #007bff);
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--accent-color, #007bff);
-    transition: all 0.3s ease;
-}
-
-.skill-tag:hover {
-    background: var(--accent-color, #007bff);
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* --- Philosophy Quote --- */
+/* Highlight elements */
+.milestone, 
+.skill-highlight, 
 .philosophy {
-    margin-top: 1rem;
-    padding: 1rem;
-    background: var(--bg-light, #f8f9fa);
-    border-left: 3px solid var(--accent-color, #007bff);
-    font-size: 0.95rem;
-}
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-    /* Stack columns on mobile */
-    #about-section .about-columns-wrapper {
-        flex-direction: column;
-    }
-    
-    .about-column.left,
-    .about-column.right {
-        flex: 1 1 100%;
-        min-width: 100%;
-    }
-    
-    .about-column.left {
-        margin-bottom: 2rem;
-    }
-    
-    .profile-image {
-        max-width: 200px;
-    }
-    
-    .card-icon {
-        font-size: 1.5rem;
-    }
-    
-    .strengths-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    #about-section {
-        padding: 2rem 1rem;
-    }
-    
-    #about-section h2 {
-        font-size: 2rem;
-    }
-    
-    .about-card h3 {
-        font-size: 1.1rem;
-    }
+    margin-top: var(--space-md);
 }
 
 
