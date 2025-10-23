@@ -61,8 +61,12 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
     background-color: var(--light);
-    padding: 1.25rem;
     display: block;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* =======================================
@@ -237,11 +241,11 @@ p {
 
 .header {
     background-color: var(--light);
-    position: sticky !important;
+    position: fixed;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
+    max-width: 100%;
 }
 
 nav ul {
@@ -250,7 +254,7 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: var(--space-md);
+    gap: var(--space-xl);
     padding: var(--space-md) 0 var(--space-xl) 0;
 }
 
