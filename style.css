@@ -454,16 +454,45 @@ nav ul {
    Profile image and about cards grid
    ======================================= */
 
-/* ===================================
-   ABOUT SECTION - COMPLETE CSS
-   =================================== */
+/* SECTION LAYOUT */
+#about {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    /* Two column layout */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary, #333);
+    /* Centered position */
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- Section Layout --- */
-#about-section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 #about-section h2 {
     text-align: center;
@@ -496,19 +525,18 @@ nav ul {
 
 /* --- Profile Image --- */
 .profile-image {
-    width: 100%;
+    width: 15rem;
     max-width: 300px;
     height: auto;
     border-radius: 50%;
     display: block;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    box-shadow: -4px 4px 0 0 var(--teal);
 }
 
-.profile-image:hover {
-    transform: scale(1.05);
-}
 
 /* --- Name & Pronouns --- */
 .pronouns {
@@ -583,11 +611,6 @@ nav ul {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card h4 {
