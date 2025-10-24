@@ -1126,37 +1126,31 @@ nav ul {
     padding: 4rem 2rem;
 }
 
-#support h4 {
-    padding-bottom: 30px;
+.support-card {
+    max-width: 30rem;
+    margin: 0 auto;
 }
 
-#support .project-info h4 {
-    font-size: 1.6rem;
-    padding: 10px;
-}
-
-#support .btn {
-    margin: 20px;
-}
-
-/* Square preview for Buy Me a Coffee card */
-.coffee-card {
-    max-width: 400px; /* Constrain card width */
-    margin: 0 auto; /* Center the card */
-}
-
-.coffee-card .square-preview {
-    aspect-ratio: 1 / 1; /* Maintain square ratio */
-    overflow: hidden;
-    background: var(--warm-white, #FAF7F2);
-}
-
-.coffee-card .square-preview img {
+.support-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures image covers the container */
-    object-position: center;
+    height: 525px;
+    background: var(--light);
+    border-bottom: 2px solid var(--dark);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.support-image img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+
 
 /* =======================================
    CONTACT SECTION
