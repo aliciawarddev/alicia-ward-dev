@@ -161,8 +161,8 @@ p {
    Reusable components like buttons and cards
    ======================================= */
 
-/* BUTTON - PRIMARY */
-.btn {
+/* BUTTON PRIMARY (ORANGE) */
+.btn-primary {
     background-color: var(--orange);
     color: var(--dark);
     padding: 0.75rem 1.5rem;
@@ -174,7 +174,18 @@ p {
     box-shadow: -2px 2px 0 0 var(--dark);
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-decoration: none;
-    /* Previous styling:
+    display: inline-block;
+}
+
+/* Hover State */
+.btn-primary:hover { 
+    background-color: var(--teal);
+    color: var(--lightest);
+    transform: translate(-2px, -2px);
+    box-shadow: -4px 4px 0 0 var(--dark);
+}
+
+/* Previous button primary styling:
     text-transform: uppercase;
     color: var(--lightest);
     /* font-family: 'Bebas Neue', sans-serif;
@@ -183,26 +194,17 @@ p {
     font-size: 1.2rem;
     letter-spacing: 0.06em;
     display: inline-block;
-    */
-}
+*/
 
-/* Hover State */
-.btn:hover { 
-    background-color: var(--orange-dark);
-    color: var(--light);
-    transform: translateY(-1px);
-    box-shadow: -4px 4px 0 0 var(--dark);
-}
-
-/* BUTTON - SMALL */
-.btn-small {
-    background-color: var(--orange);
+/* BUTTON SECONDARY (MUSTARD)*/
+.btn-secondary {
+    background-color: var(--mustard);
     color: var(--dark);
-    padding: 0.6rem 1.2rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 25px;
     border: 2px solid var(--dark);
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     box-shadow: -2px 2px 0 0 var(--dark);
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -210,11 +212,35 @@ p {
 }
 
 /* Hover State */
-.btn-small:hover { 
-    background-color: var(--orange-dark);
-    color: var(--light);
+.btn-secondary:hover { 
+    background-color: var(--orange);
+    color: var(--lightest);
     transform: translateY(-1px);
-    box-shadow: -3px 3px 0 0 var(--dark);
+    box-shadow: -4px 4px 0 0 var(--dark);
+}
+
+/* BUTTON - SMALL */
+.btn-small {
+    background-color: var(--mustard);
+    color: var(--dark);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    border: 2px solid var(--dark);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    box-shadow: -2px 2px 0 0 var(--dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Hover State */
+.btn-small:hover { 
+    background-color: var(--orange);
+    color: var(--lightest);
+    transform: translate(-2px, -2px);
+    box-shadow: -4px 4px 0 0 var(--dark);
 }
 
 /* Cards */
