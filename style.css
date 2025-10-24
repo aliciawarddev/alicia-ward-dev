@@ -164,22 +164,27 @@ p {
 /* BUTTONS */
 /* Primary Buttons */
 .btn {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    letter-spacing: 0.06em;
+    background-color: var(--orange);
+    color: var(--dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid var(--dark);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: -2px 2px 0 0 var(--dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    /* Previous styling:
     text-transform: uppercase;
     color: var(--lightest);
-    text-decoration: none;
-    /* Pill Shape */
+    /* font-family: 'Bebas Neue', sans-serif;
     padding: var(--space-sm) var(--space-lg);
-    border-radius: 25px;
-    background-color: var(--orange);
-    border: 2px solid var(--dark);
-    box-shadow: -2px 2px 0 0 var(--dark);
-    /* Smooth transition */
-    transition: all 0.3s ease;
+    font-wright: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
     display: inline-block;
+    */
 }
 
 .btn:hover { /* Hover State */
@@ -268,7 +273,7 @@ header {
     align-content: center;
     justify-content: center;
     flex-direction: row;
-    padding: 0 2rem;
+    padding: 0.5rem 0;
 }
 
 nav ul {
@@ -277,7 +282,7 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: var(--space-xl);
+    gap: 1rem;
     padding: var(--space-md) 0;
 }
 
@@ -458,7 +463,7 @@ nav ul {
 #about {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem;
     /* Two column layout */
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -829,7 +834,6 @@ nav ul {
     box-shadow: -2px 2px 0 0 var(--dark);
 }
 
-
 /* Creative Skills Grid */
 .creative-skills-grid {
     display: grid;
@@ -864,12 +868,6 @@ nav ul {
     color: var(--dark);
     opacity: 0.8;
 }
-
-
-
-
-
-
 
 /* ARCHIVED SKILLS SECTION STYLING */
 
@@ -943,6 +941,12 @@ nav ul {
    PROJECTS SECTION
    Gallery showcase with hover effects
    ======================================= */
+
+#projects {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
 
 /* Project Container */
 .project-showcase {
