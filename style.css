@@ -1149,6 +1149,15 @@ nav ul {
     display: block;
 }
 
+#support h4 {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.support-card .project-info {
+    padding-top: 2rem;
+}
+
 
 
 
