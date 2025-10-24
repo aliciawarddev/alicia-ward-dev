@@ -818,8 +818,8 @@ nav ul {
 .tech-tags-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
+    justify-content: space-evenly;
+    max-width: 100%;
 }
 
 .tech-tag {
@@ -839,6 +839,7 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    max-width: 100%;
 }
 
 /* Skill Cards */
