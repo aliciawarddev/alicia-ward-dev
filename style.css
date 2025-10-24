@@ -328,16 +328,14 @@ nav ul {
     max-height: 70rem;
 }
 
-#home h2 {
+#home h3 {
     margin-bottom: var(--space-lg);
     color: var(--teal-dark);
-    font-weight: 600;
-    font-size: 2.5rem;
     border-bottom: none;
 }
 
-#home h2::before, 
-#home h2::after {
+#home h3::before, 
+#home h3::after {
     content: '✦';
     margin: 0 1rem;
     color: var(--orange);
