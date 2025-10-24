@@ -1158,251 +1158,69 @@ nav ul {
     padding-top: 2rem;
 }
 
-
-
-
 /* =======================================
    CONTACT SECTION
    Contact information and social links
    ======================================= */
 
 #contact {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
-#contact p {
-    margin-bottom: var(--space-lg);
-    max-width: 600px;
+.contact-intro {
+    color: var(--dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    color: var(--dark);
-    line-height: 1.5;
 }
 
 .contact-buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-md); 
-    margin-top: var(--space-xl);
+    gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
-
-
 
 /* =======================================
    FOOTER
    Copyright and decorative elements
    ======================================= */
 
+/* FOOTER */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-xl);
-    gap: var(--space-lg);
+    text-align: center;
+    padding: 2rem;
 }
 
-footer p {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 0.9rem;
+.footer-note {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
     color: var(--dark);
-    letter-spacing: 0.05em;
-    margin: 0;
+    text-align: center;
 }
 
-.footer-star {
-    color: var(--mustard);
-    font-size: 1.2rem;
+.footer-copyright {
+    font-size: 0.85rem;
+    color: var(--dark);
+    opacity: 0.8;
+    margin: 0 auto;
+    text-align: center;
 }
+
 
 /* =======================================
    RESPONSIVE DESIGN
    Media queries for all screen sizes
    ======================================= */
 
-@media (max-width: 768px) {
-    /* Navigation - Make it wrap properly */
-    nav ul {
-        flex-wrap: wrap;
-        padding: var(--space-sm);
-    }
-    
-    /* Touch targets - Minimum 44x44px for fingers */
-    .btn {
-        min-height: 44px;
-        min-width: 44px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    /* Flexible typography - Scales with screen */
-    h1 {
-        font-size: clamp(3rem, 10vw, 5rem);
-    }
-    
-    .home-subtitle {
-        font-size: clamp(1.2rem, 4vw, 1.75rem);
-    }
-    
-    /* Stack name vertically on mobile */
-    .name-title {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    /* Scale down arrow button */
-    .arrow-button-container {
-        transform: scale(0.8);
-    }
-    
-    /* About section - Stack image above text */
-    .about-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .profile-image {
-        max-width: 250px;
-        margin: 0 auto;
-    }
-    
-    /* Contact Buttons */
-    .contact-buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: var(--space-md);  /* This controls BOTH horizontal and vertical spacing */
-        justify-content: center;
-        max-width: 400px;
-        margin: var(--space-xl) auto 0;
-    }
-    
-    .contact-buttons .btn {
-        flex: 0 1 calc(50% - var(--space-md)/2);  /* Adjust calculation for horizontal gap */
-        min-width: 180px;
-    }
 
-    /* Home Subtitle */
-    .home-subtitle {
-        font-size: clamp(1.2rem, 4vw, 1.75rem);
-        /* ADD these lines for better mobile display */
-        padding: 0 var(--space-sm);
-        word-wrap: break-word;
-        max-width: 100%;
-    }
-    
-    /* Adjust the decorative stars */
-    .home-subtitle::before, 
-    .home-subtitle::after {
-        content: '✦';
-        margin: 0 0.5rem; /* Reduced from 1rem */
-        font-size: 1.2rem; /* Reduced from 1.5rem */
-    }
-}
 
-@media (hover: hover) and (pointer: fine) {
-    /* Only apply hover effects on devices with precise pointers (mouse) */
-    .btn:hover {
-        background-color: var(--orange-dark);
-        color: var(--light);
-        transform: translateY(-1px);
-        box-shadow: -4px 4px 0 0 var(--dark);
-    }
-    
-    .arrow-button-container:hover {
-        transform: translateY(-3px);
-    }
-    
-    .arrow-button-container:hover .text-square {
-        background-color: var(--orange-dark); 
-        color: var(--light); 
-        box-shadow: -8px 8px 0 0 var(--dark);
-    }
-}
-
-/* Reset hover states for touch devices */
-@media (hover: none) and (pointer: coarse) {
-    .btn:hover {
-        background-color: var(--orange);
-        color: var(--lightest);
-        transform: none;
-        box-shadow: -4px 4px 0 0 var(--dark);
-    }
-}
-
-/* Add active state for better touch feedback */
-.btn:active {
-    transform: translateY(0);
-    box-shadow: -2px 2px 0 0 var(--dark);
-}
-
-/* Tablet styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    main section {
-        padding: 60px 30px;
-    }
-    
-    h1 {
-        font-size: 4rem;
-    }
-}
-
-/* Small phone styles */
-@media (max-width: 480px) {
-    body {
-        padding: 0.75rem;
-    }
-    
-    main section {
-        padding: 40px 15px;
-    }
-    
-    h2 {
-        font-size: 1.75rem;
-    }
-    
-    .skill-card,
-    .about-card {
-        padding: var(--space-md);
-    }
-
-    /* Home subtitle */
-    .home-subtitle {
-        font-size: 1.1rem;
-        line-height: 1.4;
-    }
-    
-    /* Option: Hide decorative stars on very small screens */
-    .home-subtitle::before, 
-    .home-subtitle::after {
-        display: none;
-    }
-    
-    /* OR keep them but make them block elements */
-    .home-subtitle::before {
-        display: block;
-        margin: 0 auto var(--space-xs);
-    }
-    
-    .home-subtitle::after {
-        display: block;
-        margin: var(--space-xs) auto 0;
-    }
-}
-
-@media (max-width: 768px) {
-  .image-grid {
-    gap: 10px; /* Tighter on small screens */
-  }
-}
-
-@media (max-width: 768px) {
-    .coffee-card {
-        max-width: 300px;
-    }
-}
 
 /* =======================================
    ACCESSIBILITY
