@@ -161,8 +161,7 @@ p {
    Reusable components like buttons and cards
    ======================================= */
 
-/* BUTTONS */
-/* Primary Buttons */
+/* BUTTON - PRIMARY */
 .btn {
     background-color: var(--orange);
     color: var(--dark);
@@ -187,11 +186,35 @@ p {
     */
 }
 
-.btn:hover { /* Hover State */
+/* Hover State */
+.btn:hover { 
     background-color: var(--orange-dark);
     color: var(--light);
     transform: translateY(-1px);
     box-shadow: -4px 4px 0 0 var(--dark);
+}
+
+/* BUTTON - SMALL */
+.btn-small {
+    background-color: var(--orange);
+    color: var(--dark);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    border: 2px solid var(--dark);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    box-shadow: -2px 2px 0 0 var(--dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+/* Hover State */
+.btn-small:hover { 
+    background-color: var(--orange-dark);
+    color: var(--light);
+    transform: translateY(-1px);
+    box-shadow: -3px 3px 0 0 var(--dark);
 }
 
 /* Cards */
@@ -1001,7 +1024,7 @@ nav ul {
 
 .project-info p {
     color: var(--dark);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: var(--space-md);
 }
@@ -1041,7 +1064,7 @@ nav ul {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
+    gap: 3rem;
     max-width: 80rem;
 }
 
@@ -1054,10 +1077,16 @@ nav ul {
     align-items: center;
 }
 
+/* JS Projects description */
 .project-description {
     color: var(--dark);
     font-size: 1rem;
     margin-top: var(--space-sm);
+}
+
+/* JS projects - project card image preview */
+.project-preview.js {
+    max-height: 250px
 }
 
 
