@@ -392,7 +392,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;  /* Match btn font */
-    font-size: 1.7rem;  /* Match btn font-size */
+    font-size: 1rem;  /* Match btn font-size */
     letter-spacing: 0.06em;  /* Match btn letter-spacing */
     text-transform: uppercase;  /* Match btn text-transform */
     color: var(--lightest);
@@ -400,6 +400,8 @@ nav ul {
     border: 2px solid var(--dark);
     transition: all 0.3s ease;  /* Add transition for smooth changes */
     padding: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
 }
 
 .arrow-container {
@@ -453,32 +455,27 @@ nav ul {
     transition: all 0.3s ease;
 }
 
-/* Hover - Enhanced to match btn */
-/* 
-.arrow-button-container:hover {
-    transform: translateY(-1px); 
-}
-    */
-
+/* Hover State - Aligned with btn primary/secondary */
 .arrow-button-container:hover .text-square {
-    background-color: var(--orange-dark); 
-    color: var(--light); 
-    box-shadow: -4px 4px 0 0 var(--dark) !important;
-    transform: translateY(-1px);
+    background-color: var(--teal);
+    color: var(--lightest);
+    transform: translate(-2px, -2px);
+    box-shadow: -4px 4px 0 0 var(--dark);
 }
 
 .arrow-button-container:hover .arrow-line {
-    border-color: var(--teal-dark);
-    box-shadow: -6px 6px 0 0 var(--dark);  /* Enhanced shadow on hover */
+    border-color: var(--orange);
+    transform: translate(-2px, -2px);
+    box-shadow: -6px 6px 0 0 var(--dark);
 }
 
 .arrow-button-container:hover .arrow-head {
-    border-left-color: var(--teal-dark);  /* Only color changes, no movement */
+    border-left-color: var(--orange);
 }
 
 .arrow-button-container:hover .arrow-shadow {
-    right: -15px;  /* Move further right (from -27px) */
-    bottom: -40px;  /* Move further down (from +4px to +8px) */
+    right: -18px;
+    bottom: -39px;
 }
 
 /* =======================================
