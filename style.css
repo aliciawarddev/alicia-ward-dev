@@ -84,6 +84,7 @@ section {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 /* =======================================
@@ -109,13 +110,24 @@ h2 {
     font-size: 3rem;
     margin-top: 0;
     margin-bottom: var(--space-xl); 
-    padding-bottom: var(--space-xs);  
     color: var(--dark);
-    border-bottom: 0.3rem solid var(--teal);
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-bottom: var(--space-xs);
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--teal);
 }
 
 h3 {
@@ -514,20 +526,14 @@ nav ul {
     margin: 0 auto;
     padding: 4rem 2rem;
     /* Two column layout */
+    
+}
+
+.about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     align-items: start;
-}
-
-/* Header - spans both columns */
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--dark);
-    /* Centered position */
-    text-align: center;
-    grid-column: 1 / -1;
 }
 
 /* LEFT COLUMN */
@@ -1212,7 +1218,6 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
-
 
 /* =======================================
    RESPONSIVE DESIGN
