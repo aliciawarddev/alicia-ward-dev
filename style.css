@@ -841,11 +841,20 @@ nav ul {
 }
 
 /* Creative Skills Grid */
-.creative-skills-grid {
+.skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     max-width: 100%;
+}
+
+/* Icon Header */
+.icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 /* Skill Cards */
@@ -855,12 +864,12 @@ nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--space-lg);
+    padding: 1rem;
     min-height: 180px;
 }
 
 .card-icon-large {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
