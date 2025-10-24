@@ -831,6 +831,9 @@ nav ul {
     gap: 2rem;
 }
 
+/* Technical Tags */
+.values-list
+
 /* Technical Tags Grid */
 .tech-tags-grid {
     display: flex;
