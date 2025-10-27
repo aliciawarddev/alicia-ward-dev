@@ -525,7 +525,7 @@ nav ul {
 /* Profile image */
 .profile-image {
     width: 100%;
-    max-width: 22rem; /* Slightly larger */
+    max-width: 24rem; /* Slightly larger */
     height: auto;
     border: 2px solid var(--dark);
     border-radius: 25px;
@@ -550,6 +550,11 @@ nav ul {
 }
 
 /* The Journey */
+.journey-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .journey-path {
     margin-bottom: 0.5rem !important;
 }
