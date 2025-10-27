@@ -375,6 +375,7 @@ nav ul {
 .home-subtitle {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
+    font-size: 2.5rem;
 }
 
 /* ARROW BUTTON - VIEW PROJECTS */
