@@ -814,80 +814,36 @@ nav ul {
 
 #skills h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* Two-column grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+/* Left column */
+.skills-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
 }
 
 .section-intro {
-    text-align: center;
-    font-size: 1.25rem;
+    text-align: left;
+    font-size: 1.1rem;
     color: var(--dark);
-    margin-bottom: 3rem;
-    font-style: italic;
-}
-
-/* Single container - no columns needed */
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-/* Technical Tags */
-.values-list
-
-/* Technical Tags Grid */
-.tech-tags-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    gap: 1rem;
-}
-
-/* Creative Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 100%;
-}
-
-/* Icon Header */
-.icon-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-
-/* Skill Cards */
-.skill-card.card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    min-height: 180px;
-}
-
-.card-icon-large {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.skill-card h4 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.25rem;
-}
-
-.skill-card p {
     margin: 0;
-    font-size: 0.95rem;
-    color: var(--dark);
-    opacity: 0.8;
 }
+
+.skills-left .values.card {
+    flex-grow: 1; 
+}
+
 
 /* ARCHIVED SKILLS SECTION STYLING */
 
