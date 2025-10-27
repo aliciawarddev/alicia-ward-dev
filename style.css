@@ -199,7 +199,7 @@ p {
 
 /* BUTTON SECONDARY (MUSTARD) */
 .btn-secondary {
-    background-color: var(--mustard);
+    background-color: var(--teal);
     color: var(--dark);
     padding: 0.6rem 1.2rem;
     border-radius: 20px;
@@ -223,7 +223,7 @@ p {
 
 /* Tags - pill shape, not interactive*/
 .tag {
-    background-color: var(--teal);
+    background-color: var(--mustard);
     color: var(--dark);
     padding: 0.6rem 1.2rem;
     border-radius: 20px;
@@ -262,6 +262,7 @@ p {
     margin: 0;
     color: var(--dark);
     line-height: 1.6;
+    text-align: left;
 }
 
 .card .skill-list, 
@@ -501,7 +502,6 @@ nav ul {
     margin: 0 auto;
     padding: 4rem 2rem;
     /* Two column layout */
-    
 }
 
 .about-grid {
@@ -567,6 +567,19 @@ nav ul {
     width: 100%; /* All cards take full width */
 }
 
+/* The Journey */
+.journey-card {
+    padding: 2rem;
+}
+
+.journey-path {
+    margin-bottom: 1rem !important;
+}
+
+.why-it-works {
+    margin-top: 1rem !important;
+}
+
 /* Values List*/
 .values-list {
     list-style: none;
@@ -576,17 +589,6 @@ nav ul {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-
-/* 
-.value-item {
-    background: var(--mustard);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: var(--dark);
-    border: 1px solid var(--dark);
-}
-*/ 
 
 /* Icons */
 .card-icon {
@@ -602,26 +604,26 @@ nav ul {
 /* Strengths grid */
 .strengths-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    margin-top: 1rem;
 }
 
 .strength-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
 }
 
 .strength-item strong {
     display: block;
-    margin-bottom: 0.25rem;
-    color: var(--dark);
+    margin: 0.5rem 0;
     font-size: 1.1rem;
+    color: var(--dark);
 }
 
 .strength-item p {
     margin: 0;
+    line-height: 1.6;
 }
 
 /* Highlight elements */
@@ -630,7 +632,6 @@ nav ul {
 .philosophy {
     margin-top: var(--space-md);
 }
-
 
 /* ARCHIVED - PREVIOUS ABOUT SECTION 
 #about-section {
