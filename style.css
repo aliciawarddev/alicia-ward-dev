@@ -1397,8 +1397,8 @@ footer {
     
     .home-title {
         flex-direction: row; /* Change from column to row */
-        gap: 0.5rem;
         flex-wrap: wrap; /* Allow wrapping if needed */
+        gap: 0.1rem;
         justify-content: center;
     }
     
@@ -1407,49 +1407,12 @@ footer {
         padding-top: var(--space-md);
         padding-bottom: var(--space-md);
     }
-    
-    /* Simplify arrow button */
-    .arrow-button-container {
-        flex-direction: column;
-        gap: 1rem;
-        padding-top: var(--space-md);
-        padding-bottom: var(--space-md);
-    }
-    
-    .text-square {
+
+    .projects-button {
         width: 160px;
-        height: 70px;
-        margin-left: 0;
-        font-size: 0.9rem;
-    }
-    
-    .arrow-container {
-        margin-top: 0;
-        margin-right: 0;
-        transform: rotate(90deg);
-    }
-    
-    .arrow-line {
-        width: 100px;
-        height: 80px;
-        border-left: 18px solid var(--teal);
-        border-bottom: 18px solid var(--teal);
-    }
-    
-    .arrow-head {
-        border-left: 22px solid var(--teal);
-        border-top: 18px solid transparent;
-        border-bottom: 18px solid transparent;
-        right: -18px;
-        bottom: -27px;
-    }
-    
-    .arrow-shadow {
-        border-left: 22px solid var(--dark);
-        border-top: 16px solid transparent;
-        border-bottom: 18px solid transparent;
-        right: -12px;
-        bottom: -30px;
+        height: 65px;
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
     }
 }
 
@@ -1464,16 +1427,11 @@ footer {
     .home-subtitle {
         font-size: 2rem;
     }
-    
-    .text-square {
+
+    .projects-button {
         width: 180px;
-        height: 80px;
-        margin-left: -70px;
-    }
-    
-    .arrow-line {
-        width: 130px;
-        height: 95px;
+        height: 70px;
+        font-size: 1.5rem;
     }
 }
 
