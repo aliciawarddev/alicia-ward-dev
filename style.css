@@ -529,6 +529,31 @@ nav ul {
 
 /* ANIMATIONS */
 
+/* Ultra-subtle fade-in - barely noticeable polish */
+@keyframes gentleFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.home-title {
+    animation: gentleFadeIn 1s ease-out;
+}
+
+.home-subtitle {
+    animation: gentleFadeIn 1s ease-out 0.1s backwards;
+}
+
+#home p {
+    animation: gentleFadeIn 1s ease-out 0.2s backwards;
+}
+
+.arrow-button-container {
+    animation: gentleFadeIn 1s ease-out 0.3s backwards;
+}
 
 
 
