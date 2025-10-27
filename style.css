@@ -525,7 +525,7 @@ nav ul {
 /* Profile image */
 .profile-image {
     width: 100%;
-    max-width: 24rem; /* Slightly larger */
+    max-width: 25rem; /* Slightly larger */
     height: auto;
     border: 2px solid var(--dark);
     border-radius: 25px;
