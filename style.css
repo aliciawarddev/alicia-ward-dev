@@ -1266,9 +1266,8 @@ footer {
    Media queries for all screen sizes
    ======================================= */
 
-/* MOBILE */
+/* NAVIGATION BAR */
 
-/* Navigation Bar */
 /* Mobile - Stack vertically */
 @media (max-width: 768px) {
     nav ul {
@@ -1289,12 +1288,103 @@ footer {
         flex-wrap: wrap;
     }
 }
-/* Home */
-/* About Me */
-/* Skills & Approach */
-/* Projects */
-/* Support My Work */
-/* Contact Me */
+
+/* HOME */
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 8rem;
+        max-height: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .home-title {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .home-subtitle {
+        font-size: 1.5rem;
+        padding-top: var(--space-md);
+        padding-bottom: var(--space-md);
+    }
+    
+    /* Simplify arrow button */
+    .arrow-button-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: var(--space-md);
+        padding-bottom: var(--space-md);
+    }
+    
+    .text-square {
+        width: 160px;
+        height: 70px;
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+    
+    .arrow-container {
+        margin-top: 0;
+        margin-right: 0;
+        transform: rotate(90deg);
+    }
+    
+    .arrow-line {
+        width: 100px;
+        height: 80px;
+        border-left: 18px solid var(--teal);
+        border-bottom: 18px solid var(--teal);
+    }
+    
+    .arrow-head {
+        border-left: 22px solid var(--teal);
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        right: -18px;
+        bottom: -27px;
+    }
+    
+    .arrow-shadow {
+        border-left: 22px solid var(--dark);
+        border-top: 16px solid transparent;
+        border-bottom: 18px solid transparent;
+        right: -12px;
+        bottom: -30px;
+    }
+}
+
+/* Tablet (769px-1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #home {
+        padding-top: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .home-subtitle {
+        font-size: 2rem;
+    }
+    
+    .text-square {
+        width: 180px;
+        height: 80px;
+        margin-left: -70px;
+    }
+    
+    .arrow-line {
+        width: 130px;
+        height: 95px;
+    }
+}
+
+/* ABOUT ME */
+/* SKILLS & APPROACH */
+/* PROJECTS */
+/* SUPPORT MY WORK */
+/* CONTACT ME*/
 
 
 
@@ -1343,38 +1433,5 @@ footer {
 @media (prefers-contrast: high) {
     .btn, .card {
         border-width: 3px;
-    }
-}
-
-/* =======================================
-   PRINT STYLES
-   Optimized styles for printing
-   ======================================= */
-
-@media print {
-    /* Hide non-essential elements */
-    nav, .arrow-button-container, .footer-star {
-        display: none;
-    }
-    
-    /* Remove shadows for cleaner print */
-    .card, .btn, .gallery-item {
-        box-shadow: none;
-        border: 1px solid #ccc;
-    }
-    
-    /* Black text for better print quality */
-    body, h1, h2, h3, p, li {
-        color: black;
-    }
-    
-    /* White background */
-    body {
-        background: white;
-    }
-    
-    /* Show URLs for links */
-    a[href^="http"]:after {
-        content: " (" attr(href) ")";
     }
 }
