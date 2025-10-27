@@ -1398,8 +1398,8 @@ footer {
     .home-title {
         flex-direction: row; /* Change from column to row */
         flex-wrap: wrap; /* Allow wrapping if needed */
-        gap: 0.1rem;
         justify-content: center;
+        size: 1rem;
     }
     
     .home-subtitle {
