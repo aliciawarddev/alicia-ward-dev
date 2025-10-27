@@ -413,70 +413,34 @@ nav ul {
 }
 
 /* PROJECTS BUTTON */
-.arrow-button {
+.projects-button {
     position: relative;
     display: inline-block;
     text-decoration: none;
     margin: 2rem 0;
-}
-
-.arrow-body {
-    width: 250px;
-    height: 90px;
+    width: 200px;
+    height: 80px;
     background: var(--orange);
     border: 3px solid var(--dark);
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: -4px 4px 0 0 var(--teal);
     transition: all 0.3s ease;
-}
-
-.arrow-body span {
+    color: var(--dark);
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
-    color: var(--lightest);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05;
+    font-size: 1.7rem;
 }
 
-.arrow-point {
-    position: absolute;
-    right: -65px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 70px solid var(--orange);
-    z-index: 5;
-}
-
-.arrow-point::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 65px solid transparent;
-    border-bottom: 65px solid transparent;
-    border-left: 75px solid var(--dark);
-    right: -5px;
-    top: -65px;
-    z-index: 0;
-}
-
-.arrow-button:hover .arrow-body {
+.projects-button:hover {
     background: var(--teal);
     transform: translate(-2px, -2px);
     box-shadow: -6px 6px 0 0 var(--dark);
 }
 
-.arrow-button:hover .arrow-point {
-    border-left-color: var(--teal);
-}
-
-/* ARROW BUTTON - VIEW PROJECTS */
+/* ARROW BUTTON - ARCHIVED
 .arrow-button-container {
     display: inline-flex;
     flex-direction: row;
@@ -488,29 +452,29 @@ nav ul {
     transition: transform 0.3s ease;
     margin: var(--space-md) auto;
     position: relative;
-    width: fit-content;  /* Add this to prevent full width */
-    align-self: center;  /* Add this for flexbox parent alignment */
+    width: fit-content;  /* Add this to prevent full width 
+    align-self: center;  /* Add this for flexbox parent alignment 
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
 }
 
 .text-square {
-    width: 200px;  /* Increased from 150px */
-    height: 90px;   /* Increased from 75px */
-    border-radius: 15px;  /* Match btn border-radius */
+    width: 200px;  /* Increased from 150px 
+    height: 90px;   /* Increased from 75px
+    border-radius: 15px;  /* Match btn border-radius 
     background-color: var(--orange);
-    margin-left: -85px;  /* Adjusted for larger size */
+    margin-left: -85px;  /* Adjusted for larger size 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Bebas Neue', sans-serif;  /* Match btn font */
-    font-size: 1rem;  /* Match btn font-size */
-    letter-spacing: 0.06em;  /* Match btn letter-spacing */
-    text-transform: uppercase;  /* Match btn text-transform */
+    font-family: 'Bebas Neue', sans-serif;  /* Match btn font
+    font-size: 1rem;  /* Match btn font-size 
+    letter-spacing: 0.06em;  /* Match btn letter-spacing 
+    text-transform: uppercase;  /* Match btn text-transform 
     color: var(--lightest);
-    box-shadow: -2px 2px 0 0 var(--dark);  /* Match btn default shadow */
+    box-shadow: -2px 2px 0 0 var(--dark);  /* Match btn default shadow 
     border: 2px solid var(--dark);
-    transition: all 0.3s ease;  /* Add transition for smooth changes */
+    transition: all 0.3s ease;  /* Add transition for smooth changes 
     padding: 1rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
@@ -524,19 +488,19 @@ nav ul {
     margin-top: -10px;
     margin-right: -50px;
     pointer-events: none;
-    position: relative;  /* Add this */
+    position: relative;  /* Add this 
 }
 
 .arrow-line {
-    width: 150px;  /* Slightly increased */
-    height: 110px;  /* Slightly increased */
-    border-left: 24px solid var(--teal);  /* Slightly thicker */
+    width: 150px;  /* Slightly increased 
+    height: 110px;  /* Slightly increased 
+    border-left: 24px solid var(--teal);  /* Slightly thicker 
     border-bottom: 24px solid var(--teal);
     border-bottom-left-radius: 30px;
     border-top-right-radius: 20px;
-    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow */
+    box-shadow: -4px 4px 0 0 var(--dark);  /* Match btn default shadow 
     z-index: 3;
-    transition: all 0.3s ease;  /* Add transition */
+    transition: all 0.3s ease;  /* Add transition 
 }
 
 .arrow-head {
@@ -545,12 +509,12 @@ nav ul {
     border-left: 28px solid var(--teal);
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
-    position: absolute;  /* Changed to absolute */
-    right: -23px;  /* Position from the right of arrow-line */
+    position: absolute;  /* Changed to absolute 
+    right: -23px;  /* Position from the right of arrow-line 
     bottom: -33px;
-    transform: translateY(-50%);  /* Center vertically */
-    z-index: 4;  /* Higher than shadow */
-    transition: border-color 0.3s ease;  /* Only transition color */
+    transform: translateY(-50%);  /* Center vertically 
+    z-index: 4;  /* Higher than shadow 
+    transition: border-color 0.3s ease;  /* Only transition color 
 }
 
 .arrow-shadow {
@@ -559,15 +523,15 @@ nav ul {
     border-left: 28px solid var(--dark);
     border-top: 19px solid transparent;
     border-bottom: 22px solid transparent;
-    position: absolute;  /* Changed to absolute */
-    right: -16px;  /* 4px offset from arrow-head */
+    position: absolute;  /* Changed to absolute 
+    right: -16px;  /* 4px offset from arrow-head
     bottom: -37px;
     transform: translateY(-50%);
-    z-index: 1;  /* Behind arrow-head */
+    z-index: 1;  /* Behind arrow-head
     transition: all 0.3s ease;
 }
 
-/* Hover State - Aligned with btn primary/secondary */
+/* Hover State - Aligned with btn primary/secondary
 .arrow-button-container:hover .text-square {
     background-color: var(--teal);
     color: var(--lightest);
