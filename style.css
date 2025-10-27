@@ -119,7 +119,6 @@ h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    text-shadow: -3px 3px 0 var(--teal);
 }  
 
 /* Section Headers */
@@ -362,6 +361,8 @@ nav ul {
     overflow: hidden;
 }
 
+/* NAME TITLE */
+
 #home h3 {
     margin-bottom: var(--space-lg);
     color: var(--teal-dark);
@@ -377,11 +378,6 @@ nav ul {
     vertical-align: middle;
 }
 
-#home p {
-    margin-bottom: var(--space-xl);
-    opacity: 0.9;
-}
-
 .home-title {
     display: flex;
     flex-direction: row;
@@ -391,10 +387,30 @@ nav ul {
     position: relative;
 }
 
+.first-name {
+    text-shadow: 
+        3px 3px 0 var(--teal),
+        6px 6px 0 var(--teal-dark);
+}
+
+.last-name {
+    text-shadow: 
+        3px 3px 0 var(--orange),
+        6px 6px 0 var(--mustard);
+}
+
+/* SUBTITLE */
 .home-subtitle {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
     font-size: 2.5rem;
+}
+
+
+/* TAGLINE */
+#home p {
+    margin-bottom: var(--space-xl);
+    opacity: 0.9;
 }
 
 /* ARROW BUTTON - VIEW PROJECTS */
@@ -510,6 +526,11 @@ nav ul {
     right: -18px;
     bottom: -39px;
 }
+
+/* ANIMATIONS */
+
+
+
 
 /* =======================================
    ABOUT SECTION
