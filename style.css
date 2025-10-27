@@ -501,38 +501,40 @@ nav ul {
     max-width: 80rem;
     margin: 0 auto;
     padding: 4rem 2rem;
-    /* Two column layout */
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-    align-items: start;
+    gap: 2rem;
+    align-items: stretch;
 }
 
 /* LEFT COLUMN */
 .about-column.left {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
+    gap: 2rem;
+    height: 100%;
 }
 
-.about-column.left > * {
-    width: 100%; /* All direct children take full width */
+.about-column.left .values.card {
+    flex-grow: 1;
 }
 
-/* Profile image*/
+/* Profile image */
 .profile-image {
     width: 100%;
+    max-width: 22rem; /* Slightly larger */
+    height: auto;
     border: 2px solid var(--dark);
     border-radius: 25px;
     box-shadow: -4px 4px 0 0 var(--teal);
     display: block;
+    margin: 0 auto;
 }
 
-/* Pronouns*/
+/* Pronouns */
 .pronouns {
     text-align: center;
     margin: 0;
@@ -540,47 +542,27 @@ nav ul {
     color: var(--dark);
 }
 
-/* Tagline*/
-.tagline {
-    text-align: center;
-    font-style: italic;
-    margin: 0;
-    color: var(--dark);
-}
-
 /* RIGHT COLUMN */
 .about-column.right {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-}
-
-.about-content > * {
-    width: 100%; /* All cards take full width */
+    gap: 2rem; /* Equal spacing between cards */
 }
 
 /* The Journey */
-.journey-card {
-    padding: 2rem;
+.journey-path {
+    margin-bottom: 0.5rem !important;
 }
 
-.journey-path {
-    margin-bottom: 1rem !important;
+.accounting-lesson {
+    margin-top: 0.5rem !important;
 }
 
 .why-it-works {
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
 }
 
-/* Values List*/
+/* Values List */
 .values-list {
     list-style: none;
     padding: 0;
@@ -591,11 +573,6 @@ nav ul {
 }
 
 /* Icons */
-.card-icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
 .standout-icon {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -626,12 +603,147 @@ nav ul {
     line-height: 1.6;
 }
 
-/* Highlight elements */
-.milestone, 
-.skill-highlight, 
-.philosophy {
-    margin-top: var(--space-md);
+
+
+
+/* ARCHIVED - ABOUT SECTION 
+
+/* SECTION LAYOUT 
+#about {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
 }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+}
+
+/* LEFT COLUMN 
+.about-column.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%; /* Fill the grid cell height 
+}
+
+.about-column.left .values.card {
+    flex-grow: 1; /* Make the values card expand to fill remaining space 
+}
+
+.about-column.left > * {
+    width: 100%; /* All direct children take full width 
+}
+
+/* Profile image
+.profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    box-shadow: -4px 4px 0 0 var(--teal);
+    display: block;
+}
+
+/* Pronouns
+.pronouns {
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/* Tagline
+.tagline {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    color: var(--dark);
+}
+
+/* RIGHT COLUMN 
+.about-column.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.about-content > 
+    width: 100%; /* All cards take full width 
+}
+
+/* The Journey 
+.journey-card {
+    padding: 2rem;
+}
+
+.journey-path {
+    margin-bottom: 1rem !important;
+}
+
+.why-it-works {
+    margin-top: 1rem !important;
+}
+
+/* Values List
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Icons 
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.standout-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Strengths grid 
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.strength-item {
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.strength-item strong {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--dark);
+}
+
+.strength-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
 
 /* ARCHIVED - PREVIOUS ABOUT SECTION 
 #about-section {
