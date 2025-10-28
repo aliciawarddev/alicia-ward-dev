@@ -1398,14 +1398,25 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
+
+    #home h1 {
+        font-size: 3rem; /* Smaller font size for mobile */
+    }
     
     .home-title {
         flex-direction: row;
-        flex-wrap: nowrap; /* Keep in one line */
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem; /* Add spacing between first and last name */
-        font-size: 2rem; /* Smaller font size for mobile */
+        gap: 0.5rem;
+    }
+
+    .first-name {
+        text-shadow: 3px 3px 0 var(--teal);
+    }
+    
+    .last-name {
+        text-shadow: 3px 3px 0 var(--orange);
     }
     
     .home-subtitle {
