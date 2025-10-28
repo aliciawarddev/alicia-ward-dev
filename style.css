@@ -1401,7 +1401,7 @@ footer {
     }
 
     #home h1 {
-        font-size: 3rem !important; /* Smaller font size for mobile */
+        font-size: 3.3rem !important; /* Smaller font size for mobile */
     }
     
     .home-title {
@@ -1409,7 +1409,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     .first-name {
@@ -1421,7 +1421,7 @@ footer {
     }
     
     .home-subtitle {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         padding-top: var(--space-md);
         padding-bottom: var(--space-md);
         text-align: center;
