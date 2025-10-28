@@ -1390,29 +1390,36 @@ footer {
 @media (max-width: 768px) {
     #home {
         padding-top: 8rem;
+        min-height: calc(100vh - 8rem); /* Adjust height to account for nav */
         max-height: none;
         padding-left: 1rem;
         padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .home-title {
-        flex-direction: row; /* Change from column to row */
-        flex-wrap: wrap; /* Allow wrapping if needed */
+        flex-direction: row;
+        flex-wrap: nowrap; /* Keep in one line */
         justify-content: center;
-        size: 1rem;
+        align-items: center;
+        gap: 0.5rem; /* Add spacing between first and last name */
+        font-size: 2rem; /* Smaller font size for mobile */
     }
     
     .home-subtitle {
         font-size: 1.5rem;
         padding-top: var(--space-md);
         padding-bottom: var(--space-md);
+        text-align: center;
     }
 
     .projects-button {
         width: 160px;
         height: 65px;
         font-size: 1.3rem;
-        margin: 1.5rem 0;
+        margin: 1.5rem auto; /* Center the button */
     }
 }
 
