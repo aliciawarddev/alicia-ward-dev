@@ -1400,7 +1400,7 @@ footer {
     }
 
     #home h1 {
-        font-size: 5rem !important; /* Smaller font size for mobile */
+        font-size: 3rem !important; /* Smaller font size for mobile */
     }
     
     .home-title {
@@ -1420,16 +1420,16 @@ footer {
     }
     
     .home-subtitle {
-        font-size: 3rem;
+        font-size: 1.8rem;
         padding-top: var(--space-md);
         padding-bottom: var(--space-md);
         text-align: center;
     }
 
     .projects-button {
-        width: 28px;
-        height: 52px;
-        font-size: 1.1rem;
+        width: 130px;
+        height: 55px;
+        font-size: 1.4rem;
         margin: 1.5rem auto; /* Center the button */
     }
 }
