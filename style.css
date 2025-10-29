@@ -1357,6 +1357,14 @@ footer {
    Media queries for all screen sizes
    ======================================= */
 
+/* GENERAL */
+@media (max-width: 768px) {
+    body {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
 /* NAVIGATION BAR */
 
 /* Mobile - Keep horizontal, adjust sizing */
@@ -1421,16 +1429,17 @@ footer {
     }
     
     .home-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding-top: var(--space-md);
         padding-bottom: var(--space-md);
         text-align: center;
+        flex-wrap: nowrap;
     }
 
     .projects-button {
-        width: 130px;
-        height: 55px;
-        font-size: 1.4rem;
+        width: 140px;
+        height: 60px;
+        font-size: 1.2rem;
         margin: 1.5rem auto; /* Center the button */
     }
 }
@@ -1527,6 +1536,7 @@ footer {
     
     #skills h2 {
         margin-bottom: 2rem;
+        flex-wrap: nowrap;
     }
     
     .skills-container {
