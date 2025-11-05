@@ -323,8 +323,13 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-direction: row;
     padding: 0;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 /* Navigation buttons */
@@ -335,7 +340,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     padding-bottom: 0.5rem;
 }
 
@@ -348,14 +353,16 @@ nav ul {
     cursor: pointer;
     font-size: 1.2rem;
     transition: all 0.3s ease;
-    margin-right: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #theme-toggle:hover {
     background-color: var(--orange);
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
-
 
 /* =======================================
    HOME SECTION
