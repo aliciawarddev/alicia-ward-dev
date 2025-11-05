@@ -1548,6 +1548,41 @@ footer {
     }
 }
 
+/* Navigation - Dark mode*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    header {
+        padding: 0.25rem 0;
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+    
+    #theme-toggle {
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove centering transform */
+        order: -1; /* Place before nav */
+        margin: 0.5rem auto; /* Center horizontally */
+    }
+    
+    nav {
+        width: 100%; /* Full width for nav */
+    }
+    
+    /* Dark mode hover state on mobile */
+    [data-theme="dark"] #theme-toggle:hover {
+        transform: scale(1.1); /* Remove translateY */
+    }
+}
+
 /* HOME */
 
 /* Mobile (≤768px) */
