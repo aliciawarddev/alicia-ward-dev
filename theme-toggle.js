@@ -19,11 +19,9 @@ if (currentTheme === 'dark') {
 
 // ===== TOGGLE THEME WHEN BUTTON IS CLICKED =====
 themeToggle.addEventListener('click', () => {
-    console.log('Button clicked'); // TEST
     
     // Get current theme from HTML element
     const theme = document.documentElement.getAttribute('data-theme');
-    console.log('Current theme:', theme); // TEST
 
     // Switch to opposite theme
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -38,4 +36,3 @@ themeToggle.addEventListener('click', () => {
     sunIcon.hidden = !sunIcon.hidden; // Toggle sun visibility
     moonIcon.hidden = !moonIcon.hidden; // Toggle moon visibility
 });
-
