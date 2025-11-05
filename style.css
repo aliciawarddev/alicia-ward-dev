@@ -22,14 +22,66 @@
     --space-2xl: 3rem;     /* 48px */
 }
 
-/* DARK THEME */
+/* DARK THEME*/
 [data-theme="dark"] {
     --light: #2a2a2a;
     --lightest: #1a1a1a;
     --dark: #f0f0f0;
-    --orange: #ff8c5a;
+    --orange: #c7654c;
     --teal: #4db8b8;
-    --mustard: #f5d8a9;
+    --mustard: #c2a372;
+}
+
+/* Strength items - dark background, white text */
+[data-theme="dark"] .strength-item {
+    background: #2a2a2a !important;
+}
+
+[data-theme="dark"] .strength-item strong,
+[data-theme="dark"] .strength-item p {
+    color: #f0f0f0 !important;
+}
+
+/* Tags - darker background, white text */
+[data-theme="dark"] .tag {
+    background-color: #2f7e7e !important;
+    color: #f0f0f0 !important;
+}
+
+/* Buttons */
+[data-theme="dark"] .btn-primary,
+[data-theme="dark"] .btn-secondary {
+    background-color: #2a2a2a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    border-color: #4a4a4a; /* Medium gray border - visible but not harsh */
+    box-shadow: -2px 2px 0 0 #4a4a4a;
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .btn-secondary:hover {
+    background-color: #3a3a3a; /* Slightly lighter on hover */
+    color: #ffffff; /* Brighter white */
+    border-color: #5a5a5a; /* Lighter border on hover */
+    box-shadow: -4px 4px 0 0 #5a5a5a;
+}
+
+/* H1 text shadows*/
+[data-theme="dark"] .first-name {
+    text-shadow: 
+        3px 3px 0 #3B9C9C,
+        6px 6px 0 #2f7e7e;
+}
+
+[data-theme="dark"] .last-name {
+    text-shadow: 
+        3px 3px 0 #E07A5F,
+        6px 6px 0 #c7654c;
+}
+
+/* Cards */
+[data-theme="dark"] .card {
+    border-color: #4a4a4a !important;
+    box-shadow: -4px 4px 0 0 #4a4a4a !important;
 }
 
 /* =======================================
@@ -412,14 +464,14 @@ nav ul {
 
 .first-name {
     text-shadow: 
-        3px 3px 0 var(--teal),
-        6px 6px 0 var(--teal-dark);
+        3px 3px 0 var(--teal),        /* lighter */
+        6px 6px 0 var(--teal-dark);    /* darker */
 }
 
 .last-name {
     text-shadow: 
-        3px 3px 0 var(--orange),
-        6px 6px 0 var(--mustard);
+        3px 3px 0 var(--orange),       /* lighter */
+        6px 6px 0 var(--orange-dark);      /* darker */
 }
 
 /* SUBTITLE */
