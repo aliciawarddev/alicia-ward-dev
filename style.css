@@ -84,6 +84,12 @@
     box-shadow: -4px 4px 0 0 #4a4a4a !important;
 }
 
+/* Profile image*/
+[data-theme="dark"] .profile-image {
+    border-color: #4a4a4a !important;
+    box-shadow: -4px 4px 0 0 #4a4a4a !important;
+}
+
 /* =======================================
    BASE STYLES & RESET
    Global resets and foundational styles
