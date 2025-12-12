@@ -765,13 +765,20 @@ nav ul {
 }
 
 /* Profile image */
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 1rem 2rem;
+    overflow: hidden; /* Add this */
+    max-height: 30rem; /* Add this to control crop amount */
+}
+
+/* Profile image */
 .profile-image {
     width: 100%;
-    max-width: 25rem; /* Slightly larger */
-    height: auto;
-    border: 2px solid var(--dark);
-    border-radius: 25px;
-    box-shadow: -4px 4px 0 0 var(--teal);
+    max-width: 25rem;
+    height: auto; /* Back to auto */
     display: block;
     margin: 0 auto;
 }
