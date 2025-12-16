@@ -932,8 +932,9 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 900px;
+    max-width: 80rem;
     margin: 0 auto 2rem;
+    width: 100%;  /* ADD THIS - forces grid to fill available space */
 }
 
 .service-card {
@@ -942,6 +943,7 @@ nav ul {
 
 .service-card h4 {
     justify-content: center;
+    white-space: nowrap;
 }
 
 .service-card p {
@@ -962,8 +964,6 @@ nav ul {
     gap: 0.5rem;
     margin-top: var(--space-xl);
 }
-
-
 
 /* =======================================
    SKILLS SECTION - ARCHIVED
@@ -1488,25 +1488,26 @@ footer {
    RESPONSIVE: Services
    ============================================= */
 
-/* Tablet: 2 columns */
+/* Tablet */
 @media (max-width: 900px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile: 1 column */
+/* Mobile */
 @media (max-width: 600px) {
     .services-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .service-card {
-        padding: 1.5rem 1rem;
+        gap: 1.5rem;
     }
     
     .service-icon {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    
+    .tech-stack {
+        padding: 0 1rem;
     }
 }
 
