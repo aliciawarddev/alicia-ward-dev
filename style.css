@@ -159,6 +159,31 @@
 }
 
 /* =======================================
+   ICONS
+   ======================================= */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+/* Size variations */
+.icon-small {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon-medium {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-large {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* =======================================
    BASE STYLES & RESET
    Global resets and foundational styles
    ======================================= */
@@ -767,11 +792,12 @@ nav ul {
 /* Profile image */
 .profile-card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 1rem 1rem 2rem;
-    overflow: hidden; /* Add this */
-    max-height: 30rem; /* Add this to control crop amount */
+    padding: 4rem 2rem 0rem 3rem;
+    overflow: hidden;
+    max-height: 35rem; 
 }
 
 /* Profile image */
@@ -781,6 +807,41 @@ nav ul {
     height: auto; /* Back to auto */
     display: block;
     margin: 0 auto;
+}
+
+/* INFO CARD BELOW PORTRAIT */
+.profile-card .card {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center !important;
+}
+
+.profile-card .card h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    color: var(--dark);
+}
+
+.profile-card .card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-dark);
+    text-align: center;
+}
+
+/* Pronunciation styling - NEW SECTION */
+.pronunciation {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin: 0.25rem 0 0.75rem 0 !important;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 /* Pronouns */
