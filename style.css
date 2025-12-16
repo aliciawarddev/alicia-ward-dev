@@ -165,12 +165,14 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 0.5rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.2rem;
 }
 
 /* Size variations */
 .icon-small {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .icon-medium {
