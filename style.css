@@ -545,6 +545,7 @@ nav ul {
     border-bottom: none;
 }
 
+/* 
 #home h3::before, 
 #home h3::after {
     content: '✦';
@@ -553,6 +554,7 @@ nav ul {
     font-size: 1.5rem;
     vertical-align: middle;
 }
+    */ 
 
 .home-title {
     display: flex;
@@ -580,6 +582,18 @@ nav ul {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
     font-size: 2.5rem;
+}
+
+/* Starburst icons for home subtitle */
+.icon-starburst {
+    width: 3.5rem;
+    height: 3.5rem;
+    vertical-align: middle;
+    margin: 0 0.75rem;
+}
+
+.icon-starburst-flip {
+    transform: scaleX(-1);
 }
 
 /* TAGLINE */
