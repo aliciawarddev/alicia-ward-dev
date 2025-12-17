@@ -796,42 +796,22 @@ nav ul {
    ======================================= */
 
 #about {
-    max-width: 100%;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
 
-/* Container */
-.about-container {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.about-bio {
-    text-align: center;
-}
-
-.about-bio p {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Top Grid: Portrait + Right Stack */
-.about-grid-top {
+/* Two-column layout: Portrait | Stacked cards */
+.about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-md);
     gap: 2rem;
 }
 
+/* Right column stack */
 .about-right-stack {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
     gap: 2rem;
 }
 
@@ -846,14 +826,40 @@ nav ul {
 
 .profile-image {
     width: 100%;
-    max-width: 19rem;
+    max-width: 25rem;
     height: auto;
     display: block;
-    padding: 0;
-    margin: 0;
 }
 
-/* Values List */
+/* Bio */
+.about-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-bio p {
+    margin-bottom: 1rem;
+}
+
+.about-bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* Pronounciation */
+.pronunciation {
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.card h4 .pronunciation {
+    font-size: 0.65em;
+    opacity: 0.6;
+    letter-spacing: 0.02em;
+    margin-left: 0.5rem;
+}
+
+/* Values List (kept in case you uncomment)
 .values-list {
     list-style: none;
     padding: 0;
@@ -862,6 +868,7 @@ nav ul {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+*/
 
 /* Mobile */
 @media (max-width: 768px) {
