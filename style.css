@@ -525,6 +525,19 @@ nav ul {
    Hero section with name title and CTA
    ======================================= */
 
+#home::before {
+    content: '';
+    position: absolute;
+    top: 8rem;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, transparent 30%, var(--teal) 30%, var(--teal) 32%, transparent 32%),
+                radial-gradient(circle, transparent 50%, var(--orange) 50%, var(--orange) 52%, transparent 52%);
+    opacity: 0.08;
+    z-index: -1;
+    border-radius: 50%;
+}
+
 #home {
     display: flex;
     flex-direction: column;
@@ -1363,6 +1376,22 @@ footer {
     opacity: 0.8;
     margin: 0 auto;
     text-align: center;
+}
+
+/* =======================================
+   BANNERS
+   ======================================= */
+
+.banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: auto;
+    max-height: 60px; /* adjust this value */
+    object-fit: cover; /* keeps it from distorting */
+    margin: var(--space-xl) 0;
 }
 
 /* =======================================
