@@ -112,6 +112,10 @@
     box-shadow: -4px 4px 0 0 #5a5a5a;
 }
 
+[data-theme="dark"] #theme-toggle .theme-icon {
+    transform: rotate(180deg);
+}
+
 /* TAGS */
 [data-theme="dark"] .tag {
     background-color: #2a2a2a !important;
