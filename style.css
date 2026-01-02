@@ -1091,6 +1091,7 @@ nav ul {
     text-align: center;
     width: 100%;
     min-width: 0;
+    padding: var(--space-xl);
 }
 
 .service-card h4 {
