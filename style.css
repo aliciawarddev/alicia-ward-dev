@@ -47,7 +47,7 @@
 
 [data-theme="dark"] h2,
 [data-theme="dark"] h3,
-[data-theme="dark"] h4 1{
+[data-theme="dark"] h4 {
     color: #d0d0d0;
 }
 
@@ -59,17 +59,13 @@
     background-color: var(--teal-dark);
 }
 
-/* TEXT SHADOWS */
+/* TEXT SHADOWS - single shadow to match light mode */
 [data-theme="dark"] .first-name {
-    text-shadow: 
-        3px 3px 0 var(--teal),
-        6px 6px 0 var(--teal-dark);
+    text-shadow: 4px 4px 0 var(--teal-dark);
 }
 
 [data-theme="dark"] .last-name {
-    text-shadow: 
-        3px 3px 0 var(--orange),
-        6px 6px 0 var(--orange-dark);
+    text-shadow: 4px 4px 0 var(--orange-dark);
 }
 
 /* BUTTONS */
@@ -89,18 +85,6 @@
     box-shadow: -4px 4px 0 0 #5a5a5a;
 }
 
-[data-theme="dark"] .projects-button {
-    background: #3a3a3a;
-    color: #f0f0f0;
-    border-color: #4a4a4a;
-    box-shadow: -4px 4px 0 0 #4a4a4a;
-}
-
-[data-theme="dark"] .projects-button:hover {
-    background: #4a4a4a;
-    box-shadow: -6px 6px 0 0 #5a5a5a;
-}
-
 [data-theme="dark"] #theme-toggle {
     background: var(--teal-dark);
     border-color: #4a4a4a;
@@ -118,8 +102,8 @@
 
 /* TAGS */
 [data-theme="dark"] .tag {
-    background-color: #2a2a2a !important;
-    color: #d0d0d0 !important;
+    background-color: #2a2a2a;
+    color: #d0d0d0;
     border-color: #4a4a4a;
 }
 
@@ -127,24 +111,13 @@
 [data-theme="dark"] .card,
 [data-theme="dark"] .project-card,
 [data-theme="dark"] .support-card {
-    border-color: #4a4a4a !important;
-    box-shadow: -4px 4px 0 0 #4a4a4a !important;
-}
-
-/* STRENGTH ITEMS */
-[data-theme="dark"] .strength-item {
-    background: #2a2a2a !important;
-}
-
-[data-theme="dark"] .strength-item strong,
-[data-theme="dark"] .strength-item p {
-    color: #f0f0f0 !important;
+    border-color: #4a4a4a;
+    box-shadow: -4px 4px 0 0 #4a4a4a;
 }
 
 /* IMAGES */
 [data-theme="dark"] .profile-image {
-    border-color: #4a4a4a !important;
-    box-shadow: -4px 4px 0 0 #4a4a4a !important;
+    border-color: #4a4a4a;
     opacity: 0.85;
     filter: brightness(0.9);
 }
@@ -451,12 +424,31 @@ p {
 .card {
     background: var(--light);
     border: 2px solid var(--dark);
-    border-radius: 25px;
     padding: var(--space-xl);
     transition: all 0.3s ease;
     position: relative;
     box-shadow: -4px 4px 0 0 var(--mustard); 
     background-color: var(--lightest);
+}
+
+.card,
+.project-card,
+.support-card,
+.profile-image {
+    border-radius: 25px;
+}
+
+/* Light mode shadows - ensure consistent 4px offset */
+.card {
+    box-shadow: -4px 4px 0 0 var(--mustard) !important;
+}
+
+.project-card {
+    box-shadow: -4px 4px 0 0 var(--mustard) !important;
+}
+
+.support-card {
+    box-shadow: -4px 4px 0 0 var(--teal) !important;
 }
 
 /* Card headers */
@@ -609,15 +601,11 @@ nav ul {
 }
 
 .first-name {
-    text-shadow: 
-        3px 3px 0 var(--teal),        /* lighter */
-        6px 6px 0 var(--teal-dark);    /* darker */
+    text-shadow: 4px 4px 0 var(--teal-dark);
 }
 
 .last-name {
-    text-shadow: 
-        3px 3px 0 var(--orange),       /* lighter */
-        6px 6px 0 var(--orange-dark);      /* darker */
+    text-shadow: 4px 4px 0 var(--orange-dark);
 }
 
 /* SUBTITLE */
@@ -645,7 +633,7 @@ nav ul {
     opacity: 0.9;
 }
 
-/* PROJECTS BUTTON */
+/* PROJECTS BUTTON
 .projects-button {
     position: relative;
     display: inline-block;
@@ -672,6 +660,7 @@ nav ul {
     transform: translate(-2px, -2px);
     box-shadow: -6px 6px 0 0 var(--dark);
 }
+*/ 
 
 /* ARROW BUTTON - ARCHIVED
 .arrow-button-container {
@@ -790,29 +779,33 @@ nav ul {
 /* ANIMATIONS */
 
 /* Ultra-subtle fade-in - barely noticeable polish */
-@keyframes gentleFadeIn {
+
+@keyframes fadeUp {
     from {
         opacity: 0;
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-.home-title {
-    animation: gentleFadeIn 1s ease-out;
+/* Apply to hero elements */
+.name-title {
+    animation: fadeUp 0.8s ease-out;
 }
 
-.home-subtitle {
-    animation: gentleFadeIn 1s ease-out 0.1s backwards;
+#home h2 {
+    animation: fadeUp 0.8s ease-out 0.15s backwards;  /* slight delay */
 }
 
 #home p {
-    animation: gentleFadeIn 1s ease-out 0.2s backwards;
+    animation: fadeUp 0.8s ease-out 0.3s backwards;
 }
 
 .arrow-button-container {
-    animation: gentleFadeIn 1s ease-out 0.3s backwards;
+    animation: fadeUp 0.8s ease-out 0.45s backwards;
 }
 
 /* =======================================
@@ -1203,7 +1196,6 @@ nav ul {
 .project-card {
     background: var(--lightest);
     border: 2px solid var(--dark);
-    border-radius: 25px;
     overflow: hidden;
     box-shadow: -4px 4px 0 0 var(--mustard);
     /* 
@@ -1671,12 +1663,14 @@ footer {
         flex-wrap: nowrap;
     }
 
+    /* 
     .projects-button {
         width: 140px;
         height: 60px;
         font-size: 1.2rem;
-        margin: 1.5rem auto; /* Center the button */
+        margin: 1.5rem auto; /* Center the button
     }
+    */ 
 }
 
 /* Tablet (769px-1024px) */
@@ -1691,11 +1685,13 @@ footer {
         font-size: 2rem;
     }
 
+    /* 
     .projects-button {
         width: 180px;
         height: 70px;
         font-size: 1.5rem;
     }
+        */ 
 }
 
 /* ABOUT ME */
