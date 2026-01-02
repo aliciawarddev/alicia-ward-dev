@@ -231,7 +231,10 @@ main section:last-child {
 
 
 body {
+    /* 
     font-family: 'Plus Jakarta Sans', sans-serif;
+    */ 
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     background-color: var(--light);
     display: block;
@@ -383,7 +386,10 @@ p {
     font-size: 0.875rem;
     transition: all 0.3s ease;
     box-shadow: -2px 2px 0 0 var(--dark);
+    /* 
     font-family: 'Plus Jakarta Sans', sans-serif;
+    */ 
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     display: inline-block;
 }
@@ -407,7 +413,10 @@ p {
     font-size: 0.875rem;
     transition: all 0.3s ease;
     box-shadow: -2px 2px 0 0 var(--dark);
+    /* 
     font-family: 'Plus Jakarta Sans', sans-serif;
+    */ 
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     display: inline-block;
 }
