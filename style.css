@@ -357,7 +357,7 @@ h4 {
 
 p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
     color: var(--dark);
     margin-bottom: var(--space-lg);
     max-width: 600px;
@@ -850,15 +850,18 @@ nav ul {
 
 /* Pronounciation */
 .pronunciation {
-    font-weight: normal;
+    font-weight: 300;
     text-transform: none !important;
+    color: var(--teal-dark);
+    opacity: 0.8;
 }
 
 .card h4 .pronunciation {
-    font-size: 0.65em;
-    opacity: 0.6;
+    font-size: 0.6em;
+    opacity: 0.7;
     letter-spacing: 0.02em;
     margin-left: 0.5rem;
+    font-weight: 300;
 }
 
 /* Values List (kept in case you uncomment)
