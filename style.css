@@ -12,6 +12,7 @@
     --teal-dark: #2f7e7e;
     --mustard: #F2CC8F;
     --mustard-light: #f5d8a9;
+    --cream: 
 
     /* Spacing units */
     --space-xs: 0.25rem;   /* 4px */
@@ -855,6 +856,7 @@ nav ul {
     padding: 1rem;
     box-sizing: border-box;
     width: 100%;
+    border-bottom: 2px solid var(--dark);
 }
 
 .preview-grid img {
@@ -912,30 +914,29 @@ nav ul {
 .project-card.design-assets {
     width: 100%;
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 3rem auto 0;
 }
 
 .assets-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.5rem;
     padding: 1.5rem;
-    background: var(--cream); /* or a subtle pattern background */
-    aspect-ratio: auto; /* Override the 3/2 from .project-preview */
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 2px solid var(--dark);
+    background: var(--mustard);
 }
 
 .assets-grid img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    object-fit: contain; /* contain works better for icons/assets */
+    object-fit: contain;
+    border-radius: 4px;
+    display: block;
     background: var(--lightest);
-    border-radius: 8px;
     padding: 0.5rem;
-    border: 1px solid var(--dark);
-    transition: transform 0.2s ease;
 }
-
-
 
 /* =======================================
    SUPPORT MY WORK
