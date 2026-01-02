@@ -541,6 +541,7 @@ nav ul {
     top: 50%;
     transform: translateY(-50%);
     box-shadow: -2px 2px 0 0 var(--dark);
+    overflow: hidden;
 }
 
 #theme-toggle:hover {
@@ -549,6 +550,8 @@ nav ul {
     transform: translateY(-50%) translate(-2px, -2px);
     box-shadow: -4px 4px 0 0 var(--dark);
 }
+
+
 
 /* =======================================
    HOME SECTION
@@ -1118,7 +1121,7 @@ nav ul {
 
 .service-icon {
     font-size: 2.5rem;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
 /* Tech stack as pill tags */
@@ -1428,7 +1431,26 @@ nav ul {
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem; 
+}
+
+.diamond-banner-mini {
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.diamond-small {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0.3rem;
+}
+
+.footer-tagline {
+    font-family: 'Inter', sans-serif;  /* or keep Plus Jakarta */
+    font-size: 0.9rem;
+    color: var(--teal-dark);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
 }
 
 .footer-note {
@@ -1439,9 +1461,9 @@ footer {
 }
 
 .footer-copyright {
-    font-size: 0.85rem;
+    font-size: 0.8rem;  /* was 0.85rem */
     color: var(--dark);
-    opacity: 0.8;
+    opacity: 0.6;  /* was 0.8 */
     margin: 0 auto;
     text-align: center;
 }
