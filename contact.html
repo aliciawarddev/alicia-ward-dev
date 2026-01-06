@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Alicia Ward</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="btn-primary back-link">← Back</a>
+            <div class="header-text">
+                <h1>Get In Touch</h1>
+                <p class="header-tagline">Let's create something together.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-card">
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">What can I help with?</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a category</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="ui-components">Design Assets</option>
+                            <option value="branding">Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range (optional)</label>
+                        <select id="budget" name="budget">
+                            <option value="" selected>Prefer not to say</option>
+                            <option value="under-1k">Under $1,000</option>
+                            <option value="1k-5k">$1,000 – $5,000</option>
+                            <option value="5k-10k">$5,000 – $10,000</option>
+                            <option value="10k-plus">$10,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="diamond-banner-mini">
+            <span class="diamond diamond-small teal"></span>
+            <span class="diamond diamond-small orange"></span>
+            <span class="diamond diamond-small teal"></span>
+            <span class="diamond diamond-small orange"></span>
+            <span class="diamond diamond-small teal"></span>
+        </div>
+        <p class="footer-copyright">© 2025 Alicia Ward</p>
+    </footer>
+
+    <script>
+        // Form submission feedback
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            const btn = document.querySelector('.btn-submit');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+        });
+    </script>
+</body>
+</html>

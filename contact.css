@@ -1,0 +1,112 @@
+/* =======================================
+   CONTACT SECTION
+   ======================================= */
+.contact-section {
+    padding: var(--space-2xl) var(--space-xl);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--light);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    box-shadow: -4px 4px 0 0 var(--mustard);
+}
+
+/* =======================================
+   FORM STYLES
+   ======================================= */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--dark);
+    border-radius: 8px;
+    background: var(--cream-light);
+    color: var(--dark);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    box-shadow: -2px 2px 0 0 var(--teal);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--dark);
+    opacity: 0.4;
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%233A3A3A' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--space-md) center;
+    padding-right: var(--space-2xl);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =======================================
+   SUBMIT BUTTON
+   ======================================= */
+.btn-submit {
+    align-self: flex-start;
+    padding: var(--space-sm) var(--space-xl);
+    font-size: 1rem;
+    margin-top: var(--space-sm);
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =======================================
+   RESPONSIVE
+   ======================================= */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .contact-card {
+        padding: var(--space-lg);
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
