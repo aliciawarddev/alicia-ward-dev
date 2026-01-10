@@ -1,151 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Alicia Ward - Web Designer & Developer based in Calgary. Specializing in CSS illustrations, accessible UI/UX design, and JavaScript projects.">
   <meta name="author" content="Alicia Ward">
-
-  <!-- SEO Tags -->
   <meta name="keywords" content="web developer, web designer, CSS illustrations, Calgary developer, frontend developer, accessible web design">
   <meta property="og:title" content="Alicia Ward | Web Designer & Developer">
   <meta property="og:description" content="Web Designer & Developer specializing in CSS illustrations and accessible design">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aliciawarddev.github.io">
-  <!-- Add og:image when you have a preview image -->
   <meta property="og:image" content="https://aliciawarddev.github.io/preview-image.jpg">
   <link rel="canonical" href="https://aliciawarddev.github.io">
   
-  <!-- Page Title -->
-  <title>Alicia Ward | Web Designer & Developer Portfolio</title>
+  <title>Alicia Ward | Web Designer & Developer</title>
   
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FAF3E0' rx='10'/><text x='50' y='70' font-family='Bebas Neue, sans-serif' font-size='50' fill='%233B9C9C' text-anchor='middle' font-weight='400'>AW</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FAF8F4' rx='10'/><text x='50' y='70' font-family='Bebas Neue, sans-serif' font-size='50' fill='%23E87461' text-anchor='middle' font-weight='400'>AW</text></svg>">
   
-  <!-- Font Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alicia Ward",
-    "jobTitle": "Web Designer & Developer",
-    "url": "https://aliciawarddev.github.io",
-    "sameAs": [
-      "https://github.com/aliciawarddev",
-      "https://www.linkedin.com/in/aliciahward/"
-    ]
-  }
-  </script>
-  
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- NAVIGATION BAR -->
-<header>
+  <!-- HEADER -->
+  <header>
     <div class="header-content">
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
-                <ul class="dropdown-menu">
-                    <li><a href="portfolio.html#css-illustrations">CSS Illustrations</a></li>
-                    <li><a href="portfolio.html#design-assets">Design Assets</a></li>
-                    <li><a href="portfolio.html#interactive">Interactive Projects</a></li>
-                </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-dropdown">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio.html#css-illustrations">CSS Illustrations</a></li>
+              <li><a href="portfolio.html#design-assets">Design Assets</a></li>
+              <li><a href="portfolio.html#interactive">Interactive Projects</a></li>
             </ul>
-        </nav>
-        <!-- Dark mode button-->
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-            <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
-        </button>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
+      </button>
     </div>
-</header>
+  </header>
 
+  <!-- MAIN CONTENT -->
   <main id="main-content" role="main">
     
-    <!-- HOME -->
-    <section id="home" aria-labelledby="home-title">
-        <!-- Name Title -->
-        <h1 class="home-title">
-          <span class="first-name">Alicia</span>
-          <span class="last-name">Ward</span>
+    <!-- HERO -->
+    <section id="hero">
+        <h1 class="hero-title">
+            <span class="first-name">Alicia</span>
+            <span class="last-name">Ward</span>
         </h1>
-        <h3 class="home-subtitle">
-            <img src="icons/icon-starburst.PNG" class="icon icon-starburst" alt="">
+        <p class="hero-subtitle">
+            <span class="subtitle-diamond"></span>
             Web Designer & Developer
-            <img src="icons/icon-starburst.PNG" class="icon icon-starburst icon-starburst-flip" alt="">
-        </h3>
-        <p>Frontend development with an artist's eye for detail</p>
-
-        <!-- Portfolio Button-->
-        <a href="portfolio.html" class="btn-secondary">
-            <span>View Portfolio</span>
-        </a>
+            <span class="subtitle-diamond"></span>
+        </p>
+      <p class="hero-tagline">Frontend development with an artist's eye for detail</p>
+      <a href="portfolio.html" class="btn-primary">View Portfolio</a>
     </section>
+
+    <!-- DIVIDER -->
+    <div class="divider">
+      <span class="divider-line"></span>
+      <span class="divider-diamond"></span>
+      <span class="divider-line"></span>
+    </div>
 
     <!-- HIGHLIGHT REEL -->
     <section id="highlights">
-        <h2>Featured Work</h2>
-        <div class="highlights-grid">
-            <a href="portfolio.html#css-illustrations" class="highlight-card">
-                <div class="highlight-image">
-                    <img src="images/css-illustration-preview.png" alt="CSS Illustration preview">
-                </div>
-                <h4>CSS Illustrations</h4>
-            </a>
-            <a href="portfolio.html#design-assets" class="highlight-card">
-                <div class="highlight-image">
-                    <img src="images/design-assets-preview.png" alt="Design Assets preview">
-                </div>
-                <h4>Design Assets</h4>
-            </a>
-            <a href="portfolio.html#interactive" class="highlight-card">
-                <div class="highlight-image">
-                    <img src="images/interactive-preview.png" alt="Interactive Projects preview">
-                </div>
-                <h4>Interactive Projects</h4>
-            </a>
-        </div>
+      <h2>Featured Work</h2>
+      <div class="highlights-grid">
+        <a href="portfolio.html#css-illustrations" class="highlight-card">
+          <div class="highlight-image">
+            <img src="images/css-illustration-preview.png" alt="CSS Illustration preview">
+          </div>
+          <h4>CSS Illustrations</h4>
+        </a>
+        <a href="portfolio.html#design-assets" class="highlight-card">
+          <div class="highlight-image">
+            <img src="images/design-assets-preview.png" alt="Design Assets preview">
+          </div>
+          <h4>Design Assets</h4>
+        </a>
+        <a href="portfolio.html#interactive" class="highlight-card">
+          <div class="highlight-image">
+            <img src="images/interactive-preview.png" alt="Interactive Projects preview">
+          </div>
+          <h4>Interactive Projects</h4>
+        </a>
+      </div>
     </section>
 
-  <!-- FOOTER -->
+  </main>
+
+    <!-- DIVIDER -->
+    <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+    </div>
+
+<!-- FOOTER -->
     <div class="footer-container">
-        <footer>
-            <!-- Mini diamond banner -->
-            <div class="diamond-banner diamond-banner-mini">
-                <div class="diamond diamond-small teal"></div>
-                <div class="diamond diamond-small orange"></div>
-                <div class="diamond diamond-small teal"></div>
-                <div class="diamond diamond-small orange"></div>
-                <div class="diamond diamond-small teal"></div>
-            </div>
-            
-            <p class="footer-tagline">Crafted with care in Calgary</p>
-            <p class="footer-copyright">&copy; 2025 Alicia Ward</p>
-        </footer>
+    <footer>
+        <p class="footer-tagline">Crafted with care in Calgary</p>
+        <p class="footer-copyright">&copy; 2025 Alicia Ward</p>
+    </footer>
     </div>
 
   <script src="theme-toggle.js"></script>
 
 </body>
-
 </html>

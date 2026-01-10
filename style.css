@@ -337,11 +337,56 @@ p {
 }
 
 /* =======================================
+   BUTTONS - Updated colors
+   ======================================= */
+.btn-primary {
+    background-color: var(--coral);
+    color: var(--cream);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: -4px 4px 0 0 var(--teal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: -4px 6px 0 0 var(--teal);
+}
+
+.btn-secondary {
+    background-color: var(--teal);
+    color: var(--cream);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: -4px 4px 0 0 var(--coral);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: -4px 6px 0 0 var(--coral);
+}
+
+/* =======================================
    LAYOUT COMPONENTS
    Reusable components like buttons and cards
-   ======================================= */
+   =======================================
 
-/* BUTTON PRIMARY (ORANGE) */
+/* BUTTONS - ARCHIVED */
+
+/* BUTTON PRIMARY (ORANGE)
 .btn-primary {
     background-color: var(--orange);
     color: var(--dark);
@@ -352,15 +397,13 @@ p {
     font-size: 0.875rem;
     transition: all 0.3s ease;
     box-shadow: -2px 2px 0 0 var(--dark);
-    /* 
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    */ 
+   
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     display: inline-block;
 }
 
-/* Hover State */
+/* Hover State 
 .btn-primary:hover { 
     background-color: var(--teal);
     color: var(--cream);
@@ -368,7 +411,7 @@ p {
     box-shadow: -4px 4px 0 0 var(--dark);
 }
 
-/* BUTTON SECONDARY (MUSTARD) */
+/* BUTTON SECONDARY (MUSTARD) 
 .btn-secondary {
     background-color: var(--teal);
     color: var(--dark);
@@ -379,15 +422,13 @@ p {
     font-size: 0.875rem;
     transition: all 0.3s ease;
     box-shadow: -2px 2px 0 0 var(--dark);
-    /* 
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    */ 
+    
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     display: inline-block;
 }
 
-/* Hover State */
+/* Hover State 
 .btn-secondary:hover { 
     background-color: var(--orange);
     color: var(--cream);
@@ -470,8 +511,7 @@ p {
 }
 
 /* =======================================
-   NAVIGATION
-   Main navigation bar with responsive design
+   HEADER - Simplified
    ======================================= */
 
 header {
@@ -485,8 +525,10 @@ header {
     display: flex;
     justify-content: center;
     padding: 1rem;
+    
 }
 
+/* 
 .header-content {
     width: 100%;
     max-width: 80rem;
@@ -494,6 +536,7 @@ header {
     align-items: center;
     position: relative;
 }
+    */ 
 
 nav {
     flex: 1;
@@ -546,6 +589,10 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--teal);
+}
+
+nav ul li a.active {
+    color: var(--coral);
 }
 
 /* DROPDOWN */
@@ -629,9 +676,153 @@ nav ul li a:hover {
 }
 
 /* =======================================
+   HERO SECTION
+   ======================================= */
+#hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12rem 2rem 4rem;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.hero-title .first-name,
+.hero-title .last-name {
+    font-size: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--dark);
+}
+
+.hero-title .first-name {
+    text-shadow: -4px 4px 0 var(--teal);
+}
+
+.hero-title .last-name {
+    text-shadow: -4px 4px 0 var(--coral);
+}
+
+.hero-subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.subtitle-diamond {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--coral);
+    transform: rotate(45deg);
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+.hero-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--dark);
+    opacity: 0.8;
+    margin-bottom: var(--space-xl);
+    max-width: 280px;
+    padding-top: 1rem;
+    padding-bottom: 2.1rem;
+}
+
+/* =======================================
+   DIVIDER
+   ======================================= */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.divider-line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--dark);
+    opacity: 0.3;
+}
+
+.divider-diamond {
+    width: 10px;
+    height: 10px;
+    background-color: var(--coral);
+    transform: rotate(45deg);
+}
+
+/* =======================================
+   HIGHLIGHT REEL
+   ======================================= */
+
+#highlights {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 2rem 4rem;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.highlight-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: -4px 4px 0 0 var(--teal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.highlight-card:hover {
+    transform: translateY(-2px);
+    box-shadow: -4px 8px 0 0 var(--teal);
+}
+
+.highlight-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-bottom: 2px solid var(--dark);
+}
+
+.highlight-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-card h4 {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* =======================================
    HOME SECTION
    Hero section with name title and CTA
-   ======================================= */
+   ======================================= 
 
 #home {
     display: flex;
@@ -645,7 +836,7 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-/* NAME TITLE */
+/* NAME TITLE 
 
 #home h3 {
     margin-bottom: var(--space-lg);
@@ -670,14 +861,14 @@ nav ul li a:hover {
     text-shadow: 4px 4px 0 var(--orange-dark);
 }
 
-/* SUBTITLE */
+/* SUBTITLE 
 .home-subtitle {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
     font-size: 2.5rem;
 }
 
-/* Starburst icons for home subtitle */
+/* Starburst icons for home subtitle 
 .icon-starburst {
     width: 3.5rem;
     height: 3.5rem;
@@ -689,7 +880,7 @@ nav ul li a:hover {
     transform: scaleX(-1);
 }
 
-/* TAGLINE */
+/* TAGLINE 
 #home p {
     margin-bottom: var(--space-xl);
     opacity: 0.9;
@@ -697,7 +888,7 @@ nav ul li a:hover {
 
 /* ANIMATIONS */
 
-/* Ultra-subtle fade-in - barely noticeable polish */
+/* Ultra-subtle fade-in - barely noticeable polish
 
 @keyframes fadeUp {
     from {
@@ -710,13 +901,13 @@ nav ul li a:hover {
     }
 }
 
-/* Apply to hero elements */
+/* Apply to hero elements 
 .name-title {
     animation: fadeUp 0.8s ease-out;
 }
 
 #home h2 {
-    animation: fadeUp 0.8s ease-out 0.15s backwards;  /* slight delay */
+    animation: fadeUp 0.8s ease-out 0.15s backwards;  /* slight delay 
 }
 
 #home p {
@@ -726,56 +917,9 @@ nav ul li a:hover {
 .arrow-button-container {
     animation: fadeUp 0.8s ease-out 0.45s backwards;
 }
+    */
 
-/* =======================================
-   HIGHLIGHT REEL
-   ======================================= */
 
-#highlights {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-}
-
-.highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.highlight-card {
-    background: var(--cream);
-    border: 2px solid var(--dark);
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: -4px 4px 0 0 var(--mustard);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-}
-
-.highlight-card:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: -6px 6px 0 0 var(--mustard);
-}
-
-.highlight-image {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    border-bottom: 2px solid var(--dark);
-}
-
-.highlight-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.highlight-card h4 {
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
-}
 
 /* =======================================
    ABOUT SECTION
@@ -1158,10 +1302,45 @@ nav ul li a:hover {
 
 /* =======================================
    FOOTER
-   Copyright and decorative elements
    ======================================= */
+.footer-container {
+    display: flex;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--cream-dark);
+}
 
-/* FOOTER */
+footer {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-tagline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    justify-content: center;
+}
+
+.footer-copyright {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--dark);
+    opacity: 0.5;
+    margin: 0;
+}
+
+/* =======================================
+   FOOTER - ARCHIVED 
+   ======================================= 
+
+/* FOOTER 
 
 .footer-container {
     width: 100vw;
@@ -1187,7 +1366,7 @@ footer {
 }
 
 .footer-tagline {
-    font-family: 'Inter', sans-serif;  /* or keep Plus Jakarta */
+    font-family: 'Inter', sans-serif; 
     font-size: 0.9rem;
     color: var(--teal-dark);
     margin-bottom: 0.5rem;
@@ -1202,12 +1381,13 @@ footer {
 }
 
 .footer-copyright {
-    font-size: 0.8rem;  /* was 0.85rem */
+    font-size: 0.8rem; 
     color: var(--dark);
-    opacity: 0.6;  /* was 0.8 */
+    opacity: 0.6;  
     margin: 0 auto;
     text-align: center;
 }
+     */
 
 /* =======================================
    BANNERS
