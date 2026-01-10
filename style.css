@@ -213,7 +213,7 @@ body {
     */ 
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: var(--cream-dark);
+    background-color: var(--cream);
     display: block;
     max-width: 80rem;
     margin-left: auto;
@@ -473,7 +473,9 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 1rem;
+    background-image: url("bg-images/diamonds-texture.PNG");
+    background-repeat: repeat;
 }
 
 .header-content {
@@ -1017,9 +1019,20 @@ nav ul {
    ======================================= */
 
 /* FOOTER */
+
+.footer-container {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--cream-dark);
+    background-image: url("bg-images/diamonds-texture.PNG");
+    background-repeat: repeat;
+}
+
 footer {
     text-align: center;
-    padding: 3rem 2rem 2rem; 
+    padding: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .diamond-banner-mini {
