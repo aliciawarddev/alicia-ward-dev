@@ -384,30 +384,6 @@ p {
     box-shadow: -4px 4px 0 0 var(--dark);
 }
 
-/* NAVIGATION LINKS */
-.nav-link {
-    color: var(--dark);
-    padding: 0.4rem 0.75rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Hover State */
-.nav-link:hover {
-    color: var(--teal);
-}
-
-/* Active/Current Section */
-.nav-link.active {
-    color: var(--teal);
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 2px;
-}
-
 /* Tags - pill shape, not interactive*/
 .tag {
     background-color: var(--mustard);
@@ -516,7 +492,28 @@ nav {
     justify-content: center;
 }
 
-/* Navigation buttons */
+/* NAVIGATION LINKS */
+.nav-link {
+    color: var(--dark);
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--teal);
+}
+
+.nav-link.active {
+    color: var(--teal);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -528,6 +525,54 @@ nav ul {
     padding-bottom: 0.5rem;
 }
 
+/* DROPDOWN */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cream);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 1001;
+    display: flex;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown li {
+    list-style: none;
+}
+
+.dropdown a {
+    padding: 0.4rem 0.75rem;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown a:hover {
+    background-color: var(--cream-dark);
+    color: var(--teal);
+}
+
+/* DARK/LIGHT MODE TOGGLE */
 #theme-toggle {
     background: var(--teal);
     border: 2px solid var(--dark);
