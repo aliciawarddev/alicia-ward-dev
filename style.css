@@ -2,10 +2,10 @@
    VARIABLES
    ======================================= */
 :root {
-    /* Color Palette */
-    --light: #FAF3E0;  
-    --lightest: #FDF9F0;
-    --dark: #3A3A3A; 
+    /* Simple MCM*/
+    --cream: #FDF9F0;      
+    --cream-dark: #F5EDD8; 
+    --dark: #3A3A3A;
     --orange: #E07A5F;
     --orange-dark: #c7654c;
     --teal: #3B9C9C;
@@ -29,8 +29,8 @@
 
 /* COLOR VARIABLES */
 [data-theme="dark"] {
-    --light: #2a2a2a;
-    --lightest: #1a1a1a;
+    --cream-dark: #2a2a2a;
+    --cream: #1a1a1a;
     --dark: #f0f0f0;
     --orange: #ff8c5a;
     --orange-dark: #c7654c;
@@ -213,7 +213,7 @@ body {
     */ 
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: var(--light);
+    background-color: var(--cream-dark);
     display: block;
     max-width: 80rem;
     margin-left: auto;
@@ -225,23 +225,25 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
+
 }
 
-/* Background pattern */
+/* Background pattern 
 body::before {
     content: '';
-    position: fixed; /* Use fixed so it stays in place while scrolling */
+    position: fixed; \
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.03; /* Keep it very subtle */
+    opacity: 0.03; \
     z-index: -1;
     background-image: 
         repeating-linear-gradient(45deg, var(--teal) 0px, var(--teal) 2px, transparent 2px, transparent 20px),
         repeating-linear-gradient(-45deg, var(--orange) 0px, var(--orange) 2px, transparent 2px, transparent 20px);
-    pointer-events: none; /* Ensure it doesn't interfere with clicks */
+    pointer-events: none; 
 }
+*/
 
 section {
     max-width: 100%;
@@ -349,7 +351,7 @@ p {
 /* Hover State */
 .btn-primary:hover { 
     background-color: var(--teal);
-    color: var(--lightest);
+    color: var(--cream);
     transform: translate(-2px, -2px);
     box-shadow: -4px 4px 0 0 var(--dark);
 }
@@ -376,7 +378,7 @@ p {
 /* Hover State */
 .btn-secondary:hover { 
     background-color: var(--orange);
-    color: var(--lightest);
+    color: var(--cream);
     transform: translate(-2px, -2px);
     box-shadow: -4px 4px 0 0 var(--dark);
 }
@@ -397,13 +399,13 @@ p {
 
 /* Cards */
 .card {
-    background: var(--light);
+    background: var(--cream-dark);
     border: 2px solid var(--dark);
     padding: var(--space-xl);
     transition: all 0.3s ease;
     position: relative;
     box-shadow: -4px 4px 0 0 var(--mustard); 
-    background-color: var(--lightest);
+    background-color: var(--cream);
 }
 
 .card,
@@ -461,7 +463,7 @@ p {
    ======================================= */
 
 header {
-    background: var(--light);
+    background: var(--cream-dark);
     position: fixed;
     top: 0;
     left: 0;
@@ -776,7 +778,7 @@ nav ul {
 
 /* PROJECT CARDS */
 .project-card {
-    background: var(--lightest);
+    background: var(--cream);
     border: 2px solid var(--dark);
     overflow: hidden;
     box-shadow: -4px 4px 0 0 var(--mustard);
@@ -933,7 +935,7 @@ nav ul {
     object-fit: contain;
     border-radius: 4px;
     display: block;
-    background: var(--lightest);
+    background: var(--cream);
     padding: 0.5rem;
 }
 
@@ -955,7 +957,7 @@ nav ul {
 .support-image {
     width: 100%;
     height: 525px;
-    background: var(--light);
+    background: var(--cream-dark);
     border-bottom: 2px solid var(--dark);
     overflow: hidden;
     display: flex;
@@ -1547,7 +1549,7 @@ footer {
     top: -40px;
     left: 0;
     background: var(--orange);
-    color: var(--lightest);
+    color: var(--cream);
     padding: var(--space-sm) var(--space-md);
     text-decoration: none;
     border-radius: 0 0 5px 0;
