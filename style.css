@@ -886,7 +886,7 @@ nav ul li a.active {
 }
 
 .basics-strip .icon {
-    width: 3rem;
+    width: auto;
     height: 3rem;
     object-fit: contain;
     object-position: bottom;
@@ -921,13 +921,13 @@ nav ul li a.active {
     text-align: center;
     padding-bottom: var(--space-lg);
     margin-bottom: var(--space-lg);
-    border-bottom: 2px solid var(--cream-dark);
+    border-bottom: 2px solid var(--coral);
 }
 
 .highlight-text {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
-    color: var(--coral) !important;
+    color: var(--teal-dark) !important;
     letter-spacing: 0.05em;
     margin-bottom: 0 !important;
     line-height: 1;
