@@ -1106,7 +1106,6 @@ nav ul li a:hover {
 
 .footer-container {
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
     background-color: var(--cream-dark);
     background-image: url("bg-images/diamonds-texture.PNG");
     background-repeat: repeat;
