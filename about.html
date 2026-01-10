@@ -1,535 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Alicia Ward - Web Designer & Developer based in Calgary. Specializing in CSS illustrations, accessible UI/UX design, and JavaScript projects.">
   <meta name="author" content="Alicia Ward">
-
-  <!-- SEO Tags -->
   <meta name="keywords" content="web developer, web designer, CSS illustrations, Calgary developer, frontend developer, accessible web design">
   <meta property="og:title" content="Alicia Ward | Web Designer & Developer">
   <meta property="og:description" content="Web Designer & Developer specializing in CSS illustrations and accessible design">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aliciawarddev.github.io">
-  <!-- Add og:image when you have a preview image -->
   <meta property="og:image" content="https://aliciawarddev.github.io/preview-image.jpg">
   <link rel="canonical" href="https://aliciawarddev.github.io">
   
-  <!-- Page Title -->
-  <title>Alicia Ward | Web Designer & Developer Portfolio</title>
+  <title>Alicia Ward | Web Designer & Developer</title>
   
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FAF3E0' rx='10'/><text x='50' y='70' font-family='Bebas Neue, sans-serif' font-size='50' fill='%233B9C9C' text-anchor='middle' font-weight='400'>AW</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FAF8F4' rx='10'/><text x='50' y='70' font-family='Bebas Neue, sans-serif' font-size='50' fill='%23E87461' text-anchor='middle' font-weight='400'>AW</text></svg>">
   
-  <!-- Font Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alicia Ward",
-    "jobTitle": "Web Designer & Developer",
-    "url": "https://aliciawarddev.github.io",
-    "sameAs": [
-      "https://github.com/aliciawarddev",
-      "https://www.linkedin.com/in/aliciahward/"
-    ]
-  }
-  </script>
-  
 </head>
 
 <body>
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- NAVIGATION BAR -->
-<header>
+  <!-- HEADER -->
+  <header>
     <div class="header-content">
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
-                <ul class="dropdown-menu">
-                    <li><a href="portfolio.html#css-illustrations">CSS Illustrations</a></li>
-                    <li><a href="portfolio.html#design-assets">Design Assets</a></li>
-                    <li><a href="portfolio.html#interactive">Interactive Projects</a></li>
-                </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-dropdown">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio.html#css-illustrations">CSS Illustrations</a></li>
+              <li><a href="portfolio.html#design-assets">Design Assets</a></li>
+              <li><a href="portfolio.html#interactive">Interactive Projects</a></li>
             </ul>
-        </nav>
-        <!-- Dark mode button-->
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-            <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
-        </button>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
+      </button>
     </div>
-</header>
-
-
-
-<!-- NAVIGATION BAR - ARCHIVED
-<header>
-    <div class="header-content">
-        <nav aria-label="Main navigation">
-            <ul role="list">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#support" class="nav-link">Support</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Dark mode button
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-            <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
-        </button>
-    </div>
-</header>-->
+  </header>
 
   <main id="main-content" role="main">
     
-    <!-- HOME -->
-    <section id="home" aria-labelledby="home-title">
-        <!-- Name Title -->
-        <h1 class="home-title">
-          <span class="first-name">Alicia</span>
-          <span class="last-name">Ward</span>
-        </h1>
-        <h3 class="home-subtitle">
-            <img src="icons/icon-starburst.PNG" class="icon icon-starburst" alt="">
-            Web Designer & Developer
-            <img src="icons/icon-starburst.PNG" class="icon icon-starburst icon-starburst-flip" alt="">
-        </h3>
-        <p>Frontend development with an artist's eye for detail</p>
-
-        <!-- Projects Button-->
-        <a href="#projects" class="btn-secondary">
-            <span>View Projects</span>
-        </a>
-    </section>
-    
-    <!-- DIAMOND BANNER -->
-    <div class="diamond-banner">
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-    </div>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-
-        <div class="about-grid">
-            <!-- Left: Portrait -->
-            <div class="profile-card card">
-                <img src="icons/icon-portrait.PNG" alt="Geometric portrait of Alicia" class="profile-image">
-            </div>
-
-            <!-- Right Stack -->
-            <div class="about-right-stack">
-                <!-- Developer + Artist -->
-                <div class="card about-bio">
-                    <h4>Developer + Artist</h4>
-                    <p>I'm a frontend developer with a lifelong art practice and a background in accounting. That combination means I write organized, maintainable code <em>and</em> create custom visuals—no need to hire separately for design assets.</p>
-                    <p>As a neurodivergent developer, I notice patterns others miss and obsess over the details that make interfaces feel right.</p>
-                </div>
-
-                <!-- Location -->
-                <div class="card">
-                    <h4>Alicia Ward <span class="pronunciation">(ah-LEE-see-ah)</span></h4>
-                    <p>she/her · 🏳️‍🌈</p>
-                    <p>Originally from Sweden · Based in Calgary, Alberta</p>
-                    <p>Remote only · Available for freelance</p>
-                </div>
-            </div>
-        </div>
+    <!-- ABOUT HERO -->
+    <section id="about-hero" class="about-hero">
+        <h1 class="page-title">An Artist Who Codes</h1>
     </section>
 
-    <!-- DIAMOND BANNER -->
-    <div class="diamond-banner">
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-    </div>
+    <!-- THE BASICS -->
+    <section id="the-basics" class="basics-strip">
+        <span><img src="icons/graphic/bubble.PNG" class="icon icon-medium" alt="">she/her</span>
+        <span><img src="icons/graphic/coffee.PNG" class="icon icon-medium" alt="">Calgary, AB</span>
+        <span><img src="icons/graphic/briefcase.PNG" class="icon icon-medium briefcase" alt="">Remote</span>
+    </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services">
-        <h2>What I Offer</h2>
-        <p class="section-intro">Frontend development with an artist's precision. I write clean, organized code and create custom visuals that elevate your project.</p>
+    <!-- THE STORY -->
+    <section id="my-story">
+        <h3>The Story</h3>
         
-        <div class="services-grid">
-            <!-- Frontend Development -->
-            <div class="service-card card">
-                <div class="service-icon"><img src="icons/icon-brain.PNG" class="icon icon-large" alt="brain icon"></div>
-                <h4>Frontend Development</h4>
-                <p>Meticulous, organized code that's built to last. Responsive, accessible, and easy to maintain.</p>
+        <div class="story-grid">
+            <div class="card story-card">
+                <div class="story-highlight">
+                    <p class="highlight-text">20+ years</p>
+                    <p class="highlight-label">making things by hand</p>
+                </div>
+                <p>Drawing, painting, sculpting — two decades of practice trained my eye to see the details that make something feel <em>right</em>. The exact spacing. The subtle color shifts. The patience to refine until it's done.</p>
             </div>
-            
-            <!-- Custom Graphics -->
-            <div class="service-card card">
-                <div class="service-icon"><img src="icons/icon-paintbrush.PNG" class="icon icon-large" alt="paintbrush icon"></div>
-                <h4>Custom Graphics</h4>
-                <p>Hand-drawn icons, banners, and visual assets that give your project a unique identity.</p>
-            </div>
-            
-            <!-- UI/UX Design -->
-            <div class="service-card card">
-                <div class="service-icon"><img src="icons/icon-globe.PNG" class="icon icon-large" alt="globe icon"></div>
-                <h4>UI/UX Design</h4>
-                <p>Pixel-perfect interfaces with every detail considered. Design that looks polished and feels intuitive.</p>
+
+            <div class="card story-card">
+                <div class="story-highlight">
+                    <p class="highlight-text">The pivot</p>
+                    <p class="highlight-label">from spreadsheets to CSS</p>
+                </div>
+                <p>Web development is the same thing in a different medium. Code is just another way to build something from nothing — except now I can make it interactive.</p>
             </div>
         </div>
+    </section>
+
+    <!-- WHAT YOU GET -->
+    <section id="why-it-matters">
+        <h3>What You Get</h3>
         
-        <!-- Tech skills as pills -->
-        <div class="tech-stack">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Git</span>
-            <span class="tag">Responsive Design</span>
-            <span class="tag">WCAG Accessibility</span>
-        </div>
-    </section>
-
-    <!-- DIAMOND BANNER -->
-    <div class="diamond-banner">
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-    </div>
-    
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <!-- DESIGN ASSETS CARD -->
-        <div class="project-card design-assets">
-            <div class="assets-grid">
-                <img src="icons/icon-brain.PNG" alt="Custom icon example">
-                <img src="icons/icon-globe.PNG" alt="Pattern sample">
-                <img src="icons/icon-laptop-orange.PNG" alt="UI element">
-                <img src="icons/icon-location-pin.PNG" alt="Custom icon example">
-                <img src="icons/icon-starburst.PNG" alt="Pattern sample">
-                <img src="icons/icon-run.PNG" alt="UI element">
-                <img src="icons/icon-brain.PNG" alt="Custom icon example">
-                <img src="icons/icon-globe.PNG" alt="Pattern sample">
-                <img src="icons/icon-laptop-orange.PNG" alt="UI element">
-                <img src="icons/icon-location-pin.PNG" alt="Custom icon example">
-                <img src="icons/icon-starburst.PNG" alt="Pattern sample">
-                <img src="icons/icon-run.PNG" alt="UI element">
-                <!-- Add more as needed -->
+        <div class="value-grid">
+            <div class="card">
+                <h4><img src="icons/graphic/magnifying-glass.PNG" class="icon icon-medium" alt="">I See What Others Miss</h4>
+                <p>That 2-pixel misalignment. The hover state that feels off. The color that's fighting its neighbor. Years of visual training means I obsess over the details that separate "fine" from "polished."</p>
             </div>
-            <div class="project-info">
-                <h4>Design Assets</h4>
-                <p>Hand-crafted icons, patterns, and UI elements for web projects — all custom, no stock images.</p>
-                <a href="https://aliciawarddev.github.io/web-assets/" class="btn-secondary">View Gallery</a>
+
+            <div class="card">
+                <h4><img src="icons/graphic/gear.PNG" class="icon icon-medium" alt="">Design + Code, One Person</h4>
+                <p>Most developers outsource visual assets. I make my own — icons, illustrations, UI elements. Faster turnaround, consistent style, no telephone game between designer and developer.</p>
             </div>
-        </div>
 
-        <!-- CSS Illustrations -->
-        <div class="project-card css-illustrations">
-            <div class="preview-grid">
-                <!-- Row 1 -->
-                <img src="preview-images/preview-burger.png" alt="burger">
-                <img src="preview-images/preview-half-circle-pattern.png" alt="half circle pattern">
-                <img src="preview-images/preview-retro-computer.png" alt="retro computer">
-                <img src="preview-images/preview-lightbulb-plant.png" alt="lightbulb plant">
-                <img src="preview-images/preview-cityscape.png" alt="cityscape">
-                <img src="preview-images/preview-retro-tv.png" alt="retro tv">
-                <!-- Row 2 -->
-                <img src="preview-images/preview-ferris-wheel.png" alt="ferris wheel">
-                <img src="preview-images/preview-cute-fruits.png" alt="cute fruits">
-                <img src="preview-images/preview-sunset-arches.png" alt="sunset arches">
-                <img src="preview-images/preview-star-circle-pattern.png" alt="star circle pattern">
-                <img src="preview-images/preview-desert.png" alt="desert">
-                <img src="preview-images/preview-soft-serve.png" alt="soft serve">
-                <!-- Row 3 -->
-                <img src="preview-images/preview-ferris-wheel.png" alt="ferris wheel">
-                <img src="preview-images/preview-cute-fruits.png" alt="cute fruits">
-                <img src="preview-images/preview-sunset-arches.png" alt="sunset arches">
-                <img src="preview-images/preview-star-circle-pattern.png" alt="star circle pattern">
-                <img src="preview-images/preview-desert.png" alt="desert">
-                <img src="preview-images/preview-soft-serve.png" alt="soft serve">
-            </div>
-            <div class="project-info">
-                <h4>CSS Illustrations</h4>
-                <p>Pure CSS artwork, no images, just code. These illustrations showcase advanced CSS techniques and creative problem-solving.</p>
-                <a href="https://aliciawarddev.github.io/css-illustration-portfolio" target="_blank" class="btn-secondary">View Gallery</a>
-            </div>
-        </div>
-
-        <!-- JavaScript Interactive Projects -->
-        <div class="project-showcase">
-            <div class="project-header">
-                <h3>JavaScript Interactive Projects</h3>
-                <p class="project-description">Interactive JavaScript projects showcasing diverse functionalities and creative problem-solving. From dynamic interfaces to engaging web applications, exploring what's possible with vanilla JavaScript.</p>
-            </div>
-            
-            <!-- Project Grid -->
-            <div class="project-grid">
-
-                <!-- ADD NEW PROJECTS HERE -->
-
-                <!-- What Should I Wear Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-what-should-i-wear.png" alt="What Should I Wear Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>What Should I Wear</h4>
-                        <p>A weather app that shows current conditions and personalized outfit recommendations based on temperature and weather</p>
-                        <a href="https://aliciawarddev.github.io/what-should-i-wear/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Paint Mixer Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-paint-mixer-new.png" alt="Paint Mixer Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Paint Mixer</h4>
-                        <p>An interactive app that teaches color mixing through practice and game modes where users blend paint colors to see the results</p>
-                        <a href="https://aliciawarddev.github.io/paint-mixer/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Menu Calculator Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-menu-calculator-new.png" alt="Menu Calculator Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Menu Calculator</h4>
-                        <p>Select burgers, sides, and drinks with real-time price totals in a retro diner interface</p>
-                        <a href="https://aliciawarddev.github.io/menu-calculator/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Adventure Time Elements Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-adventure-time-new.png" alt="Adventure Time Elements Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Adventure Time Elements</h4>
-                        <p>Interactive guide to elemental forces and their counterbalances</p>
-                        <a href="https://aliciawarddev.github.io/js-adventure-time-elements/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Burger Board Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-burger-board-new.png" alt="Burger Board Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Burger Board</h4>
-                        <p>Ring the bell to reveal daily burger specials with punny names</p>
-                        <a href="https://aliciawarddev.github.io/js-burger-board/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Text Resizer Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-text-resizer-new.png" alt="Text Resizer Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Text Resizer</h4>
-                        <p>Adjust text size for improved readability and accessibility</p>
-                        <a href="https://aliciawarddev.github.io/js-text-resizer/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Background Colour Switcher Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-background-colour-switcher-new.png" alt="Background Colour Switcher Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Background Colour Switcher</h4>
-                        <p>Change background colors dynamically with a click</p>
-                        <a href="https://aliciawarddev.github.io/js-color-switcher/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Name Greeter Preview 
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-name-greeter.png" alt="Name Greeter Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Name Greeter</h4>
-                        <p>Enter your name to receive a personalized greeting</p>
-                        <a href="https://aliciawarddev.github.io/js-name-greeter/" target="_blank" class="btn-secondary">
-                            View Project ➜
-                        </a>
-                    </div>
-                </div>
-                -->
-
-                <!-- Click Counter Preview -->
-                <div class="project-card">
-                    <div class="project-preview js">
-                        <img src="preview-images/preview-click-counter-new.png" alt="Click Counter Preview">
-                    </div>
-                    <div class="project-info">
-                        <h4>Click Counter</h4>
-                        <p>Track and count clicks with instant visual feedback</p>
-                        <a href="https://aliciawarddev.github.io/js-click-counter/" target="_blank" class="btn-secondary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
+            <div class="card">
+                <h4><img src="icons/graphic/calendar.PNG" class="icon icon-medium" alt="">Structure + Creativity</h4>
+                <p>Five years in accounting taught me to write organized, documented code that future-you will actually understand. The artist makes it beautiful; the accountant makes it maintainable.</p>
             </div>
         </div>
     </section>
 
-    <!-- DIAMOND BANNER -->
-    <div class="diamond-banner">
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-    </div>
+    <hr class="section-divider">
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="contact-content">
-            <h2>Let's Connect</h2>
-            <p class="contact-intro">I'd love to hear from you! Whether it's about projects, collaboration, or just to say hi.</p>
-            <!-- Contact Buttons-->
-            <div class="contact-buttons">
-                <a href="mailto:aliciawarddev@gmail.com" class="btn-secondary"><img src="icons/icon-paper-airplane.PNG" class="icon icon-medium" alt="envelope icon"> Email Me</a>
-                <a href="https://github.com/aliciawarddev" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="View GitHub profile (opens in new tab)"><img src="icons/icon-laptop-orange.PNG" class="icon icon-medium" alt="laptop icon"> GitHub</a>
-                <a href="https://www.linkedin.com/in/aliciahward/" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="View LinkedIn profile (opens in new tab)"><img src="icons/icon-briefcase-orange.PNG" class="icon icon-medium" alt="briefcase icon"> LinkedIn</a>
-            </div>
-        </div>
-    </section>
-
-        <!-- DIAMOND BANNER -->
-    <div class="diamond-banner">
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-        <div class="diamond teal"></div>
-        <div class="diamond orange"></div>
-    </div>
-
-    <!-- SUPPORT MY WORK SECTION -->
-    <section id="support">
-        <!-- Header -->
-        <h2>Support My Work</h2>
-        <h4>Help fuel creative experiments and fun web projects</h4>
-        <div class="project-card support-card">
-            <div class="preview-image support-image">
-                <img src="preview-images/preview-buy-coffee.png" alt="Buy me coffee preview">
-            </div>
-            <div class="project-info">
-                <p>Your support helps me create more fun projects, explore creative ideas, and keep everything open-source and ad-free.</p>
-                <p>Every coffee makes a difference <img src="icons/icon-heart-orange.PNG" class="icon icon-small" alt="heart icon"></p>
-                <a href="https://aliciawarddev.github.io/buy-me-coffee/" target="_blank" class="btn-secondary">
-                    Support My Work
-                </a>
-            </div>
-        </div>
+    <!-- CTA -->
+    <section id="about-cta">
+        <a href="portfolio.html" class="btn-primary">See the Work →</a>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+    <!-- DIVIDER -->
+    <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+    </div>
+
+<!-- FOOTER -->
     <div class="footer-container">
-        <footer>
-            <!-- Mini diamond banner -->
-            <div class="diamond-banner diamond-banner-mini">
-                <div class="diamond diamond-small teal"></div>
-                <div class="diamond diamond-small orange"></div>
-                <div class="diamond diamond-small teal"></div>
-                <div class="diamond diamond-small orange"></div>
-                <div class="diamond diamond-small teal"></div>
-            </div>
-            
-            <p class="footer-tagline">Crafted with care in Calgary</p>
-            <p class="footer-copyright">&copy; 2025 Alicia Ward</p>
-        </footer>
+    <footer>
+        <p class="footer-tagline">Crafted with care in Calgary</p>
+        <p class="footer-copyright">&copy; 2025 Alicia Ward</p>
+    </footer>
     </div>
 
   <script src="theme-toggle.js"></script>
 
 </body>
-
 </html>

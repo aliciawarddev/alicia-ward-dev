@@ -159,13 +159,14 @@
 
 /* Size variations */
 .icon-small {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
 }
 
 .icon-medium {
-    width: 2rem;
-    height: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .icon-large {
@@ -285,7 +286,7 @@ h1 {
 
 /* Section Headers */
 h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-top: 0;
     margin-bottom: var(--space-xl); 
     color: var(--dark);
@@ -343,7 +344,7 @@ p {
     background-color: var(--coral);
     color: var(--cream);
     padding: 0.75rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 2px solid var(--dark);
     font-weight: 600;
     font-size: 0.9rem;
@@ -363,7 +364,7 @@ p {
     background-color: var(--teal);
     color: var(--cream);
     padding: 0.75rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 2px solid var(--dark);
     font-weight: 600;
     font-size: 0.9rem;
@@ -465,7 +466,8 @@ p {
 .project-card,
 .support-card,
 .profile-image {
-    border-radius: 25px;
+    border-radius: 4px;
+    /* previously 25px*/
 }
 
 /* Light mode shadows - ensure consistent 4px offset */
@@ -788,7 +790,7 @@ nav ul li a.active {
 .highlight-card {
     background: var(--cream);
     border: 2px solid var(--dark);
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     box-shadow: -4px 4px 0 0 var(--teal);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -817,6 +819,170 @@ nav ul li a.active {
     padding: 1rem;
     margin: 0;
     text-align: center;
+}
+
+/* =======================================
+   ABOUT PAGE STYLES
+   Add these to your style.css file
+   Uses existing variables and patterns
+   ======================================= */
+
+/* SECTION DIVIDER */
+.section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--coral) 20%,
+        var(--teal) 50%,
+        var(--coral) 80%,
+        transparent
+    );
+    max-width: 200px;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+/* =======================================
+   ABOUT HERO
+   ======================================= */
+
+.about-hero {
+    padding-top: 10rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--dark);
+    text-shadow: 3px 3px 0 var(--teal);
+    margin-bottom: 0;
+}
+
+/* =======================================
+   THE BASICS - INLINE STRIP
+   ======================================= */
+
+.basics-strip {
+    padding: var(--space-lg) 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.basics-strip > span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--dark);
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.basics-strip .icon {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    object-position: bottom;
+    margin: 0;
+}
+
+/* =======================================
+   THE STORY SECTION
+   ======================================= */
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.story-card {
+    padding: var(--space-xl) !important;
+}
+
+.story-card > p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 0;
+}
+
+/* Story Highlight - visual callout at top of card */
+.story-highlight {
+    text-align: center;
+    padding-bottom: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    border-bottom: 2px solid var(--cream-dark);
+}
+
+.highlight-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--coral) !important;
+    letter-spacing: 0.05em;
+    margin-bottom: 0 !important;
+    line-height: 1;
+}
+
+.highlight-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--teal-dark) !important;
+    margin-bottom: 0 !important;
+}
+
+/* =======================================
+   WHAT YOU GET SECTION
+   ======================================= */
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.value-grid .card {
+    padding: var(--space-xl);
+}
+
+.value-grid .card h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 400;
+    justify-content: flex-start;
+    margin-bottom: var(--space-md);
+}
+
+.value-grid .card p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 0;
+    max-width: none;
+}
+
+/* =======================================
+   CTA SECTION
+   ======================================= */
+
+#about-cta {
+    text-align: center;
+    padding-top: 2rem !important;
+    padding-bottom: 4rem !important;
 }
 
 /* =======================================
@@ -923,7 +1089,7 @@ nav ul li a.active {
 
 /* =======================================
    ABOUT SECTION
-   ======================================= */
+   ======================================= 
 
 #about {
     max-width: 80rem;
@@ -931,21 +1097,21 @@ nav ul li a.active {
     padding: 4rem 2rem;
 }
 
-/* Two-column layout: Portrait | Stacked cards */
+/* Two-column layout: Portrait | Stacked cards 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-/* Right column stack */
+/* Right column stack 
 .about-right-stack {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-/* Profile Card */
+/* Profile Card 
 .profile-card {
     display: flex;
     justify-content: center;
@@ -961,7 +1127,7 @@ nav ul li a.active {
     display: block;
 }
 
-/* Bio */
+/* Bio 
 .about-bio {
     display: flex;
     flex-direction: column;
@@ -976,7 +1142,7 @@ nav ul li a.active {
     margin-bottom: 0;
 }
 
-/* Pronounciation */
+/* Pronounciation 
 .pronunciation {
     font-weight: 300;
     text-transform: none !important;
@@ -992,7 +1158,7 @@ nav ul li a.active {
     font-weight: 300;
 }
 
-/* Mobile */
+/* Mobile 
 @media (max-width: 768px) {
     .about-grid-top {
         grid-template-columns: 1fr;
@@ -1002,6 +1168,7 @@ nav ul li a.active {
         justify-self: center;
     }
 }
+    */
 
 /* =============================================
    SERVICES SECTION
