@@ -225,7 +225,8 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
-
+    background-image: url("bg-images/paper-soft.PNG");
+    background-repeat: repeat;
 }
 
 /* Background pattern 
