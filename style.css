@@ -384,6 +384,30 @@ p {
     box-shadow: -4px 4px 0 0 var(--dark);
 }
 
+/* NAVIGATION LINKS */
+.nav-link {
+    color: var(--dark);
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover State */
+.nav-link:hover {
+    color: var(--teal);
+}
+
+/* Active/Current Section */
+.nav-link.active {
+    color: var(--teal);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
 /* Tags - pill shape, not interactive*/
 .tag {
     background-color: var(--mustard);
