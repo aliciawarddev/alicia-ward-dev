@@ -926,7 +926,7 @@ nav ul li a.active {
 
 .highlight-text {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--teal-dark) !important;
     letter-spacing: 0.05em;
     margin-bottom: 0 !important;
@@ -1440,7 +1440,6 @@ nav ul li a.active {
 
 /* =======================================
    CONTACT PAGE STYLES
-   Add these to your style.css file
    ======================================= */
 
 /* CONTACT HERO */
@@ -1451,45 +1450,30 @@ nav ul li a.active {
 
 /* CONTACT MAIN SECTION */
 #contact-main {
-    padding-top: 0 !important;
-    padding-bottom: 2rem !important;
+    padding-top: var(--space-xl) !important;
+    padding-bottom: var(--space-2xl) !important;
 }
 
 /* CONTACT GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 2rem;
-    align-items: start;
+    gap: 3rem;
+    align-items: stretch;
 }
 
-/* CARD HEADER - Matches About page story cards */
-.card-header {
-    text-align: center;
-    margin-bottom: var(--space-lg);
+/* CONTACT PAGE - LEFT-ALIGN CARD HEADERS */
+.contact-form-card .story-highlight,
+.connect-card .story-highlight {
+    text-align: left;
 }
 
-.card-header .highlight-text {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    color: var(--teal-dark);
-    letter-spacing: 0.05em;
-    margin-bottom: 0;
-    line-height: 1;
-}
-
-.card-header .highlight-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: var(--teal-dark);
-    margin-bottom: 0;
-    margin-top: var(--space-xs);
-}
-
-.card-divider {
-    height: 2px;
-    background-color: var(--coral);
-    margin-bottom: var(--space-lg);
+.contact-form-card .highlight-text,
+.contact-form-card .highlight-label,
+.connect-card .highlight-text,
+.connect-card .highlight-label {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* =======================================
@@ -1498,6 +1482,7 @@ nav ul li a.active {
 
 .contact-form-card {
     padding: var(--space-xl) !important;
+    padding-bottom: var(--space-2xl) !important;
 }
 
 .contact-form {
@@ -1517,6 +1502,7 @@ nav ul li a.active {
     font-size: 1.1rem;
     letter-spacing: 0.05em;
     color: var(--dark);
+    text-align: left;
 }
 
 .form-group input,
@@ -1565,12 +1551,6 @@ nav ul li a.active {
     margin-top: var(--space-sm);
 }
 
-.btn-submit:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-    transform: none;
-}
-
 /* =======================================
    CONNECT CARD STYLES
    ======================================= */
@@ -1579,19 +1559,20 @@ nav ul li a.active {
     padding: var(--space-xl) !important;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .connect-links {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-lg);
 }
 
 .connect-link {
     display: flex;
     align-items: center;
     gap: var(--space-md);
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
     background: var(--cream-dark);
     border-radius: 4px;
     text-decoration: none;
@@ -1612,11 +1593,12 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     gap: 0;
+    text-align: left;
 }
 
 .connect-link-label {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--dark);
     letter-spacing: 0.05em;
     line-height: 1.2;
@@ -1634,41 +1616,41 @@ nav ul li a.active {
     align-items: center;
     gap: var(--space-sm);
     margin-top: auto;
-    padding-top: var(--space-xl);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    color: var(--dark);
+    padding-top: var(--space-lg);
+    border-top: 2px solid var(--cream-dark);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    color: var(--teal-dark);
 }
 
-.availability-dot {
-    width: 10px;
-    height: 10px;
-    background-color: var(--teal);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
+.availability-note .icon {
+    margin: 0;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 /* =======================================
    SUPPORT CTA SECTION
    ======================================= */
 
-#support-cta {
-    text-align: center;
-    padding-top: 2rem !important;
-    padding-bottom: 4rem !important;
+/* SUPPORT CTA ICON ALIGNMENT */
+#support-cta h3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--space-md);
+    padding-bottom: 1rem;
+}
+
+#support-cta h3 .icon {
+    margin-top: -1rem;
 }
 
 #support-cta p {
-    margin-bottom: var(--space-xl);
+    max-width: 700px;
+    padding-bottom: 1rem;
 }
 
 /* =======================================
