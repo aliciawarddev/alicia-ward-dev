@@ -1439,9 +1439,242 @@ nav ul li a.active {
 }
 
 /* =======================================
-   CONTACT SECTION
-   Contact information and social links
+   CONTACT PAGE STYLES
+   Add these to your style.css file
    ======================================= */
+
+/* CONTACT HERO */
+.contact-hero {
+    padding-top: 10rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* CONTACT MAIN SECTION */
+#contact-main {
+    padding-top: 0 !important;
+    padding-bottom: 2rem !important;
+}
+
+/* CONTACT GRID */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* CARD HEADER - Matches About page story cards */
+.card-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.card-header .highlight-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.card-header .highlight-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--teal-dark);
+    margin-bottom: 0;
+    margin-top: var(--space-xs);
+}
+
+.card-divider {
+    height: 2px;
+    background-color: var(--coral);
+    margin-bottom: var(--space-lg);
+}
+
+/* =======================================
+   CONTACT FORM STYLES
+   ======================================= */
+
+.contact-form-card {
+    padding: var(--space-xl) !important;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    background: var(--cream);
+    color: var(--dark);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    box-shadow: -2px 2px 0 0 var(--teal);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--dark);
+    opacity: 0.4;
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%233A3A3A' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--space-md) center;
+    padding-right: var(--space-2xl);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.btn-submit {
+    align-self: flex-start;
+    margin-top: var(--space-sm);
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =======================================
+   CONNECT CARD STYLES
+   ======================================= */
+
+.connect-card {
+    padding: var(--space-xl) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.connect-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--cream-dark);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.connect-link:hover {
+    transform: translateX(4px);
+    background: var(--cream);
+}
+
+.connect-link .icon {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.connect-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.connect-link-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: var(--dark);
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.connect-link-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--teal-dark);
+}
+
+/* AVAILABILITY NOTE */
+.availability-note {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: auto;
+    padding-top: var(--space-xl);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+.availability-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* =======================================
+   SUPPORT CTA SECTION
+   ======================================= */
+
+#support-cta {
+    text-align: center;
+    padding-top: 2rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#support-cta p {
+    margin-bottom: var(--space-xl);
+}
+
+/* =======================================
+   CONTACT SECTION - ARCHIVED 
+   Contact information and social links
+   ======================================= 
 
 #contact {
     max-width: 80rem;
@@ -1466,6 +1699,7 @@ nav ul li a.active {
     flex-wrap: wrap;
     justify-content: center;
 }
+    */
 
 /* =======================================
    FOOTER

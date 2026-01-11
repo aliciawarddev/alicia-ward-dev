@@ -26,67 +26,140 @@
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- NAVIGATION BAR -->
-<header>
+  <!-- NAVIGATION BAR -->
+  <header>
     <div class="header-content">
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
-                <ul class="dropdown-menu">
-                    <li><a href="portfolio.html#css-illustrations">CSS Illustrations</a></li>
-                    <li><a href="portfolio.html#design-assets">Design Assets</a></li>
-                    <li><a href="portfolio.html#interactive">Interactive Projects</a></li>
-                </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-dropdown">
+            <a href="portfolio.html" class="dropdown-toggle">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio.html#css-illustrations">CSS Illustrations</a></li>
+              <li><a href="portfolio.html#design-assets">Design Assets</a></li>
+              <li><a href="portfolio.html#interactive">Interactive Projects</a></li>
             </ul>
-        </nav>
-        <!-- Dark mode button-->
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-            <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
-        </button>
+          </li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Dark mode button-->
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
+      </button>
     </div>
-</header>
+  </header>
 
   <main id="main-content" role="main">
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="contact-content">
-            <h2>Let's Connect</h2>
-            <p class="contact-intro">I'd love to hear from you! Whether it's about projects, collaboration, or just to say hi.</p>
-            <!-- Contact Buttons-->
-            <div class="contact-buttons">
-                <a href="mailto:aliciawarddev@gmail.com" class="btn-secondary"><img src="icons/icon-paper-airplane.PNG" class="icon icon-medium" alt="envelope icon"> Email Me</a>
-                <a href="https://github.com/aliciawarddev" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="View GitHub profile (opens in new tab)"><img src="icons/icon-laptop-orange.PNG" class="icon icon-medium" alt="laptop icon"> GitHub</a>
-                <a href="https://www.linkedin.com/in/aliciahward/" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="View LinkedIn profile (opens in new tab)"><img src="icons/icon-briefcase-orange.PNG" class="icon icon-medium" alt="briefcase icon"> LinkedIn</a>
-            </div>
-        </div>
+    
+    <!-- CONTACT HERO -->
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <h1 id="contact-title" class="page-title">Get In Touch</h1>
     </section>
 
-    <!-- SUPPORT MY WORK SECTION -->
-    <section id="support">
-        <!-- Header -->
-        <h2>Support My Work</h2>
-        <h4>Help fuel creative experiments and fun web projects</h4>
-        <div class="project-card support-card">
-            <div class="preview-image support-image">
-                <img src="preview-images/preview-buy-coffee.png" alt="Buy me coffee preview">
+    <!-- CONTACT GRID -->
+    <section id="contact-main">
+      <div class="contact-grid">
+        
+        <!-- SEND A MESSAGE CARD -->
+        <div class="card contact-form-card">
+          <div class="card-header">
+            <h3 class="highlight-text">Send a Message</h3>
+            <p class="highlight-label">I'd love to hear from you</p>
+          </div>
+          <div class="card-divider"></div>
+          
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
-            <div class="project-info">
-                <p>Your support helps me create more fun projects, explore creative ideas, and keep everything open-source and ad-free.</p>
-                <p>Every coffee makes a difference <img src="icons/icon-heart-orange.PNG" class="icon icon-small" alt="heart icon"></p>
-                <a href="https://aliciawarddev.github.io/buy-me-coffee/" target="_blank" class="btn-secondary">
-                    Support My Work
-                </a>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
             </div>
+            
+            <div class="form-group">
+              <label for="project-type">Project Type</label>
+              <select id="project-type" name="project-type">
+                <option value="" disabled selected>Select an option</option>
+                <option value="website">Website Design & Development</option>
+                <option value="css-illustration">CSS Illustration</option>
+                <option value="design-assets">Design Assets</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary btn-submit">
+              Send Message
+            </button>
+          </form>
         </div>
+
+        <!-- CONNECT CARD -->
+        <div class="card connect-card">
+          <div class="card-header">
+            <h3 class="highlight-text">Connect</h3>
+            <p class="highlight-label">Other ways to reach me</p>
+          </div>
+          <div class="card-divider"></div>
+          
+          <div class="connect-links">
+            <a href="mailto:aliciawarddev@gmail.com" class="connect-link">
+              <img src="icons/graphic/envelope.PNG" class="icon icon-medium" alt="Envelope">
+              <div class="connect-link-text">
+                <span class="connect-link-label">Email</span>
+                <span class="connect-link-value">aliciawarddev@gmail.com</span>
+              </div>
+            </a>
+            
+            <a href="https://github.com/aliciawarddev" target="_blank" rel="noopener noreferrer" class="connect-link">
+              <img src="icons/graphic/folder.PNG" class="icon icon-medium" alt="">
+              <div class="connect-link-text">
+                <span class="connect-link-label">GitHub</span>
+                <span class="connect-link-value">@aliciawarddev</span>
+              </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/aliciahward/" target="_blank" rel="noopener noreferrer" class="connect-link">
+              <img src="icons/graphic/briefcase.PNG" class="icon icon-medium" alt="">
+              <div class="connect-link-text">
+                <span class="connect-link-label">LinkedIn</span>
+                <span class="connect-link-value">aliciahward</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- AVAILABILITY -->
+          <div class="availability-note">
+            <span class="availability-dot"></span>
+            <span>Available for freelance projects</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <hr class="section-divider">
+
+    <!-- SUPPORT SECTION -->
+    <section id="support-cta">
+      <h2>Support My Work</h2>
+      <p>Help fuel creative experiments and fun web projects. Every coffee makes a difference.</p>
+      <a href="https://aliciawarddev.github.io/buy-me-coffee/" target="_blank" class="btn-secondary">
+        Buy Me a Coffee
+      </a>
     </section>
 
   </main>
