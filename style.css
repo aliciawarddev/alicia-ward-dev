@@ -38,7 +38,7 @@
    All dark mode overrides organized by component
    ======================================= */
 
-/* COLOR VARIABLES */
+/* COLOR VARIABLES 
 [data-theme="dark"] {
     --cream-dark: #2a2a2a;
     --cream: #1a1a1a;
@@ -51,7 +51,7 @@
     --mustard-dark: #c2a372;
 }
 
-/* TYPOGRAPHY */
+/* TYPOGRAPHY
 [data-theme="dark"] h1 {
     color: #d0d0d0;
 }
@@ -70,7 +70,7 @@
     background-color: var(--teal-dark);
 }
 
-/* TEXT SHADOWS - single shadow to match light mode */
+/* TEXT SHADOWS - single shadow to match light mode 
 [data-theme="dark"] .first-name {
     text-shadow: 4px 4px 0 var(--teal-dark);
 }
@@ -79,7 +79,7 @@
     text-shadow: 4px 4px 0 var(--orange-dark);
 }
 
-/* BUTTONS */
+/* BUTTONS 
 [data-theme="dark"] .btn-primary,
 [data-theme="dark"] .btn-secondary {
     background-color: #2a2a2a;
@@ -111,14 +111,14 @@
     transform: rotate(180deg);
 }
 
-/* TAGS */
+/* TAGS 
 [data-theme="dark"] .tag {
     background-color: #2a2a2a;
     color: #d0d0d0;
     border-color: #4a4a4a;
 }
 
-/* CARDS */
+/* CARDS 
 [data-theme="dark"] .card,
 [data-theme="dark"] .project-card,
 [data-theme="dark"] .support-card {
@@ -126,7 +126,7 @@
     box-shadow: -4px 4px 0 0 #4a4a4a;
 }
 
-/* IMAGES */
+/* IMAGES 
 [data-theme="dark"] .profile-image {
     border-color: #4a4a4a;
     opacity: 0.85;
@@ -140,7 +140,7 @@
     filter: brightness(0.9);
 }
 
-/* DIVIDERS */
+/* DIVIDERS 
 [data-theme="dark"] .project-preview,
 [data-theme="dark"] .support-image {
     border-bottom-color: #4a4a4a;
