@@ -986,6 +986,597 @@ nav ul li a.active {
 }
 
 /* =======================================
+   PORTFOLIO PAGE STYLES
+   Add this section to your main style.css
+   ======================================= */
+
+/* =======================================
+   PORTFOLIO HERO
+   ======================================= */
+
+.portfolio-hero {
+    padding-top: 10rem !important;
+    padding-bottom: 2rem !important;
+    text-align: center;
+}
+
+.portfolio-hero .page-title {
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--dark);
+    text-shadow: 3px 3px 0 var(--teal);
+    margin-bottom: var(--space-sm);
+}
+
+.portfolio-hero .hero-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+/* =======================================
+   PORTFOLIO SECTIONS
+   ======================================= */
+
+.portfolio-section {
+    padding: var(--space-2xl) var(--space-xl) !important;
+    max-width: 80rem !important;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto var(--space-xl);
+    color: var(--dark);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* =======================================
+   CSS ILLUSTRATIONS INTRO
+   ======================================= */
+
+.css-intro {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.css-intro-lead {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
+    color: var(--teal-dark);
+    margin-bottom: var(--space-xs);
+}
+
+.css-intro-detail {
+    font-size: 0.9rem;
+    color: var(--dark);
+    opacity: 0.8;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* =======================================
+   CSS ILLUSTRATIONS GALLERY
+   ======================================= */
+
+.css-gallery-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: -4px 4px 0 0 var(--teal);
+}
+
+.css-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--cream-dark);
+    border-bottom: 2px solid var(--dark);
+}
+
+.css-preview-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid var(--dark);
+}
+
+.gallery-cta {
+    padding: var(--space-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-2xl);
+}
+
+.gallery-cta p {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--dark);
+}
+
+/* =======================================
+   DESIGN ASSETS - CATEGORY NAVIGATION
+   ======================================= */
+
+.asset-category-nav {
+    margin-bottom: var(--space-xl);
+}
+
+.category-tabs {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    background: var(--cream-dark);
+    color: var(--dark);
+    padding: 0.6rem 1.5rem;
+    border: 2px solid var(--dark);
+    border-radius: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-tab:hover {
+    background: var(--cream);
+}
+
+.category-tab.active {
+    background: var(--teal);
+    color: var(--cream);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* =======================================
+   DESIGN ASSETS - CATEGORY SECTIONS
+   ======================================= */
+
+.asset-category {
+    display: none;
+}
+
+.asset-category.active {
+    display: block;
+}
+
+/* =======================================
+   DESIGN ASSETS - PACK CARDS GRID
+   ======================================= */
+
+.asset-packs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.asset-pack-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: -4px 4px 0 0 var(--coral);
+}
+
+.pack-header {
+    background: var(--teal);
+    padding: var(--space-md);
+    border-bottom: 2px solid var(--dark);
+}
+
+.pack-header h3 {
+    color: var(--cream);
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.08em;
+    margin: 0;
+    font-weight: normal;
+}
+
+.pack-preview {
+    background: var(--cream-dark);
+    padding: var(--space-md);
+}
+
+.pack-description {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--cream);
+    border-top: 2px solid var(--dark);
+}
+
+.pack-description p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    max-width: none;
+}
+
+/* =======================================
+   DESIGN ASSETS - ICON PREVIEW GRID
+   ======================================= */
+
+.icon-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xs);
+}
+
+.icon-slot {
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xs);
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.icon-slot.dark {
+    background: var(--dark);
+}
+
+.icon-slot.light {
+    background: var(--cream);
+}
+
+.icon-slot img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    min-width: 0;
+}
+
+/* =======================================
+   DESIGN ASSETS - PATTERN PREVIEW
+   ======================================= */
+
+.pattern-preview {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-repeat: repeat;
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    image-rendering: crisp-edges;
+    background-color: var(--cream);
+}
+
+.pattern-preview.dark-bg {
+    background-color: var(--dark);
+}
+
+.background-toggle {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.toggle-btn {
+    background: var(--cream);
+    color: var(--dark);
+    border: 2px solid var(--dark);
+    border-radius: 12px;
+    padding: 0.25rem 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background: var(--cream-dark);
+}
+
+.toggle-btn.active {
+    background: var(--teal);
+    color: var(--cream);
+}
+
+/* =======================================
+   DESIGN ASSETS - COMING SOON
+   ======================================= */
+
+.coming-soon-card {
+    background: var(--cream-dark);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    padding: var(--space-2xl);
+    text-align: center;
+    box-shadow: -4px 4px 0 0 var(--coral);
+}
+
+.coming-soon-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+    margin-bottom: var(--space-sm);
+    justify-content: center;
+}
+
+.coming-soon-card p {
+    color: var(--dark);
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* =======================================
+   FEATURED PROJECTS - CASE STUDY CARDS
+   ======================================= */
+
+.featured-projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.case-study-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: -4px 4px 0 0 var(--teal);
+}
+
+.case-study-preview {
+    background: var(--cream-dark);
+    border-right: 2px solid var(--dark);
+    overflow: hidden;
+}
+
+.case-study-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.case-study-content {
+    padding: var(--space-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--space-sm) var(--space-lg);
+    align-items: start;
+}
+
+.case-study-content h3 {
+    grid-column: 1 / -1;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+    justify-content: flex-start;
+}
+
+.case-study-summary {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--dark);
+    margin: 0;
+    text-align: left;
+    max-width: none;
+}
+
+.case-study-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    margin: 0;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.detail-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.05em;
+}
+
+.detail-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--dark);
+    line-height: 1.4;
+}
+
+.case-study-content .btn-secondary {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+.case-study-content .btn-secondary {
+    align-self: flex-start;
+}
+
+/* =======================================
+   META CASE STUDY - THIS SITE SECTION
+   ======================================= */
+
+.meta-case-study {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    padding: var(--space-xl);
+    box-shadow: -4px 4px 0 0 var(--coral);
+}
+
+.meta-content > p {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: var(--space-xl);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.85;
+}
+
+.meta-details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.meta-detail {
+    text-align: center;
+    padding: var(--space-md);
+}
+
+.meta-detail-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto var(--space-sm);
+    display: block;
+}
+
+.meta-detail h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-xs);
+    justify-content: center;
+}
+
+.meta-detail p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--dark);
+    margin: 0;
+    text-align: center;
+    max-width: none;
+    opacity: 0.8;
+}
+
+/* =======================================
+   ASSETS CTA
+   ======================================= */
+
+.assets-cta {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+/* =======================================
+   ILLUSTRATIONS PREVIEW
+   ======================================= */
+
+.illustrations-preview {
+    text-align: center;
+}
+
+.illustrations-note {
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.coming-soon-card .btn-secondary {
+    margin-top: var(--space-lg);
+}
+
+/* =======================================
+   INTERACTIVE PROJECTS GRID
+   ======================================= */
+
+.js-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+}
+
+.js-project-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: -4px 4px 0 0 var(--teal);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.js-project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: -4px 6px 0 0 var(--teal);
+}
+
+.js-project-preview {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    background: var(--cream-dark);
+    border-bottom: 2px solid var(--dark);
+    overflow: hidden;
+}
+
+.js-project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.js-project-info {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.js-project-info h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: var(--space-sm);
+    letter-spacing: 0.05em;
+    justify-content: center;
+}
+
+.js-project-info p {
+    color: var(--dark);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
+    max-width: none;
+}
+
+/* =======================================
    HOME SECTION
    Hero section with name title and CTA
    ======================================= 
@@ -1171,9 +1762,9 @@ nav ul li a.active {
     */
 
 /* =============================================
-   SERVICES SECTION
+   SERVICES SECTION - ARCHIVED 
    ============================================= */
-
+/* 
 #services {
     width: 80rem !important;
     max-width: 100% !important;
@@ -1212,7 +1803,7 @@ nav ul li a.active {
     margin-bottom: var(--space-md);
 }
 
-/* Tech stack as pill tags */
+/* Tech stack as pill tags 
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -1220,20 +1811,21 @@ nav ul li a.active {
     gap: 0.5rem;
     margin-top: var(--space-xl);
 }
+*/ 
 
 /* =======================================
    PROJECTS SECTION
    Gallery showcase with hover effects
    ======================================= */
 
-/* PROJECTS SECTION */
+/* PROJECTS SECTION 
 #projects {
     max-width: 80rem;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
 
-/* PROJECT CARDS */
+/* PROJECT CARDS
 .project-card {
     background: var(--cream);
     border: 2px solid var(--dark);
@@ -1241,7 +1833,7 @@ nav ul li a.active {
     box-shadow: -4px 4px 0 0 var(--mustard);
     /* 
     transition: all 0.3s ease;
-    */ 
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     display: flex;
     flex-direction: column;
@@ -1249,13 +1841,15 @@ nav ul li a.active {
     justify-content: center;
 }
 
+
 .project-card:hover {
-    box-shadow: -5px 5px 0 0 var(--mustard);  /* just slightly deeper */
+    box-shadow: -5px 5px 0 0 var(--mustard);  /* just slightly deeper 
 }
+    
 
 .project-preview {
     width: 100%;
-    aspect-ratio: 3 / 2; /* This makes the container 3:2 ratio */
+    aspect-ratio: 3 / 2; /* This makes the container 3:2 ratio 
     background: transparent;
     border-bottom: 2px solid var(--dark);
     overflow: hidden;
@@ -1298,7 +1892,7 @@ nav ul li a.active {
     margin-bottom: var(--space-md);
 }
 
-/* CSS ILLUSTRATIONS */
+/* CSS ILLUSTRATIONS
 
 .project-card.css-illustrations {
     width: 100%;
@@ -1328,15 +1922,16 @@ nav ul li a.active {
 .project-card.css-illustrations {
     margin-top: 3rem;
 }
+     */
 
-/* JAVASCRIPT PROJECTS */
+/* JAVASCRIPT PROJECTS 
 
-/* JS Projects Container */
+/* JS Projects Container
 .project-showcase {
     margin-top: 5rem;
 }
 
-/* JS Projects Grid */
+/* JS Projects Grid 
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1344,7 +1939,7 @@ nav ul li a.active {
     max-width: 80rem;
 }
 
-/* JS projects Header */
+/* JS projects Header 
 .project-header {
     margin-bottom: var(--space-md);
     display: flex;
@@ -1353,22 +1948,22 @@ nav ul li a.active {
     align-items: center;
 }
 
-/* JS Projects description */
+/* JS Projects description 
 .project-description {
     color: var(--dark);
     font-size: 1rem;
     margin-top: var(--space-sm);
 }
 
-/* Remove the individual card targeting and use this instead */
+/* Remove the individual card targeting and use this instead 
 .project-preview.js img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Back to cover, not fill */
+    object-fit: cover; /* Back to cover, not fill 
     object-position: center;
 }
 
-/* DESIGN ASSETS GRID */
+/* DESIGN ASSETS GRID 
 .project-card.design-assets {
     width: 100%;
     max-width: 80rem;
@@ -1395,6 +1990,8 @@ nav ul li a.active {
     background: var(--cream);
     padding: 0.5rem;
 }
+
+*/
 
 /* =======================================
    SUPPORT MY WORK
