@@ -34,119 +34,6 @@
 }
 
 /* =======================================
-   DARK MODE THEME
-   All dark mode overrides organized by component
-   ======================================= */
-
-/* COLOR VARIABLES 
-[data-theme="dark"] {
-    --cream-dark: #2a2a2a;
-    --cream: #1a1a1a;
-    --dark: #f0f0f0;
-    --orange: #ff8c5a;
-    --orange-dark: #c7654c;
-    --teal: #4db8b8;
-    --teal-dark: #2f7e7e;
-    --mustard: #f5d8a9;
-    --mustard-dark: #c2a372;
-}
-
-/* TYPOGRAPHY
-[data-theme="dark"] h1 {
-    color: #d0d0d0;
-}
-
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4 {
-    color: #d0d0d0;
-}
-
-[data-theme="dark"] p {
-    color: #f0f0f0;
-}
-
-[data-theme="dark"] h2::after {
-    background-color: var(--teal-dark);
-}
-
-/* TEXT SHADOWS - single shadow to match light mode 
-[data-theme="dark"] .first-name {
-    text-shadow: 4px 4px 0 var(--teal-dark);
-}
-
-[data-theme="dark"] .last-name {
-    text-shadow: 4px 4px 0 var(--orange-dark);
-}
-
-/* BUTTONS 
-[data-theme="dark"] .btn-primary,
-[data-theme="dark"] .btn-secondary {
-    background-color: #2a2a2a;
-    color: #f0f0f0;
-    border-color: #4a4a4a;
-    box-shadow: -2px 2px 0 0 #4a4a4a;
-}
-
-[data-theme="dark"] .btn-primary:hover,
-[data-theme="dark"] .btn-secondary:hover {
-    background-color: #3a3a3a;
-    color: #ffffff;
-    border-color: #5a5a5a;
-    box-shadow: -4px 4px 0 0 #5a5a5a;
-}
-
-[data-theme="dark"] #theme-toggle {
-    background: var(--teal-dark);
-    border-color: #4a4a4a;
-    box-shadow: -2px 2px 0 0 #4a4a4a;
-}
-
-[data-theme="dark"] #theme-toggle:hover {
-    background: #3a3a3a;
-    box-shadow: -4px 4px 0 0 #5a5a5a;
-}
-
-[data-theme="dark"] #theme-toggle .theme-icon {
-    transform: rotate(180deg);
-}
-
-/* TAGS 
-[data-theme="dark"] .tag {
-    background-color: #2a2a2a;
-    color: #d0d0d0;
-    border-color: #4a4a4a;
-}
-
-/* CARDS 
-[data-theme="dark"] .card,
-[data-theme="dark"] .project-card,
-[data-theme="dark"] .support-card {
-    border-color: #4a4a4a;
-    box-shadow: -4px 4px 0 0 #4a4a4a;
-}
-
-/* IMAGES 
-[data-theme="dark"] .profile-image {
-    border-color: #4a4a4a;
-    opacity: 0.85;
-    filter: brightness(0.9);
-}
-
-[data-theme="dark"] .project-preview img,
-[data-theme="dark"] .preview-grid img,
-[data-theme="dark"] .support-image img {
-    opacity: 0.85;
-    filter: brightness(0.9);
-}
-
-/* DIVIDERS 
-[data-theme="dark"] .project-preview,
-[data-theme="dark"] .support-image {
-    border-bottom-color: #4a4a4a;
-}
-
-/* =======================================
    ICONS
    ======================================= */
 .icon {
@@ -272,24 +159,72 @@ section {
    Font families, sizes, and text styles
    ======================================= */
 
-/* Name title - Home Section */
+/* h1 - Home page name only */
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
-    color: var(--dark);  /* Fixed - was orange but should be dark based on your design */
-    /* Crisp rendering */
+    color: var(--dark);
+}  
+
+/* h2 - Section headers */
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+    margin: 0 0 var(--space-xl);
+}
+
+/* h3 - Section headers within pages */
+h3 {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+    margin: 0 0 var(--space-md);
+}
+
+/* h4 - Card headers, subsections */
+h4 {
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    color: var(--dark);
+    margin: 0 0 var(--space-sm);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--dark);
+    margin-bottom: var(--space-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Name title - Home Section 
+h1 {
+    font-size: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--dark);  /* Fixed - was orange but should be dark based on your design 
+    /* Crisp rendering 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }  
 
-/* Section Headers */
+/* Section Headers 
 h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: var(--space-xl); 
     color: var(--dark);
+    text-shadow: -2px 2px 0 var(--teal);
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
@@ -324,17 +259,39 @@ h4 {
     justify-content: center;
     font-weight: 400;
 }
+    */
 
-p {
-    font-size: 1rem;
-    line-height: 1.8;
+/* =======================================
+   PAGE HERO - All inner pages
+   ======================================= */
+
+.page-hero {
+    padding-top: 10rem;
+    margin-top: 6rem;
+    padding-bottom: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title {
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1em;
     color: var(--dark);
-    margin-bottom: var(--space-lg);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    text-shadow: -3px 3px 0 var(--teal);
+    margin: 0 0 var(--space-sm) 0;
     text-align: center;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.page-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--teal-dark);
+    margin: 0;
+    text-align: center;
 }
 
 /* =======================================
@@ -845,24 +802,6 @@ nav ul li a.active {
 }
 
 /* =======================================
-   ABOUT HERO
-   ======================================= */
-
-.about-hero {
-    padding-top: 10rem !important;
-    padding-bottom: 2rem !important;
-}
-
-.page-title {
-    font-size: 3.5rem;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.1em;
-    color: var(--dark);
-    text-shadow: 3px 3px 0 var(--teal);
-    margin-bottom: 0;
-}
-
-/* =======================================
    THE BASICS - INLINE STRIP
    ======================================= */
 
@@ -991,33 +930,6 @@ nav ul li a.active {
    ======================================= */
 
 /* =======================================
-   PORTFOLIO HERO
-   ======================================= */
-
-.portfolio-hero {
-    padding-top: 10rem !important;
-    padding-bottom: 2rem !important;
-    text-align: center;
-}
-
-.portfolio-hero .page-title {
-    font-size: 3.5rem;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.1em;
-    color: var(--dark);
-    text-shadow: 3px 3px 0 var(--teal);
-    margin-bottom: var(--space-sm);
-}
-
-.portfolio-hero .hero-tagline {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: var(--teal-dark);
-    letter-spacing: 0.05em;
-    margin: 0;
-}
-
-/* =======================================
    PORTFOLIO SECTIONS
    ======================================= */
 
@@ -1056,6 +968,7 @@ nav ul li a.active {
     letter-spacing: 0.08em;
     color: var(--teal-dark);
     margin-bottom: var(--space-xs);
+    font-weight: 500;
 }
 
 .css-intro-detail {
@@ -2491,6 +2404,119 @@ a {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* =======================================
+   DARK MODE THEME
+   All dark mode overrides organized by component
+   ======================================= */
+
+/* COLOR VARIABLES 
+[data-theme="dark"] {
+    --cream-dark: #2a2a2a;
+    --cream: #1a1a1a;
+    --dark: #f0f0f0;
+    --orange: #ff8c5a;
+    --orange-dark: #c7654c;
+    --teal: #4db8b8;
+    --teal-dark: #2f7e7e;
+    --mustard: #f5d8a9;
+    --mustard-dark: #c2a372;
+}
+
+/* TYPOGRAPHY
+[data-theme="dark"] h1 {
+    color: #d0d0d0;
+}
+
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+    color: #d0d0d0;
+}
+
+[data-theme="dark"] p {
+    color: #f0f0f0;
+}
+
+[data-theme="dark"] h2::after {
+    background-color: var(--teal-dark);
+}
+
+/* TEXT SHADOWS - single shadow to match light mode 
+[data-theme="dark"] .first-name {
+    text-shadow: 4px 4px 0 var(--teal-dark);
+}
+
+[data-theme="dark"] .last-name {
+    text-shadow: 4px 4px 0 var(--orange-dark);
+}
+
+/* BUTTONS 
+[data-theme="dark"] .btn-primary,
+[data-theme="dark"] .btn-secondary {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #4a4a4a;
+    box-shadow: -2px 2px 0 0 #4a4a4a;
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .btn-secondary:hover {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #5a5a5a;
+    box-shadow: -4px 4px 0 0 #5a5a5a;
+}
+
+[data-theme="dark"] #theme-toggle {
+    background: var(--teal-dark);
+    border-color: #4a4a4a;
+    box-shadow: -2px 2px 0 0 #4a4a4a;
+}
+
+[data-theme="dark"] #theme-toggle:hover {
+    background: #3a3a3a;
+    box-shadow: -4px 4px 0 0 #5a5a5a;
+}
+
+[data-theme="dark"] #theme-toggle .theme-icon {
+    transform: rotate(180deg);
+}
+
+/* TAGS 
+[data-theme="dark"] .tag {
+    background-color: #2a2a2a;
+    color: #d0d0d0;
+    border-color: #4a4a4a;
+}
+
+/* CARDS 
+[data-theme="dark"] .card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .support-card {
+    border-color: #4a4a4a;
+    box-shadow: -4px 4px 0 0 #4a4a4a;
+}
+
+/* IMAGES 
+[data-theme="dark"] .profile-image {
+    border-color: #4a4a4a;
+    opacity: 0.85;
+    filter: brightness(0.9);
+}
+
+[data-theme="dark"] .project-preview img,
+[data-theme="dark"] .preview-grid img,
+[data-theme="dark"] .support-image img {
+    opacity: 0.85;
+    filter: brightness(0.9);
+}
+
+/* DIVIDERS 
+[data-theme="dark"] .project-preview,
+[data-theme="dark"] .support-image {
+    border-bottom-color: #4a4a4a;
 }
 
 /* =======================================
