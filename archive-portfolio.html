@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio - Alicia Ward, Web Designer & Developer. CSS illustrations, custom design assets, and interactive projects.">
+    <meta name="author" content="Alicia Ward">
+
+    <!-- SEO Tags -->
+    <meta name="keywords" content="web developer portfolio, CSS illustrations, design assets, JavaScript projects, Calgary developer, frontend developer">
+    <meta property="og:title" content="Portfolio | Alicia Ward">
+    <meta property="og:description" content="CSS illustrations, custom design assets, and interactive web projects">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://aliciawarddev.github.io/portfolio.html">
+    
+    <!-- Page Title -->
+    <title>Portfolio | Alicia Ward</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FAF3E0' rx='10'/><text x='50' y='70' font-family='Bebas Neue, sans-serif' font-size='50' fill='%233B9C9C' text-anchor='middle' font-weight='400'>AW</text></svg>">
+    
+    <!-- Font Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="nav-dropdown">
+                        <a href="portfolio.html" class="active">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#css-illustrations">CSS Illustrations</a></li>
+                            <li><a href="#featured-projects">Featured Projects</a></li>
+                            <li><a href="#design-assets">Design Assets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <img src="icons/icon-sun-moon.PNG" alt="" class="theme-icon">
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <h1 class="page-title">Portfolio</h1>
+            <p class="page-tagline">Where art meets code</p>
+        </section>
+
+        <!-- =============================================
+             CSS ILLUSTRATIONS - HERO SECTION
+             This is the primary differentiator
+             ============================================= -->
+        <section id="css-illustrations" class="portfolio-section">
+            <h2>CSS Illustrations</h2>
+            
+            
+            <div class="css-intro">
+                <h3>Art made entirely from code</h3>
+                <p class="css-intro-detail">No images. No SVGs. Just HTML and CSS — proving that technical precision and creative expression aren't opposites.</p>
+            </div>
+
+
+            <div class="css-gallery-container">
+                <div class="card">
+                    <div class="css-preview-grid">
+                        <img src="preview-images/preview-burger.png" alt="CSS burger illustration">
+                        <img src="preview-images/preview-retro-computer.png" alt="CSS retro computer">
+                        <img src="preview-images/preview-lightbulb-plant.png" alt="CSS lightbulb plant">
+                        <img src="preview-images/preview-cityscape.png" alt="CSS cityscape">
+                        <img src="preview-images/preview-retro-tv.png" alt="CSS retro tv">
+                        <img src="preview-images/preview-ferris-wheel.png" alt="CSS ferris wheel">
+                        <img src="preview-images/preview-cute-fruits.png" alt="CSS cute fruits">
+                        <img src="preview-images/preview-sunset-arches.png" alt="CSS sunset arches">
+                        <img src="preview-images/preview-desert.png" alt="CSS desert scene">
+                        <img src="preview-images/preview-soft-serve.png" alt="CSS soft serve">
+                        <img src="preview-images/preview-half-circle-pattern.png" alt="CSS half circle pattern">
+                        <img src="preview-images/preview-star-circle-pattern.png" alt="CSS star circle pattern">
+                    </div>
+                    <h4>CSS Only</h4>
+                    <p>Description here</p>
+                </div>
+            </div>
+            
+            <!-- 
+            <div class=" card css-gallery-card">
+                <div class="css-preview-grid">
+                    <img src="preview-images/preview-burger.png" alt="CSS burger illustration">
+                    <img src="preview-images/preview-retro-computer.png" alt="CSS retro computer">
+                    <img src="preview-images/preview-lightbulb-plant.png" alt="CSS lightbulb plant">
+                    <img src="preview-images/preview-cityscape.png" alt="CSS cityscape">
+                    <img src="preview-images/preview-retro-tv.png" alt="CSS retro tv">
+                    <img src="preview-images/preview-ferris-wheel.png" alt="CSS ferris wheel">
+                    <img src="preview-images/preview-cute-fruits.png" alt="CSS cute fruits">
+                    <img src="preview-images/preview-sunset-arches.png" alt="CSS sunset arches">
+                    <img src="preview-images/preview-desert.png" alt="CSS desert scene">
+                    <img src="preview-images/preview-soft-serve.png" alt="CSS soft serve">
+                    <img src="preview-images/preview-half-circle-pattern.png" alt="CSS half circle pattern">
+                    <img src="preview-images/preview-star-circle-pattern.png" alt="CSS star circle pattern">
+                </div>
+                <h4></h4>
+                <p>Description</p>
+            </div>
+            -->
+
+            <!-- BUTTON NOW OUTSIDE THE CARD -->
+            <div class="gallery-cta">
+                <a href="https://aliciawarddev.github.io/css-illustration-portfolio" target="_blank" class="btn-primary">Explore the Full Gallery</a>
+            </div>
+        </section>
+
+        <!-- DIVIDER -->
+        <hr class="section-divider">
+
+        <!-- =============================================
+             FEATURED PROJECTS - CASE STUDY STYLE
+             Showcasing problem-solving, not just output
+             ============================================= -->
+        <section id="featured-projects" class="portfolio-section">
+            <h2>Featured Projects</h2>
+            <p class="section-intro">Interactive applications where design thinking meets functional code.</p>
+            
+            <div class="featured-projects-grid">
+
+                <!-- Paint Mixer Case Study -->
+                <article class="case-study-card">
+                    <div class="case-study-preview">
+                        <img src="preview-images/preview-paint-mixer-new.png" alt="Paint Mixer application interface">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Paint Mixer</h3>
+                        <p class="case-study-summary">An interactive color mixing app with practice and game modes. Users blend virtual paints and see realistic results based on subtractive color theory.</p>
+                        <div class="case-study-details">
+                            <div class="detail-item">
+                                <h4>Challenge</h4>
+                                <span class="detail-text">Teaching color theory through play, not lecture</span>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Approach</h4>
+                                <span class="detail-text">Realistic paint mixing algorithm, immediate visual feedback, gamification</span>
+                            </div>
+                        </div>
+                        <a href="https://aliciawarddev.github.io/paint-mixer/" target="_blank" class="btn-secondary">View Project</a>
+                    </div>
+                </article>
+
+                <!-- What Should I Wear Case Study -->
+                <article class="case-study-card">
+                    <div class="case-study-preview">
+                        <img src="preview-images/preview-what-should-i-wear.png" alt="What Should I Wear application interface">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>What Should I Wear</h3>
+                        <p class="case-study-summary">A weather app that goes beyond temperature — it tells you what to actually wear. Pulls real-time data and translates it into practical outfit suggestions.</p>
+                        <div class="case-study-details">
+                            <div class="detail-item">
+                                <h4>Challenge</h4>
+                                <span class="detail-text">Making weather data personally useful</span>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Approach</h4>
+                                <span class="detail-text">Weather API integration, conditional logic for outfit mapping, friendly UI</span>
+                            </div>
+                        </div>
+                        <a href="https://aliciawarddev.github.io/what-should-i-wear/" target="_blank" class="btn-secondary">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Menu Calculator Case Study -->
+                <article class="case-study-card">
+                    <div class="case-study-preview">
+                        <img src="preview-images/preview-menu-calculator-new.png" alt="Menu Calculator application interface">
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Menu Calculator</h3>
+                        <p class="case-study-summary">A retro diner ordering interface with real-time price calculation. Select burgers, sides, and drinks while watching your total update instantly.</p>
+                        <div class="case-study-details">
+                            <div class="detail-item">
+                                <h4>Challenge</h4>
+                                <span class="detail-text">Creating an intuitive, visually engaging ordering experience</span>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Approach</h4>
+                                <span class="detail-text">Retro aesthetic, state management, accessible form controls</span>
+                            </div>
+                        </div>
+                        <a href="https://aliciawarddev.github.io/menu-calculator/" target="_blank" class="btn-secondary">View Project</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- DIVIDER -->
+        <hr class="section-divider">
+
+        <!-- =============================================
+             DESIGN ASSETS - CURATED SELECTION
+             Demonstrating range without overwhelming
+             ============================================= -->
+        <section id="design-assets" class="portfolio-section">
+            <h2>Design Assets</h2>
+            <p class="section-intro">Hand-crafted icons, patterns, and illustrations. All custom, no stock — because your project deserves original work.</p>
+            
+            <!-- Category Navigation -->
+            <nav class="asset-category-nav">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="icons">Icon Packs</button>
+                    <button class="category-tab" data-category="patterns">Patterns</button>
+                    <button class="category-tab" data-category="illustrations">Spot Illustrations</button>
+                </div>
+            </nav>
+
+            <!-- Icon Packs - Curated Selection -->
+            <div id="category-icons" class="asset-category active">
+                <div class="asset-packs-grid">
+
+                    <!-- Essential MCM Pack -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Essential MCM</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="icon-preview-grid">
+                                <div class="icon-slot dark"><img src="icons/simple/bag.png" alt="Bag"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/briefcase.png" alt="Briefcase"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/bubble.png" alt="Speech bubbles"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/bulb.png" alt="Light bulb"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/calendar.png" alt="Calendar"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/camera.png" alt="Camera"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/clock.png" alt="Clock"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/coffee.png" alt="Coffee"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/gear.png" alt="Gear"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/envelope.png" alt="Envelope"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/magnifying-glass.png" alt="Magnifying Glass"></div>
+                                <div class="icon-slot dark"><img src="icons/simple/note.png" alt="Musical note"></div>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Mid-Century Modern basics with warm colors and vintage appeal</p>
+                        </div>
+                    </article>
+
+                    <!-- Graphic MCM Pack -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Graphic MCM</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="icon-preview-grid">
+                                <div class="icon-slot light"><img src="icons/graphic/bag.png" alt="Bag"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/briefcase.png" alt="Briefcase"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/bubble.png" alt="Bubble"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/bulb.png" alt="Bulb"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/calendar.png" alt="Calendar"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/camera.png" alt="Camera"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/clock.png" alt="Clock"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/coffee.png" alt="Coffee"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/envelope.png" alt="Envelope"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/gear.png" alt="Gear"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/magnifying-glass.png" alt="Magnifying Glass"></div>
+                                <div class="icon-slot light"><img src="icons/graphic/note.png" alt="Musical Note"></div>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>High-contrast shapes with bold retro flair</p>
+                        </div>
+                    </article>
+
+                    <!-- Glow Pack -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Glow</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="icon-preview-grid">
+                                <div class="icon-slot dark"><img src="icons/glow/bag.PNG" alt="Bag"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/briefcase.PNG" alt="Briefcase"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/bubble.PNG" alt="Bubble"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/bulb.PNG" alt="Light bulb"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/calendar.PNG" alt="Calendar"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/camera.PNG" alt="Camera"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/clock.PNG" alt="Clock"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/coffee.PNG" alt="Coffee"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/envelope.PNG" alt="Envelope"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/gear.PNG" alt="Gear"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/magnifying-glass.PNG" alt="Magnifying Glass"></div>
+                                <div class="icon-slot dark"><img src="icons/glow/note.PNG" alt="Musical Note"></div>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Glowing line icons for dark interfaces</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Patterns - Curated Selection -->
+            <div id="category-patterns" class="asset-category">
+                <div class="asset-packs-grid">
+
+                    <!-- Boomerang -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Boomerang</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="pattern-preview" data-pattern="patterns/boomerang-line.png" data-scale="256"></div>
+                            <div class="background-toggle">
+                                <button class="toggle-btn active" data-bg="light">Light</button>
+                                <button class="toggle-btn" data-bg="dark">Dark</button>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Classic MCM boomerangs in warm retro tones</p>
+                        </div>
+                    </article>
+
+                    <!-- Atomic Jacks -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Atomic Jacks</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="pattern-preview" data-pattern="patterns/atomic-jacks.png" data-scale="256"></div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Atomic-age starbursts in a scattered repeat</p>
+                        </div>
+                    </article>
+
+                    <!-- Atomic Star -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Atomic Star</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="pattern-preview" data-pattern="patterns/atomic-star.png" data-scale="256"></div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Classic mid-century sparkle motif</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Spot Illustrations -->
+            <div id="category-illustrations" class="asset-category">
+                <p class="section-intro">Hand-drawn illustrations for common UI moments, designed in Procreate with the same Mid-Century Modern aesthetic.</p>
+                
+                <div class="asset-packs-grid">
+
+                    <!-- Empty State -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Empty State</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="illustration-placeholder">
+                                <!-- Replace with: <img src="illustrations/empty-state-astronaut.png" alt="Lonely retro astronaut floating in space"> -->
+                                <span class="placeholder-text">Preview Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Lonely retro astronaut floating in space — perfect for empty feeds, no results, or first-time user states.</p>
+                        </div>
+                    </article>
+
+                    <!-- 404 Error -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>404 Error</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="illustration-placeholder">
+                                <!-- Replace with: <img src="illustrations/404-broken-robot.png" alt="Broken retro robot"> -->
+                                <span class="placeholder-text">Preview Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Broken retro robot looking confused — a friendly face for page-not-found errors.</p>
+                        </div>
+                    </article>
+
+                    <!-- Success Confirmation -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Success</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="illustration-placeholder">
+                                <!-- Replace with: <img src="illustrations/success-rocket.png" alt="Retro rocket launching successfully"> -->
+                                <span class="placeholder-text">Preview Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Retro rocket launching with a trail of stars — celebrate completed actions and successful submissions.</p>
+                        </div>
+                    </article>
+
+                    <!-- Loading -->
+                    <article class="asset-pack-card">
+                        <div class="pack-header">
+                            <h3>Loading</h3>
+                        </div>
+                        <div class="pack-preview">
+                            <div class="illustration-placeholder">
+                                <!-- Replace with: <img src="illustrations/loading-atomic.png" alt="Atomic orbital paths"> -->
+                                <span class="placeholder-text">Preview Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="pack-description">
+                            <p>Atomic orbital paths in motion — a retro-futuristic loading indicator.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Hide 
+            <div class="gallery-cta">
+                <p>Need custom assets for your project?</p>
+                <a href="contact.html" class="btn-primary">Let's Talk</a>
+            </div>
+            -->
+        </section>
+
+        <!-- DIVIDER -->
+        <hr class="section-divider">
+
+        <!-- =============================================
+             THIS SITE - META CASE STUDY
+             The portfolio itself as proof of work
+             ============================================= -->
+        <section id="this-site" class="portfolio-section">
+            <h2>About This Site</h2>
+            
+            <div class="meta-case-study">
+                <div class="meta-content">
+                    <p>This portfolio is itself a demonstration of my approach: custom-designed, hand-coded, no templates or frameworks.</p>
+                    
+                    <div class="meta-details-grid">
+                        <div class="meta-detail">
+                            <img src="icons/graphic/swatch.PNG" alt="Swatch" class="icon icon-large">
+                            <h4>Design System</h4>
+                            <p>Custom color palette, spacing scale, and reusable components</p>
+                        </div>
+                        <div class="meta-detail">
+                            <img src="icons/graphic/open-arms.PNG" alt="Open arms" class="icon icon-large">
+                            <h4>Accessibility</h4>
+                            <p>Semantic HTML, focus states, reduced motion support</p>
+                        </div>
+                        <div class="meta-detail">
+                            <img src="icons/graphic/moon.PNG" alt="Moon" class="icon icon-large">
+                            <h4>Dark Mode</h4>
+                            <p>Full theme support with CSS custom properties</p>
+                        </div>
+                        <div class="meta-detail">
+                            <img src="icons/graphic/diamond.PNG" alt="Diamond" class="icon icon-large">
+                            <h4>No Dependencies</h4>
+                            <p>Pure HTML, CSS, and vanilla JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DIVIDER -->
+    <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-container">
+        <footer>
+            <p class="footer-tagline">Crafted with care in Calgary</p>
+            <p class="footer-copyright">&copy; 2025 Alicia Ward</p>
+        </footer>
+    </div>
+
+    <script src="theme-toggle.js"></script>
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
