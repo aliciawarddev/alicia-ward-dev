@@ -528,11 +528,11 @@ nav ul li a.active {
 }
 
 .hero-title .first-name {
-    text-shadow: -4px 4px 0 var(--teal);
+    text-shadow: -3px 3px 0 var(--teal);
 }
 
 .hero-title .last-name {
-    text-shadow: -4px 4px 0 var(--coral);
+    text-shadow: -3px 3px 0 var(--coral);
 }
 
 .hero-subtitle {
