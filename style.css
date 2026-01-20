@@ -149,11 +149,12 @@ h3 {
     font-size: 1.8rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.05em;
-    color: var(--dark);
-    margin: 0 0 var(--space-md);
+    color: var(--teal-dark);
+    margin: 0 0 var(--space-lg);
+    font-weight: 500;
 }
 
-/* h4 - Card headers, subsections */
+/* h4 - Card headers, subsections
 h4 {
     font-size: 1.3rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -161,6 +162,28 @@ h4 {
     color: var(--dark);
     margin: 0 0 var(--space-sm);
 }
+*/ 
+
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--teal);
+    letter-spacing: 0.05em;
+    margin: 0 0 var(--space-sm);
+    font-weight: 500;
+}
+
+/* UPDATED: Larger teal titles 
+.meta-detail h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--teal-dark);
+    letter-spacing: 0.06em;
+    margin-bottom: var(--space-sm);
+    justify-content: center;
+    line-height: 1.2;
+}
+    */
 
 p {
     font-size: 1rem;
@@ -193,19 +216,32 @@ p {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1em;
     color: var(--dark);
-    text-shadow: -3px 3px 0 var(--teal);
-    margin: 0 0 var(--space-sm) 0;
+    text-shadow: -2.5px 2.5px 0 var(--teal);
+    margin: 0 0 var(--space-xs) 0;
     text-align: center;
 }
 
 .page-tagline {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--teal-dark);
+    margin: 0;
+    text-align: center;
+}
+
+/* 
+.page-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--teal-dark);
     margin: 0;
     text-align: center;
 }
+    */ 
 
 /* =======================================
    BUTTONS - Updated colors
@@ -298,7 +334,7 @@ p {
 /* Card headers */
 .card h4 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--dark);
     margin: 0 0 var(--space-sm) 0;
     letter-spacing: 0.05em;
@@ -349,27 +385,6 @@ nav {
 }
 
 /* NAVIGATION LINKS */
-.nav-link {
-    color: var(--dark);
-    padding: 0.4rem 0.75rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: var(--teal);
-}
-
-.nav-link.active {
-    color: var(--teal);
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 2px;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -396,7 +411,10 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    color: var(--coral);
+    color: var(--teal);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 /* DROPDOWN */
@@ -834,6 +852,7 @@ nav ul li a.active {
     margin-bottom: var(--space-xl);
 }
 
+/* 
 .css-intro-lead {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
@@ -842,6 +861,7 @@ nav ul li a.active {
     margin-bottom: var(--space-xs);
     font-weight: 500;
 }
+*/ 
 
 .css-intro-detail {
     font-size: 0.9rem;
@@ -881,8 +901,13 @@ nav ul li a.active {
     border: 2px solid var(--dark);
 }
 
+.gallery-cta {
+    padding-top: 3rem;
+}
+
+
 /* UPDATED: Reduced whitespace above CTA button */
-/* Button now sits OUTSIDE the card */
+/* Button now sits OUTSIDE the card 
 .css-gallery-card + .gallery-cta,
 #css-illustrations > .gallery-cta {
     padding: var(--space-lg) 0;
@@ -894,17 +919,21 @@ nav ul li a.active {
     margin-top: var(--space-lg);
     background: transparent;
 }
+    */
 
-/* Remove button from inside card */
+/* Remove button from inside card
 .css-gallery-card .gallery-cta {
     display: none;
 }
+     */
 
+/* 
 .gallery-cta p {
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--dark);
 }
+    */ 
 
 /* =======================================
    DESIGN ASSETS - CATEGORY NAVIGATION
@@ -1281,7 +1310,7 @@ nav ul li a.active {
     display: block;
 }
 
-/* UPDATED: Larger teal titles */
+/* UPDATED: Larger teal titles 
 .meta-detail h4 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
@@ -1291,6 +1320,7 @@ nav ul li a.active {
     justify-content: center;
     line-height: 1.2;
 }
+    */
 
 /* UPDATED: Larger, more readable descriptions */
 .meta-detail p {
@@ -1308,6 +1338,7 @@ nav ul li a.active {
    UPDATED: Better visual separation for Let's Talk
    ======================================= */
 
+   /* 
 #design-assets > .gallery-cta {
     background: var(--cream-dark);
     padding: var(--space-xl);
@@ -1324,6 +1355,7 @@ nav ul li a.active {
     color: var(--dark);
     margin-bottom: var(--space-sm);
 }
+*/ 
 
 /* =======================================
    ASSETS CTA
