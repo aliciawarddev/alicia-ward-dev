@@ -884,14 +884,14 @@ nav ul li a.active {
    PORTFOLIO CARD - PREVIEW AREA
    ======================================= */
 
-.portfolio-card__preview {
+.portfolio-card-preview {
     background: var(--cream-dark);
     border-bottom: 2px solid var(--dark);
     aspect-ratio: 4 / 3;
     overflow: hidden;
 }
 
-.portfolio-card__preview img {
+.portfolio-card-preview img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -899,21 +899,21 @@ nav ul li a.active {
 }
 
 /* Icon preview variant */
-.portfolio-card__preview--icons {
+.portfolio-card-preview--icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-md);
+    padding: 0;
 }
 
 /* Pattern preview variant */
-.portfolio-card__preview--pattern {
+.portfolio-card-preview--pattern {
     background-repeat: repeat;
     background-color: var(--cream);
 }
 
 /* Placeholder variant */
-.portfolio-card__preview--placeholder {
+.portfolio-card-preview--placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -928,11 +928,11 @@ nav ul li a.active {
    PORTFOLIO CARD - CONTENT AREA
    ======================================= */
 
-.portfolio-card__content {
+.portfolio-card-content {
     padding: var(--space-lg);
 }
 
-.portfolio-card__content h3 {
+.portfolio-card-content h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
     color: var(--dark);
@@ -941,7 +941,7 @@ nav ul li a.active {
     line-height: 1.1;
 }
 
-.portfolio-card__content p {
+.portfolio-card-content > p {
     font-size: 0.9rem;
     line-height: 1.6;
     color: var(--dark);
@@ -949,13 +949,52 @@ nav ul li a.active {
     opacity: 0.85;
 }
 
-.portfolio-card__content p:last-child {
+.portfolio-card-content > p:last-child {
     margin-bottom: 0;
 }
 
-.portfolio-card__content .btn-primary,
-.portfolio-card__content .btn-secondary {
+.portfolio-card-content .btn-primary,
+.portfolio-card-content .btn-secondary {
     margin-top: var(--space-sm);
+}
+
+/* Centered content variant for CSS gallery */
+.portfolio-card-content--centered {
+    text-align: center;
+    padding: var(--space-xl);
+    border-top: 2px solid var(--dark);
+}
+
+.portfolio-card-content--centered h3 {
+    font-size: 1.6rem;
+}
+
+/* =======================================
+   PROJECT DETAILS - CHALLENGE/APPROACH
+   ======================================= */
+
+.project-details {
+    margin: var(--space-md) 0;
+    padding: var(--space-md);
+    background: var(--cream-dark);
+    border-radius: 4px;
+}
+
+.project-details p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--dark);
+    margin: 0 0 var(--space-xs) 0;
+    opacity: 0.9;
+}
+
+.project-details p:last-child {
+    margin-bottom: 0;
+}
+
+.project-details strong {
+    color: var(--teal-dark);
+    font-weight: 600;
 }
 
 /* =======================================
@@ -985,34 +1024,23 @@ nav ul li a.active {
 }
 
 /* =======================================
-   CSS ILLUSTRATIONS - SPECIAL STYLING
+   CSS ILLUSTRATIONS - PREVIEW GRID
    ======================================= */
 
 .css-preview-grid {
     display: grid;
-    grid-template-columns: repeat(4, 8rem);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
     padding: var(--space-md);
     background: var(--cream-dark);
 }
 
 .css-preview-grid img {
-    width: 8rem;
-    height: 8rem;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 4px;
     border: 2px solid var(--dark);
-}
-
-/* Content styling for CSS gallery card */
-.portfolio-card--highlight .portfolio-card__content {
-    text-align: center;
-    padding: var(--space-xl);
-    border-top: 2px solid var(--dark);
-}
-
-.portfolio-card--highlight .portfolio-card__content h3 {
-    font-size: 1.6rem;
 }
 
 /* =======================================
@@ -1021,19 +1049,17 @@ nav ul li a.active {
 
 .icon-preview-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-xs);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
     width: 100%;
-    max-width: 180px;
+    height: 100%;
 }
 
 .icon-slot {
-    border: 2px solid var(--dark);
-    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-xs);
+    padding: var(--space-sm);
     aspect-ratio: 1 / 1;
 }
 
@@ -1046,8 +1072,8 @@ nav ul li a.active {
 }
 
 .icon-slot img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
     object-fit: contain;
 }
 
@@ -1070,6 +1096,54 @@ nav ul li a.active {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
+}
+
+.site-feature .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* =======================================
+   RESPONSIVE - TABLET
+   ======================================= */
+
+@media (max-width: 900px) {
+    .portfolio-grid--3col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .css-preview-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =======================================
+   RESPONSIVE - MOBILE
+   ======================================= */
+
+@media (max-width: 600px) {
+    .portfolio-section {
+        padding: var(--space-xl) var(--space-md);
+    }
+    
+    .portfolio-grid--3col,
+    .portfolio-grid--2col {
+        grid-template-columns: 1fr;
+    }
+    
+    .css-preview-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .site-features {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+    }
+    
+    .icon-preview-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* =======================================

@@ -94,7 +94,7 @@
                         <img src="preview-images/preview-half-circle-pattern.png" alt="CSS half circle pattern">
                         <img src="preview-images/preview-star-circle-pattern.png" alt="CSS star circle pattern">
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content portfolio-card-content--centered">
                         <h3>Pure CSS Collection</h3>
                         <p>12 illustrations proving that technical precision and creative expression aren't opposites.</p>
                         <a href="https://aliciawarddev.github.io/css-illustration-portfolio" target="_blank" class="btn-primary">Explore the Gallery</a>
@@ -120,36 +120,48 @@
 
                 <!-- Paint Mixer -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__preview">
+                    <div class="portfolio-card-preview">
                         <img src="preview-images/preview-paint-mixer-new.png" alt="Paint Mixer application interface">
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content">
                         <h3>Paint Mixer</h3>
                         <p>Interactive color mixing with realistic subtractive color theory. Practice mode and game mode for learning.</p>
+                        <div class="project-details">
+                            <p><strong>Challenge:</strong> Teaching color theory through play, not lecture</p>
+                            <p><strong>Approach:</strong> Realistic paint mixing algorithm, immediate visual feedback, gamification</p>
+                        </div>
                         <a href="https://aliciawarddev.github.io/paint-mixer/" target="_blank" class="btn-secondary">View Project</a>
                     </div>
                 </article>
 
                 <!-- What Should I Wear -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__preview">
+                    <div class="portfolio-card-preview">
                         <img src="preview-images/preview-what-should-i-wear.png" alt="What Should I Wear application interface">
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content">
                         <h3>What Should I Wear</h3>
-                        <p>Weather app that translates real-time data into practical outfit suggestions. API integration with friendly UI.</p>
+                        <p>Weather app that goes beyond temperature — it tells you what to actually wear based on real-time conditions.</p>
+                        <div class="project-details">
+                            <p><strong>Challenge:</strong> Making weather data personally useful</p>
+                            <p><strong>Approach:</strong> Weather API integration, conditional logic for outfit mapping, friendly UI</p>
+                        </div>
                         <a href="https://aliciawarddev.github.io/what-should-i-wear/" target="_blank" class="btn-secondary">View Project</a>
                     </div>
                 </article>
 
                 <!-- Menu Calculator -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__preview">
+                    <div class="portfolio-card-preview">
                         <img src="preview-images/preview-menu-calculator-new.png" alt="Menu Calculator application interface">
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content">
                         <h3>Menu Calculator</h3>
-                        <p>Retro diner ordering interface with real-time price calculation. State management with accessible controls.</p>
+                        <p>Retro diner ordering interface with real-time price calculation as you build your meal.</p>
+                        <div class="project-details">
+                            <p><strong>Challenge:</strong> Creating an intuitive, visually engaging ordering experience</p>
+                            <p><strong>Approach:</strong> Retro aesthetic, state management, accessible form controls</p>
+                        </div>
                         <a href="https://aliciawarddev.github.io/menu-calculator/" target="_blank" class="btn-secondary">View Project</a>
                     </div>
                 </article>
@@ -174,17 +186,26 @@
 
                 <!-- Icon Packs -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__preview portfolio-card__preview--icons">
+                    <div class="portfolio-card-preview portfolio-card-preview--icons">
                         <div class="icon-preview-grid">
+                            <!-- Row 1: Essential -->
                             <div class="icon-slot dark"><img src="icons/simple/bag.png" alt="Bag"></div>
-                            <div class="icon-slot light"><img src="icons/graphic/briefcase.png" alt="Briefcase"></div>
-                            <div class="icon-slot dark"><img src="icons/glow/bulb.PNG" alt="Light bulb"></div>
+                            <div class="icon-slot dark"><img src="icons/simple/briefcase.png" alt="Briefcase"></div>
+                            <div class="icon-slot dark"><img src="icons/simple/bulb.png" alt="Light bulb"></div>
                             <div class="icon-slot dark"><img src="icons/simple/camera.png" alt="Camera"></div>
+                            <!-- Row 2: Graphic -->
                             <div class="icon-slot light"><img src="icons/graphic/coffee.png" alt="Coffee"></div>
-                            <div class="icon-slot dark"><img src="icons/glow/envelope.PNG" alt="Envelope"></div>
+                            <div class="icon-slot light"><img src="icons/graphic/envelope.png" alt="Envelope"></div>
+                            <div class="icon-slot light"><img src="icons/graphic/gear.png" alt="Gear"></div>
+                            <div class="icon-slot light"><img src="icons/graphic/calendar.png" alt="Calendar"></div>
+                            <!-- Row 3: Glow -->
+                            <div class="icon-slot dark"><img src="icons/glow/clock.PNG" alt="Clock"></div>
+                            <div class="icon-slot dark"><img src="icons/glow/magnifying-glass.PNG" alt="Magnifying Glass"></div>
+                            <div class="icon-slot dark"><img src="icons/glow/note.PNG" alt="Musical Note"></div>
+                            <div class="icon-slot dark"><img src="icons/glow/bubble.PNG" alt="Bubble"></div>
                         </div>
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content">
                         <h3>Icon Packs</h3>
                         <p>Three MCM-inspired icon sets: Essential, Graphic, and Glow. 12+ icons each.</p>
                     </div>
@@ -192,9 +213,9 @@
 
                 <!-- Patterns -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__preview portfolio-card__preview--pattern" style="background-image: url('patterns/boomerang-line.png'); background-size: 128px;">
+                    <div class="portfolio-card-preview portfolio-card-preview--pattern" style="background-image: url('patterns/boomerang-line.png'); background-size: 128px;">
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content">
                         <h3>Seamless Patterns</h3>
                         <p>Atomic-age inspired repeating patterns. Boomerangs, starbursts, and geometric motifs.</p>
                     </div>
@@ -202,10 +223,10 @@
 
                 <!-- Spot Illustrations -->
                 <article class="portfolio-card">
-                    <div class="portfolio-card__preview portfolio-card__preview--placeholder">
+                    <div class="portfolio-card-preview portfolio-card-preview--placeholder">
                         <span>Coming Soon</span>
                     </div>
-                    <div class="portfolio-card__content">
+                    <div class="portfolio-card-content">
                         <h3>Spot Illustrations</h3>
                         <p>Hand-drawn Procreate illustrations for empty states, errors, and success moments.</p>
                     </div>
@@ -229,19 +250,19 @@
 
             <div class="site-features">
                 <div class="site-feature">
-                    <img src="icons/graphic/swatch.PNG" alt="Swatch Palette" class="icon icon-medium">
+                    <img src="icons/graphic/swatch.PNG" alt="" class="icon icon-large">
                     <span>Custom Design System</span>
                 </div>
                 <div class="site-feature">
-                    <img src="icons/graphic/open-arms.PNG" alt="Person with open arms" class="icon icon-medium">
+                    <img src="icons/graphic/open-arms.PNG" alt="" class="icon icon-large">
                     <span>Accessible</span>
                 </div>
                 <div class="site-feature">
-                    <img src="icons/graphic/moon.PNG" alt="Moon" class="icon icon-medium">
+                    <img src="icons/graphic/moon.PNG" alt="" class="icon icon-large">
                     <span>Dark Mode</span>
                 </div>
                 <div class="site-feature">
-                    <img src="icons/graphic/diamond.PNG" alt="Diamond" class="icon icon-medium">
+                    <img src="icons/graphic/diamond.PNG" alt="" class="icon icon-large">
                     <span>No Dependencies</span>
                 </div>
             </div>
